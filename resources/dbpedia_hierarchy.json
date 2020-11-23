@@ -1,0 +1,5108 @@
+{
+    "owl:Thing": {
+        "level": 0,
+        "children": [
+            "dbo:Name",
+            "dbo:Surname",
+            "dbo:GivenName",
+            "dbo:Altitude",
+            "dbo:Letter",
+            "dbo:AnatomicalStructure",
+            "dbo:Lymph",
+            "dbo:Nerve",
+            "dbo:Ligament",
+            "dbo:Vein",
+            "dbo:Muscle",
+            "dbo:Brain",
+            "dbo:Artery",
+            "dbo:Bone",
+            "dbo:Embryology",
+            "dbo:HumanDevelopmentIndex",
+            "dbo:GrossDomesticProductPerCapita",
+            "dbo:Competition",
+            "dbo:Contest",
+            "dbo:TimePeriod",
+            "dbo:PeriodOfArtisticStyle",
+            "dbo:GeologicalPeriod",
+            "dbo:HistoricalPeriod",
+            "dbo:PrehistoricalPeriod",
+            "dbo:Year",
+            "dbo:YearInSpaceflight",
+            "dbo:ProtohistoricalPeriod",
+            "dbo:Diploma",
+            "dbo:Language",
+            "dbo:Place",
+            "dbo:SkiResort",
+            "dbo:Monastery",
+            "dbo:HistoricPlace",
+            "dbo:Community",
+            "dbo:Abbey",
+            "dbo:Garden",
+            "dbo:Mountain",
+            "dbo:SportFacility",
+            "dbo:GolfCourse",
+            "dbo:RaceTrack",
+            "dbo:Racecourse",
+            "dbo:Stadium",
+            "dbo:CricketGround",
+            "dbo:NaturalPlace",
+            "dbo:Crater",
+            "dbo:LunarCrater",
+            "dbo:BodyOfWater",
+            "dbo:Lake",
+            "dbo:Sea",
+            "dbo:Stream",
+            "dbo:River",
+            "dbo:Canal",
+            "dbo:Ocean",
+            "dbo:Archipelago",
+            "dbo:Cave",
+            "dbo:HotSpring",
+            "dbo:MountainRange",
+            "dbo:Mountain",
+            "dbo:Desert",
+            "dbo:MountainPass",
+            "dbo:Glacier",
+            "dbo:Volcano",
+            "dbo:Valley",
+            "dbo:Park",
+            "dbo:ArchitecturalStructure",
+            "dbo:Zoo",
+            "dbo:AmusementParkAttraction",
+            "dbo:RollerCoaster",
+            "dbo:WaterRide",
+            "dbo:Infrastructure",
+            "dbo:Airport",
+            "dbo:Lock",
+            "dbo:RouteOfTransportation",
+            "dbo:RailwayLine",
+            "dbo:RoadJunction",
+            "dbo:WaterwayTunnel",
+            "dbo:Road",
+            "dbo:RailwayTunnel",
+            "dbo:RoadTunnel",
+            "dbo:Bridge",
+            "dbo:Port",
+            "dbo:Dam",
+            "dbo:PowerStation",
+            "dbo:NuclearPowerStation",
+            "dbo:LaunchPad",
+            "dbo:Station",
+            "dbo:MetroStation",
+            "dbo:RailwayStation",
+            "dbo:Tower",
+            "dbo:WaterTower",
+            "dbo:Lighthouse",
+            "dbo:Shrine",
+            "dbo:Pyramid",
+            "dbo:Square",
+            "dbo:Tunnel",
+            "dbo:Gate",
+            "dbo:Arena",
+            "dbo:Mill",
+            "dbo:Treadmill",
+            "dbo:WindMotor",
+            "dbo:Watermill",
+            "dbo:Windmill",
+            "dbo:MilitaryStructure",
+            "dbo:NoteworthyPartOfBuilding",
+            "dbo:Venue",
+            "dbo:Theatre",
+            "dbo:Building",
+            "dbo:ShoppingMall",
+            "dbo:Hospital",
+            "dbo:Factory",
+            "dbo:Prison",
+            "dbo:Museum",
+            "dbo:Hotel",
+            "dbo:Library",
+            "dbo:ReligiousBuilding",
+            "dbo:Temple",
+            "dbo:Synagogue",
+            "dbo:Mosque",
+            "dbo:Church",
+            "dbo:Casino",
+            "dbo:Skyscraper",
+            "dbo:HistoricBuilding",
+            "dbo:Restaurant",
+            "dbo:Castle",
+            "dbo:WorldHeritageSite",
+            "dbo:SkiArea",
+            "dbo:ProtectedArea",
+            "dbo:PopulatedPlace",
+            "dbo:Department",
+            "dbo:OverseasDepartment",
+            "dbo:Street",
+            "dbo:Continent",
+            "dbo:Prefecture",
+            "dbo:Settlement",
+            "dbo:HistoricalSettlement",
+            "dbo:Town",
+            "dbo:CityDistrict",
+            "dbo:Village",
+            "dbo:City",
+            "dbo:Capital",
+            "dbo:CapitalOfRegion",
+            "dbo:Agglomeration",
+            "dbo:Locality",
+            "dbo:Country",
+            "dbo:HistoricalCountry",
+            "dbo:Island",
+            "dbo:Atoll",
+            "dbo:GatedCommunity",
+            "dbo:Intercommunality",
+            "dbo:Region",
+            "dbo:AdministrativeRegion",
+            "dbo:GovernmentalAdministrativeRegion",
+            "dbo:MicroRegion",
+            "dbo:DistrictWaterBoard",
+            "dbo:District",
+            "dbo:HistoricalDistrict",
+            "dbo:Municipality",
+            "dbo:FormerMunicipality",
+            "dbo:SubMunicipality",
+            "dbo:Regency",
+            "dbo:Province",
+            "dbo:HistoricalProvince",
+            "dbo:ClericalAdministrativeRegion",
+            "dbo:Parish",
+            "dbo:Diocese",
+            "dbo:Deanery",
+            "dbo:HistoricalRegion",
+            "dbo:NaturalRegion",
+            "dbo:State",
+            "dbo:Territory",
+            "dbo:OldTerritory",
+            "dbo:SiteOfSpecialScientificInterest",
+            "dbo:CountrySeat",
+            "dbo:WineRegion",
+            "dbo:Cemetery",
+            "dbo:Monument",
+            "dbo:Memorial",
+            "dbo:GraveMonument",
+            "dbo:GeneLocation",
+            "dbo:HumanGeneLocation",
+            "dbo:MouseGeneLocation",
+            "dbo:Listen",
+            "dbo:PenaltyShootOut",
+            "dbo:Flag",
+            "dbo:CareerStation",
+            "dbo:EthnicGroup",
+            "dbo:List",
+            "dbo:TrackList",
+            "dbo:Depth",
+            "dbo:Blazon",
+            "dbo:GrossDomesticProduct",
+            "dbo:Population",
+            "dbo:Award",
+            "dbo:Decoration",
+            "dbo:NobelPrize",
+            "dbo:ChartsPlacements",
+            "dbo:Sales",
+            "dbo:TopicalConcept",
+            "dbo:Type",
+            "dbo:DocumentType",
+            "dbo:GovernmentType",
+            "dbo:Genre",
+            "dbo:MovieGenre",
+            "dbo:MusicGenre",
+            "dbo:Ideology",
+            "dbo:SystemOfLaw",
+            "dbo:Fashion",
+            "dbo:Taxon",
+            "dbo:ChristianDoctrine",
+            "dbo:SnookerWorldRanking",
+            "dbo:Unknown",
+            "dbo:MeanOfTransportation",
+            "dbo:Ship",
+            "dbo:Spacecraft",
+            "dbo:SpaceShuttle",
+            "dbo:Aircraft",
+            "dbo:SpaceStation",
+            "dbo:Automobile",
+            "dbo:Motorcycle",
+            "dbo:Rocket",
+            "dbo:Train",
+            "dbo:Locomotive",
+            "dbo:CelestialBody",
+            "dbo:Star",
+            "dbo:BrownDwarf",
+            "dbo:Asteroid",
+            "dbo:Planet",
+            "dbo:Constellation",
+            "dbo:Galaxy",
+            "dbo:Biomolecule",
+            "dbo:Protein",
+            "dbo:Enzyme",
+            "dbo:Gene",
+            "dbo:MouseGene",
+            "dbo:HumanGene",
+            "dbo:Species",
+            "dbo:Eukaryote",
+            "dbo:Fungus",
+            "dbo:Animal",
+            "dbo:Bird",
+            "dbo:Arachnid",
+            "dbo:Crustacean",
+            "dbo:Amphibian",
+            "dbo:Insect",
+            "dbo:Mammal",
+            "dbo:RaceHorse",
+            "dbo:Dog",
+            "dbo:Fish",
+            "dbo:Reptile",
+            "dbo:Mollusca",
+            "dbo:Plant",
+            "dbo:Gnetophytes",
+            "dbo:Conifer",
+            "dbo:Fern",
+            "dbo:FloweringPlant",
+            "dbo:Grape",
+            "dbo:Moss",
+            "dbo:GreenAlga",
+            "dbo:Ginkgo",
+            "dbo:CultivatedVariety",
+            "dbo:ClubMoss",
+            "dbo:Cycad",
+            "dbo:Archaea",
+            "dbo:Bacteria",
+            "dbo:Event",
+            "dbo:SocietalEvent",
+            "dbo:Election",
+            "dbo:ElectionDiagram",
+            "dbo:SportsEvent",
+            "dbo:Tournament",
+            "dbo:SoccerTournament",
+            "dbo:TennisTournament",
+            "dbo:WomensTennisAssociationTournament",
+            "dbo:GolfTournament",
+            "dbo:GrandPrix",
+            "dbo:NationalFootballLeagueEvent",
+            "dbo:FootballMatch",
+            "dbo:WrestlingEvent",
+            "dbo:Race",
+            "dbo:CyclingRace",
+            "dbo:HorseRace",
+            "dbo:Olympics",
+            "dbo:OlympicEvent",
+            "dbo:MixedMartialArtsEvent",
+            "dbo:CyclingCompetition",
+            "dbo:Convention",
+            "dbo:SpaceMission",
+            "dbo:Meeting",
+            "dbo:FilmFestival",
+            "dbo:MilitaryConflict",
+            "dbo:MusicFestival",
+            "dbo:LifeCycleEvent",
+            "dbo:PersonalEvent",
+            "dbo:Marriage",
+            "dbo:Divorce",
+            "dbo:Death",
+            "dbo:Birth",
+            "dbo:NaturalEvent",
+            "dbo:SolarEclipse",
+            "dbo:UnitOfWork",
+            "dbo:Project",
+            "dbo:ResearchProject",
+            "dbo:Case",
+            "dbo:LegalCase",
+            "dbo:SupremeCourtOfTheUnitedStatesCase",
+            "dbo:SportsSeason",
+            "dbo:SportsTeamSeason",
+            "dbo:SoccerLeagueSeason",
+            "dbo:BaseballSeason",
+            "dbo:NCAATeamSeason",
+            "dbo:FootballLeagueSeason",
+            "dbo:NationalFootballLeagueSeason",
+            "dbo:SoccerClubSeason",
+            "dbo:MotorsportSeason",
+            "dbo:Statistic",
+            "dbo:SportCompetitionResult",
+            "dbo:OlympicResult",
+            "dbo:Area",
+            "dbo:Media",
+            "dbo:Holiday",
+            "dbo:PersonFunction",
+            "dbo:Profession",
+            "dbo:PoliticalFunction",
+            "dbo:Polyhedron",
+            "dbo:Imdb",
+            "dbo:ChemicalSubstance",
+            "dbo:Mineral",
+            "dbo:ChemicalCompound",
+            "dbo:ChemicalElement",
+            "dbo:Satellite",
+            "dbo:ArtificialSatellite",
+            "dbo:Demographics",
+            "dbo:Device",
+            "dbo:Weapon",
+            "dbo:Instrument",
+            "dbo:Organ",
+            "dbo:Guitar",
+            "dbo:Camera",
+            "dbo:DigitalCamera",
+            "dbo:InformationAppliance",
+            "dbo:AutomobileEngine",
+            "dbo:Agent",
+            "dbo:Family",
+            "dbo:NobleFamily",
+            "dbo:Organisation",
+            "dbo:PoliticalParty",
+            "dbo:SportsTeam",
+            "dbo:BaseballTeam",
+            "dbo:CyclingTeam",
+            "dbo:BasketballTeam",
+            "dbo:CricketTeam",
+            "dbo:SpeedwayTeam",
+            "dbo:AmericanFootballTeam",
+            "dbo:RugbyClub",
+            "dbo:HandballTeam",
+            "dbo:AustralianFootballTeam",
+            "dbo:FormulaOneTeam",
+            "dbo:HockeyTeam",
+            "dbo:SoccerClub",
+            "dbo:NationalSoccerClub",
+            "dbo:CanadianFootballTeam",
+            "dbo:EducationalInstitution",
+            "dbo:Library",
+            "dbo:University",
+            "dbo:College",
+            "dbo:School",
+            "dbo:SportsLeague",
+            "dbo:AutoRacingLeague",
+            "dbo:MotorcycleRacingLeague",
+            "dbo:SpeedwayLeague",
+            "dbo:FormulaOneRacing",
+            "dbo:InlineHockeyLeague",
+            "dbo:BoxingLeague",
+            "dbo:AustralianFootballLeague",
+            "dbo:SoftballLeague",
+            "dbo:MixedMartialArtsLeague",
+            "dbo:TennisLeague",
+            "dbo:IceHockeyLeague",
+            "dbo:VolleyballLeague",
+            "dbo:HandballLeague",
+            "dbo:PaintballLeague",
+            "dbo:CricketLeague",
+            "dbo:PoloLeague",
+            "dbo:RugbyLeague",
+            "dbo:AmericanFootballLeague",
+            "dbo:FieldHockeyLeague",
+            "dbo:CurlingLeague",
+            "dbo:RadioControlledRacingLeague",
+            "dbo:GolfLeague",
+            "dbo:VideogamesLeague",
+            "dbo:BaseballLeague",
+            "dbo:LacrosseLeague",
+            "dbo:BowlingLeague",
+            "dbo:SoccerLeague",
+            "dbo:CanadianFootballLeague",
+            "dbo:BasketballLeague",
+            "dbo:CyclingLeague",
+            "dbo:GeopoliticalOrganisation",
+            "dbo:TradeUnion",
+            "dbo:Legislature",
+            "dbo:ComedyGroup",
+            "dbo:Group",
+            "dbo:Band",
+            "dbo:Parliament",
+            "dbo:ClericalOrder",
+            "dbo:Company",
+            "dbo:RecordLabel",
+            "dbo:Brewery",
+            "dbo:Airline",
+            "dbo:LawFirm",
+            "dbo:Winery",
+            "dbo:BusCompany",
+            "dbo:Publisher",
+            "dbo:SambaSchool",
+            "dbo:Broadcaster",
+            "dbo:TelevisionStation",
+            "dbo:BroadcastNetwork",
+            "dbo:RadioStation",
+            "dbo:TermOfOffice",
+            "dbo:Non-ProfitOrganisation",
+            "dbo:RecordOffice",
+            "dbo:GovernmentAgency",
+            "dbo:MilitaryUnit",
+            "dbo:PublicTransitSystem",
+            "dbo:Deity",
+            "dbo:Person",
+            "dbo:Architect",
+            "dbo:TelevisionPersonality",
+            "dbo:Host",
+            "dbo:Noble",
+            "dbo:Coach",
+            "dbo:AmericanFootballCoach",
+            "dbo:CollegeCoach",
+            "dbo:VolleyballCoach",
+            "dbo:TelevisionDirector",
+            "dbo:Philosopher",
+            "dbo:Presenter",
+            "dbo:RadioHost",
+            "dbo:TelevisionHost",
+            "dbo:Employer",
+            "dbo:Journalist",
+            "dbo:Scientist",
+            "dbo:Medician",
+            "dbo:Professor",
+            "dbo:Entomologist",
+            "dbo:Model",
+            "dbo:MythologicalFigure",
+            "dbo:Criminal",
+            "dbo:Murderer",
+            "dbo:SerialKiller",
+            "dbo:Religious",
+            "dbo:BusinessPerson",
+            "dbo:PlayboyPlaymate",
+            "dbo:Farmer",
+            "dbo:PoliticianSpouse",
+            "dbo:BeautyQueen",
+            "dbo:FictionalCharacter",
+            "dbo:DisneyCharacter",
+            "dbo:SoapCharacter",
+            "dbo:NarutoCharacter",
+            "dbo:ComicsCharacter",
+            "dbo:AnimangaCharacter",
+            "dbo:Engineer",
+            "dbo:Bullfighter",
+            "dbo:Astronaut",
+            "dbo:Aristocrat",
+            "dbo:Psychologist",
+            "dbo:Linguist",
+            "dbo:Ambassador",
+            "dbo:Economist",
+            "dbo:OfficeHolder",
+            "dbo:Producer",
+            "dbo:TheatreDirector",
+            "dbo:HorseTrainer",
+            "dbo:Referee",
+            "dbo:MovieDirector",
+            "dbo:SportsManager",
+            "dbo:SoccerManager",
+            "dbo:Royalty",
+            "dbo:PolishKing",
+            "dbo:BritishRoyalty",
+            "dbo:Baronet",
+            "dbo:Athlete",
+            "dbo:Surfer",
+            "dbo:VolleyballPlayer",
+            "dbo:BeachVolleyballPlayer",
+            "dbo:Wrestler",
+            "dbo:SumoWrestler",
+            "dbo:MartialArtist",
+            "dbo:GridironFootballPlayer",
+            "dbo:CanadianFootballPlayer",
+            "dbo:AmericanFootballPlayer",
+            "dbo:NationalCollegiateAthleticAssociationAthlete",
+            "dbo:AthleticsPlayer",
+            "dbo:Skater",
+            "dbo:LacrossePlayer",
+            "dbo:Canoeist",
+            "dbo:HorseRider",
+            "dbo:IceHockeyPlayer",
+            "dbo:Cricketer",
+            "dbo:Boxer",
+            "dbo:AmateurBoxer",
+            "dbo:TennisPlayer",
+            "dbo:SnookerPlayer",
+            "dbo:SnookerChamp",
+            "dbo:Swimmer",
+            "dbo:Gymnast",
+            "dbo:SoccerPlayer",
+            "dbo:BaseballPlayer",
+            "dbo:Bodybuilder",
+            "dbo:GaelicGamesPlayer",
+            "dbo:BasketballPlayer",
+            "dbo:Jockey",
+            "dbo:TeamMember",
+            "dbo:FigureSkater",
+            "dbo:SquashPlayer",
+            "dbo:BullFighter",
+            "dbo:WaterPoloPlayer",
+            "dbo:ChessPlayer",
+            "dbo:PokerPlayer",
+            "dbo:TableTennisPlayer",
+            "dbo:Skier",
+            "dbo:GolfPlayer",
+            "dbo:MotorsportRacer",
+            "dbo:RacingDriver",
+            "dbo:NascarDriver",
+            "dbo:RallyDriver",
+            "dbo:MotocycleRacer",
+            "dbo:FormulaOneRacer",
+            "dbo:MotorcycleRider",
+            "dbo:SpeedwayRider",
+            "dbo:Rower",
+            "dbo:Curler",
+            "dbo:Fencer",
+            "dbo:HandballPlayer",
+            "dbo:AustralianRulesFootballPlayer",
+            "dbo:DartsPlayer",
+            "dbo:BadmintonPlayer",
+            "dbo:RugbyPlayer",
+            "dbo:NetballPlayer",
+            "dbo:Cyclist",
+            "dbo:Celebrity",
+            "dbo:Egyptologist",
+            "dbo:RomanEmperor",
+            "dbo:Lawyer",
+            "dbo:Politician",
+            "dbo:Mayor",
+            "dbo:PrimeMinister",
+            "dbo:VicePresident",
+            "dbo:VicePrimeMinister",
+            "dbo:MemberOfParliament",
+            "dbo:Senator",
+            "dbo:Lieutenant",
+            "dbo:Congressman",
+            "dbo:Deputy",
+            "dbo:President",
+            "dbo:Governor",
+            "dbo:Chancellor",
+            "dbo:Judge",
+            "dbo:MilitaryPerson",
+            "dbo:OrganisationMember",
+            "dbo:SportsTeamMember",
+            "dbo:Artist",
+            "dbo:Actor",
+            "dbo:VoiceActor",
+            "dbo:AdultActor",
+            "dbo:Dancer",
+            "dbo:Sculptor",
+            "dbo:FashionDesigner",
+            "dbo:Photographer",
+            "dbo:Painter",
+            "dbo:MusicalArtist",
+            "dbo:BackScene",
+            "dbo:Instrumentalist",
+            "dbo:Guitarist",
+            "dbo:MusicDirector",
+            "dbo:ClassicalMusicArtist",
+            "dbo:Singer",
+            "dbo:Humorist",
+            "dbo:Comedian",
+            "dbo:ComicsCreator",
+            "dbo:Writer",
+            "dbo:Poet",
+            "dbo:PlayWright",
+            "dbo:MusicComposer",
+            "dbo:ScreenWriter",
+            "dbo:SongWriter",
+            "dbo:Chef",
+            "dbo:Cleric",
+            "dbo:ChristianBishop",
+            "dbo:Pope",
+            "dbo:Saint",
+            "dbo:Priest",
+            "dbo:Vicar",
+            "dbo:Cardinal",
+            "dbo:ChristianPatriarch",
+            "dbo:Historian",
+            "dbo:Monarch",
+            "dbo:Archeologist",
+            "dbo:Activity",
+            "dbo:Game",
+            "dbo:BoardGame",
+            "dbo:Sport",
+            "dbo:Boxing",
+            "dbo:BoxingCategory",
+            "dbo:BoxingStyle",
+            "dbo:Athletics",
+            "dbo:HorseRiding",
+            "dbo:Food",
+            "dbo:Beverage",
+            "dbo:Beer",
+            "dbo:Wine",
+            "dbo:ControlledDesignationOfOriginWine",
+            "dbo:Cheese",
+            "dbo:Work",
+            "dbo:Website",
+            "dbo:TelevisionEpisode",
+            "dbo:CollectionOfValuables",
+            "dbo:Archive",
+            "dbo:Cartoon",
+            "dbo:HollywoodCartoon",
+            "dbo:Anime",
+            "dbo:Database",
+            "dbo:BiologicalDatabase",
+            "dbo:WrittenWork",
+            "dbo:Play",
+            "dbo:Comic",
+            "dbo:Poem",
+            "dbo:PeriodicalLiterature",
+            "dbo:AcademicJournal",
+            "dbo:Magazine",
+            "dbo:Newspaper",
+            "dbo:MultiVolumePublication",
+            "dbo:Installment",
+            "dbo:Comics",
+            "dbo:Manhua",
+            "dbo:ComicStrip",
+            "dbo:Manga",
+            "dbo:Manhwa",
+            "dbo:Book",
+            "dbo:Novel",
+            "dbo:LightNovel",
+            "dbo:StatedResolution",
+            "dbo:Annotation",
+            "dbo:Reference",
+            "dbo:Resume",
+            "dbo:Drama",
+            "dbo:TelevisionSeason",
+            "dbo:Film",
+            "dbo:Document",
+            "dbo:Image",
+            "dbo:MovingImage",
+            "dbo:StillImage",
+            "dbo:Sound",
+            "dbo:File",
+            "dbo:TelevisionShow",
+            "dbo:Artwork",
+            "dbo:Painting",
+            "dbo:Sculpture",
+            "dbo:LineOfFashion",
+            "dbo:MusicalWork",
+            "dbo:Song",
+            "dbo:EurovisionSongContestEntry",
+            "dbo:ArtistDiscography",
+            "dbo:NationalAnthem",
+            "dbo:Single",
+            "dbo:Album",
+            "dbo:ClassicalMusicComposition",
+            "dbo:Opera",
+            "dbo:RadioProgram",
+            "dbo:Software",
+            "dbo:VideoGame",
+            "dbo:ProgrammingLanguage",
+            "dbo:Musical",
+            "dbo:Tax",
+            "dbo:Drug",
+            "dbo:Currency",
+            "dbo:Disease",
+            "dbo:Swarm",
+            "dbo:Globularswarm",
+            "dbo:Openswarm",
+            "dbo:Colour"
+        ]
+    },
+    "dbo:Name": {
+        "level": 1,
+        "children": [
+            "dbo:Surname",
+            "dbo:GivenName"
+        ]
+    },
+    "dbo:Surname": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:GivenName": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Altitude": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:Letter": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:AnatomicalStructure": {
+        "level": 1,
+        "children": [
+            "dbo:Lymph",
+            "dbo:Nerve",
+            "dbo:Ligament",
+            "dbo:Vein",
+            "dbo:Muscle",
+            "dbo:Brain",
+            "dbo:Artery",
+            "dbo:Bone",
+            "dbo:Embryology"
+        ]
+    },
+    "dbo:Lymph": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Nerve": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Ligament": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Vein": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Muscle": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Brain": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Artery": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Bone": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Embryology": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:HumanDevelopmentIndex": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:GrossDomesticProductPerCapita": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:Competition": {
+        "level": 1,
+        "children": [
+            "dbo:Contest"
+        ]
+    },
+    "dbo:Contest": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:TimePeriod": {
+        "level": 1,
+        "children": [
+            "dbo:PeriodOfArtisticStyle",
+            "dbo:GeologicalPeriod",
+            "dbo:HistoricalPeriod",
+            "dbo:PrehistoricalPeriod",
+            "dbo:Year",
+            "dbo:YearInSpaceflight",
+            "dbo:ProtohistoricalPeriod"
+        ]
+    },
+    "dbo:PeriodOfArtisticStyle": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:GeologicalPeriod": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:HistoricalPeriod": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:PrehistoricalPeriod": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Year": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:YearInSpaceflight": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:ProtohistoricalPeriod": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Diploma": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:Language": {
+        "level": 1,
+        "children": [
+            "dbo:ProgrammingLanguage"
+        ]
+    },
+    "dbo:Place": {
+        "level": 1,
+        "children": [
+            "dbo:SkiResort",
+            "dbo:Monastery",
+            "dbo:HistoricPlace",
+            "dbo:Community",
+            "dbo:Abbey",
+            "dbo:Garden",
+            "dbo:Mountain",
+            "dbo:SportFacility",
+            "dbo:GolfCourse",
+            "dbo:RaceTrack",
+            "dbo:Racecourse",
+            "dbo:Stadium",
+            "dbo:CricketGround",
+            "dbo:NaturalPlace",
+            "dbo:Crater",
+            "dbo:LunarCrater",
+            "dbo:BodyOfWater",
+            "dbo:Lake",
+            "dbo:Sea",
+            "dbo:Stream",
+            "dbo:River",
+            "dbo:Canal",
+            "dbo:Ocean",
+            "dbo:Archipelago",
+            "dbo:Cave",
+            "dbo:HotSpring",
+            "dbo:MountainRange",
+            "dbo:Mountain",
+            "dbo:Desert",
+            "dbo:MountainPass",
+            "dbo:Glacier",
+            "dbo:Volcano",
+            "dbo:Valley",
+            "dbo:Park",
+            "dbo:ArchitecturalStructure",
+            "dbo:Zoo",
+            "dbo:AmusementParkAttraction",
+            "dbo:RollerCoaster",
+            "dbo:WaterRide",
+            "dbo:Infrastructure",
+            "dbo:Airport",
+            "dbo:Lock",
+            "dbo:RouteOfTransportation",
+            "dbo:RailwayLine",
+            "dbo:RoadJunction",
+            "dbo:WaterwayTunnel",
+            "dbo:Road",
+            "dbo:RailwayTunnel",
+            "dbo:RoadTunnel",
+            "dbo:Bridge",
+            "dbo:Port",
+            "dbo:Dam",
+            "dbo:PowerStation",
+            "dbo:NuclearPowerStation",
+            "dbo:LaunchPad",
+            "dbo:Station",
+            "dbo:MetroStation",
+            "dbo:RailwayStation",
+            "dbo:Tower",
+            "dbo:WaterTower",
+            "dbo:Lighthouse",
+            "dbo:Shrine",
+            "dbo:Pyramid",
+            "dbo:Square",
+            "dbo:Tunnel",
+            "dbo:Gate",
+            "dbo:Arena",
+            "dbo:Mill",
+            "dbo:Treadmill",
+            "dbo:WindMotor",
+            "dbo:Watermill",
+            "dbo:Windmill",
+            "dbo:MilitaryStructure",
+            "dbo:NoteworthyPartOfBuilding",
+            "dbo:Venue",
+            "dbo:Theatre",
+            "dbo:Building",
+            "dbo:ShoppingMall",
+            "dbo:Hospital",
+            "dbo:Factory",
+            "dbo:Prison",
+            "dbo:Museum",
+            "dbo:Hotel",
+            "dbo:Library",
+            "dbo:ReligiousBuilding",
+            "dbo:Temple",
+            "dbo:Synagogue",
+            "dbo:Mosque",
+            "dbo:Church",
+            "dbo:Casino",
+            "dbo:Skyscraper",
+            "dbo:HistoricBuilding",
+            "dbo:Restaurant",
+            "dbo:Castle",
+            "dbo:WorldHeritageSite",
+            "dbo:SkiArea",
+            "dbo:ProtectedArea",
+            "dbo:PopulatedPlace",
+            "dbo:Department",
+            "dbo:OverseasDepartment",
+            "dbo:Street",
+            "dbo:Continent",
+            "dbo:Prefecture",
+            "dbo:Settlement",
+            "dbo:HistoricalSettlement",
+            "dbo:Town",
+            "dbo:CityDistrict",
+            "dbo:Village",
+            "dbo:City",
+            "dbo:Capital",
+            "dbo:CapitalOfRegion",
+            "dbo:Agglomeration",
+            "dbo:Locality",
+            "dbo:Country",
+            "dbo:HistoricalCountry",
+            "dbo:Island",
+            "dbo:Atoll",
+            "dbo:GatedCommunity",
+            "dbo:Intercommunality",
+            "dbo:Region",
+            "dbo:AdministrativeRegion",
+            "dbo:GovernmentalAdministrativeRegion",
+            "dbo:MicroRegion",
+            "dbo:DistrictWaterBoard",
+            "dbo:District",
+            "dbo:HistoricalDistrict",
+            "dbo:Municipality",
+            "dbo:FormerMunicipality",
+            "dbo:SubMunicipality",
+            "dbo:Regency",
+            "dbo:Province",
+            "dbo:HistoricalProvince",
+            "dbo:ClericalAdministrativeRegion",
+            "dbo:Parish",
+            "dbo:Diocese",
+            "dbo:Deanery",
+            "dbo:HistoricalRegion",
+            "dbo:NaturalRegion",
+            "dbo:State",
+            "dbo:Territory",
+            "dbo:OldTerritory",
+            "dbo:SiteOfSpecialScientificInterest",
+            "dbo:CountrySeat",
+            "dbo:WineRegion",
+            "dbo:Cemetery",
+            "dbo:Monument",
+            "dbo:Memorial",
+            "dbo:GraveMonument",
+            "dbo:Star",
+            "dbo:BrownDwarf",
+            "dbo:Asteroid",
+            "dbo:Planet",
+            "dbo:Constellation",
+            "dbo:Galaxy",
+            "dbo:CelestialBody"
+        ]
+    },
+    "dbo:SkiResort": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Monastery": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:HistoricPlace": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Community": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Abbey": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Garden": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Mountain": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:SportFacility": {
+        "level": 2,
+        "children": [
+            "dbo:GolfCourse",
+            "dbo:RaceTrack",
+            "dbo:Racecourse",
+            "dbo:Stadium",
+            "dbo:CricketGround"
+        ]
+    },
+    "dbo:GolfCourse": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:RaceTrack": {
+        "level": 3,
+        "children": [
+            "dbo:Racecourse"
+        ]
+    },
+    "dbo:Racecourse": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Stadium": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:CricketGround": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:NaturalPlace": {
+        "level": 2,
+        "children": [
+            "dbo:Crater",
+            "dbo:LunarCrater",
+            "dbo:BodyOfWater",
+            "dbo:Lake",
+            "dbo:Sea",
+            "dbo:Stream",
+            "dbo:River",
+            "dbo:Canal",
+            "dbo:Ocean",
+            "dbo:Archipelago",
+            "dbo:Cave",
+            "dbo:HotSpring",
+            "dbo:MountainRange",
+            "dbo:Mountain",
+            "dbo:Desert",
+            "dbo:MountainPass",
+            "dbo:Glacier",
+            "dbo:Volcano",
+            "dbo:Valley"
+        ]
+    },
+    "dbo:Crater": {
+        "level": 3,
+        "children": [
+            "dbo:LunarCrater"
+        ]
+    },
+    "dbo:LunarCrater": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:BodyOfWater": {
+        "level": 3,
+        "children": [
+            "dbo:Lake",
+            "dbo:Sea",
+            "dbo:Stream",
+            "dbo:River",
+            "dbo:Canal",
+            "dbo:Ocean"
+        ]
+    },
+    "dbo:Lake": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Sea": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Stream": {
+        "level": 4,
+        "children": [
+            "dbo:River",
+            "dbo:Canal"
+        ]
+    },
+    "dbo:River": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Canal": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Ocean": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Archipelago": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Cave": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:HotSpring": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:MountainRange": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Desert": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:MountainPass": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Glacier": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Volcano": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Valley": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Park": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:ArchitecturalStructure": {
+        "level": 2,
+        "children": [
+            "dbo:Zoo",
+            "dbo:AmusementParkAttraction",
+            "dbo:RollerCoaster",
+            "dbo:WaterRide",
+            "dbo:Infrastructure",
+            "dbo:Airport",
+            "dbo:Lock",
+            "dbo:RouteOfTransportation",
+            "dbo:RailwayLine",
+            "dbo:RoadJunction",
+            "dbo:WaterwayTunnel",
+            "dbo:Road",
+            "dbo:RailwayTunnel",
+            "dbo:RoadTunnel",
+            "dbo:Bridge",
+            "dbo:Port",
+            "dbo:Dam",
+            "dbo:PowerStation",
+            "dbo:NuclearPowerStation",
+            "dbo:LaunchPad",
+            "dbo:Station",
+            "dbo:MetroStation",
+            "dbo:RailwayStation",
+            "dbo:Tower",
+            "dbo:WaterTower",
+            "dbo:Lighthouse",
+            "dbo:Shrine",
+            "dbo:Pyramid",
+            "dbo:Square",
+            "dbo:Tunnel",
+            "dbo:Gate",
+            "dbo:Arena",
+            "dbo:Mill",
+            "dbo:Treadmill",
+            "dbo:WindMotor",
+            "dbo:Watermill",
+            "dbo:Windmill",
+            "dbo:MilitaryStructure",
+            "dbo:NoteworthyPartOfBuilding",
+            "dbo:Venue",
+            "dbo:Theatre",
+            "dbo:Building",
+            "dbo:ShoppingMall",
+            "dbo:Hospital",
+            "dbo:Factory",
+            "dbo:Prison",
+            "dbo:Museum",
+            "dbo:Hotel",
+            "dbo:Library",
+            "dbo:ReligiousBuilding",
+            "dbo:Temple",
+            "dbo:Synagogue",
+            "dbo:Mosque",
+            "dbo:Church",
+            "dbo:Casino",
+            "dbo:Skyscraper",
+            "dbo:HistoricBuilding",
+            "dbo:Restaurant",
+            "dbo:Castle"
+        ]
+    },
+    "dbo:Zoo": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:AmusementParkAttraction": {
+        "level": 3,
+        "children": [
+            "dbo:RollerCoaster",
+            "dbo:WaterRide"
+        ]
+    },
+    "dbo:RollerCoaster": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:WaterRide": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Infrastructure": {
+        "level": 3,
+        "children": [
+            "dbo:Airport",
+            "dbo:Lock",
+            "dbo:RouteOfTransportation",
+            "dbo:RailwayLine",
+            "dbo:RoadJunction",
+            "dbo:WaterwayTunnel",
+            "dbo:Road",
+            "dbo:RailwayTunnel",
+            "dbo:RoadTunnel",
+            "dbo:Bridge",
+            "dbo:Port",
+            "dbo:Dam",
+            "dbo:PowerStation",
+            "dbo:NuclearPowerStation",
+            "dbo:LaunchPad",
+            "dbo:Station",
+            "dbo:MetroStation",
+            "dbo:RailwayStation"
+        ]
+    },
+    "dbo:Airport": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Lock": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:RouteOfTransportation": {
+        "level": 4,
+        "children": [
+            "dbo:RailwayLine",
+            "dbo:RoadJunction",
+            "dbo:WaterwayTunnel",
+            "dbo:Road",
+            "dbo:RailwayTunnel",
+            "dbo:RoadTunnel",
+            "dbo:Bridge"
+        ]
+    },
+    "dbo:RailwayLine": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:RoadJunction": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:WaterwayTunnel": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Road": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:RailwayTunnel": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:RoadTunnel": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Bridge": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Port": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Dam": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:PowerStation": {
+        "level": 4,
+        "children": [
+            "dbo:NuclearPowerStation"
+        ]
+    },
+    "dbo:NuclearPowerStation": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:LaunchPad": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Station": {
+        "level": 4,
+        "children": [
+            "dbo:MetroStation",
+            "dbo:RailwayStation"
+        ]
+    },
+    "dbo:MetroStation": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:RailwayStation": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Tower": {
+        "level": 3,
+        "children": [
+            "dbo:WaterTower",
+            "dbo:Lighthouse"
+        ]
+    },
+    "dbo:WaterTower": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Lighthouse": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Shrine": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Pyramid": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Square": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Tunnel": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Gate": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Arena": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Mill": {
+        "level": 3,
+        "children": [
+            "dbo:Treadmill",
+            "dbo:WindMotor",
+            "dbo:Watermill",
+            "dbo:Windmill"
+        ]
+    },
+    "dbo:Treadmill": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:WindMotor": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Watermill": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Windmill": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:MilitaryStructure": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:NoteworthyPartOfBuilding": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Venue": {
+        "level": 3,
+        "children": [
+            "dbo:Theatre"
+        ]
+    },
+    "dbo:Theatre": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Building": {
+        "level": 3,
+        "children": [
+            "dbo:ShoppingMall",
+            "dbo:Hospital",
+            "dbo:Factory",
+            "dbo:Prison",
+            "dbo:Museum",
+            "dbo:Hotel",
+            "dbo:Library",
+            "dbo:ReligiousBuilding",
+            "dbo:Temple",
+            "dbo:Synagogue",
+            "dbo:Mosque",
+            "dbo:Church",
+            "dbo:Casino",
+            "dbo:Skyscraper",
+            "dbo:HistoricBuilding",
+            "dbo:Restaurant",
+            "dbo:Castle"
+        ]
+    },
+    "dbo:ShoppingMall": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Hospital": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Factory": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Prison": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Museum": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Hotel": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Library": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:ReligiousBuilding": {
+        "level": 4,
+        "children": [
+            "dbo:Temple",
+            "dbo:Synagogue",
+            "dbo:Mosque",
+            "dbo:Church"
+        ]
+    },
+    "dbo:Temple": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Synagogue": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Mosque": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Church": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Casino": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Skyscraper": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:HistoricBuilding": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Restaurant": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Castle": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:WorldHeritageSite": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:SkiArea": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:ProtectedArea": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:PopulatedPlace": {
+        "level": 2,
+        "children": [
+            "dbo:Department",
+            "dbo:OverseasDepartment",
+            "dbo:Street",
+            "dbo:Continent",
+            "dbo:Prefecture",
+            "dbo:Settlement",
+            "dbo:HistoricalSettlement",
+            "dbo:Town",
+            "dbo:CityDistrict",
+            "dbo:Village",
+            "dbo:City",
+            "dbo:Capital",
+            "dbo:CapitalOfRegion",
+            "dbo:Agglomeration",
+            "dbo:Locality",
+            "dbo:Country",
+            "dbo:HistoricalCountry",
+            "dbo:Island",
+            "dbo:Atoll",
+            "dbo:GatedCommunity",
+            "dbo:Intercommunality",
+            "dbo:Region",
+            "dbo:AdministrativeRegion",
+            "dbo:GovernmentalAdministrativeRegion",
+            "dbo:MicroRegion",
+            "dbo:DistrictWaterBoard",
+            "dbo:District",
+            "dbo:HistoricalDistrict",
+            "dbo:Municipality",
+            "dbo:FormerMunicipality",
+            "dbo:SubMunicipality",
+            "dbo:Regency",
+            "dbo:Province",
+            "dbo:HistoricalProvince",
+            "dbo:ClericalAdministrativeRegion",
+            "dbo:Parish",
+            "dbo:Diocese",
+            "dbo:Deanery",
+            "dbo:HistoricalRegion",
+            "dbo:NaturalRegion",
+            "dbo:State",
+            "dbo:Territory",
+            "dbo:OldTerritory"
+        ]
+    },
+    "dbo:Department": {
+        "level": 3,
+        "children": [
+            "dbo:OverseasDepartment"
+        ]
+    },
+    "dbo:OverseasDepartment": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Street": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Continent": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Prefecture": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Settlement": {
+        "level": 3,
+        "children": [
+            "dbo:HistoricalSettlement",
+            "dbo:Town",
+            "dbo:CityDistrict",
+            "dbo:Village",
+            "dbo:City",
+            "dbo:Capital",
+            "dbo:CapitalOfRegion"
+        ]
+    },
+    "dbo:HistoricalSettlement": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Town": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:CityDistrict": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Village": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:City": {
+        "level": 4,
+        "children": [
+            "dbo:Capital",
+            "dbo:CapitalOfRegion"
+        ]
+    },
+    "dbo:Capital": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:CapitalOfRegion": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Agglomeration": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Locality": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Country": {
+        "level": 3,
+        "children": [
+            "dbo:HistoricalCountry"
+        ]
+    },
+    "dbo:HistoricalCountry": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Island": {
+        "level": 3,
+        "children": [
+            "dbo:Atoll"
+        ]
+    },
+    "dbo:Atoll": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:GatedCommunity": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Intercommunality": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Region": {
+        "level": 3,
+        "children": [
+            "dbo:AdministrativeRegion",
+            "dbo:GovernmentalAdministrativeRegion",
+            "dbo:MicroRegion",
+            "dbo:DistrictWaterBoard",
+            "dbo:District",
+            "dbo:HistoricalDistrict",
+            "dbo:Municipality",
+            "dbo:FormerMunicipality",
+            "dbo:SubMunicipality",
+            "dbo:Regency",
+            "dbo:Province",
+            "dbo:HistoricalProvince",
+            "dbo:ClericalAdministrativeRegion",
+            "dbo:Parish",
+            "dbo:Diocese",
+            "dbo:Deanery",
+            "dbo:HistoricalRegion",
+            "dbo:NaturalRegion"
+        ]
+    },
+    "dbo:AdministrativeRegion": {
+        "level": 4,
+        "children": [
+            "dbo:GovernmentalAdministrativeRegion",
+            "dbo:MicroRegion",
+            "dbo:DistrictWaterBoard",
+            "dbo:District",
+            "dbo:HistoricalDistrict",
+            "dbo:Municipality",
+            "dbo:FormerMunicipality",
+            "dbo:SubMunicipality",
+            "dbo:Regency",
+            "dbo:Province",
+            "dbo:HistoricalProvince",
+            "dbo:ClericalAdministrativeRegion",
+            "dbo:Parish",
+            "dbo:Diocese",
+            "dbo:Deanery"
+        ]
+    },
+    "dbo:GovernmentalAdministrativeRegion": {
+        "level": 5,
+        "children": [
+            "dbo:MicroRegion",
+            "dbo:DistrictWaterBoard",
+            "dbo:District",
+            "dbo:HistoricalDistrict",
+            "dbo:Municipality",
+            "dbo:FormerMunicipality",
+            "dbo:SubMunicipality",
+            "dbo:Regency",
+            "dbo:Province",
+            "dbo:HistoricalProvince"
+        ]
+    },
+    "dbo:MicroRegion": {
+        "level": 6,
+        "children": []
+    },
+    "dbo:DistrictWaterBoard": {
+        "level": 6,
+        "children": []
+    },
+    "dbo:District": {
+        "level": 6,
+        "children": [
+            "dbo:HistoricalDistrict"
+        ]
+    },
+    "dbo:HistoricalDistrict": {
+        "level": 7,
+        "children": []
+    },
+    "dbo:Municipality": {
+        "level": 6,
+        "children": [
+            "dbo:FormerMunicipality"
+        ]
+    },
+    "dbo:FormerMunicipality": {
+        "level": 7,
+        "children": []
+    },
+    "dbo:SubMunicipality": {
+        "level": 6,
+        "children": []
+    },
+    "dbo:Regency": {
+        "level": 6,
+        "children": []
+    },
+    "dbo:Province": {
+        "level": 6,
+        "children": [
+            "dbo:HistoricalProvince"
+        ]
+    },
+    "dbo:HistoricalProvince": {
+        "level": 7,
+        "children": []
+    },
+    "dbo:ClericalAdministrativeRegion": {
+        "level": 5,
+        "children": [
+            "dbo:Parish",
+            "dbo:Diocese",
+            "dbo:Deanery"
+        ]
+    },
+    "dbo:Parish": {
+        "level": 6,
+        "children": []
+    },
+    "dbo:Diocese": {
+        "level": 6,
+        "children": []
+    },
+    "dbo:Deanery": {
+        "level": 6,
+        "children": []
+    },
+    "dbo:HistoricalRegion": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:NaturalRegion": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:State": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Territory": {
+        "level": 3,
+        "children": [
+            "dbo:OldTerritory"
+        ]
+    },
+    "dbo:OldTerritory": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:SiteOfSpecialScientificInterest": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:CountrySeat": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:WineRegion": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Cemetery": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Monument": {
+        "level": 2,
+        "children": [
+            "dbo:Memorial",
+            "dbo:GraveMonument"
+        ]
+    },
+    "dbo:Memorial": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:GraveMonument": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:GeneLocation": {
+        "level": 1,
+        "children": [
+            "dbo:HumanGeneLocation",
+            "dbo:MouseGeneLocation"
+        ]
+    },
+    "dbo:HumanGeneLocation": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:MouseGeneLocation": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Listen": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:PenaltyShootOut": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:Flag": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:CareerStation": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:EthnicGroup": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:List": {
+        "level": 1,
+        "children": [
+            "dbo:TrackList"
+        ]
+    },
+    "dbo:TrackList": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Depth": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:Blazon": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:GrossDomesticProduct": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:Population": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:Award": {
+        "level": 1,
+        "children": [
+            "dbo:Decoration",
+            "dbo:NobelPrize"
+        ]
+    },
+    "dbo:Decoration": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:NobelPrize": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:ChartsPlacements": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:Sales": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:TopicalConcept": {
+        "level": 1,
+        "children": [
+            "dbo:Type",
+            "dbo:DocumentType",
+            "dbo:GovernmentType",
+            "dbo:Genre",
+            "dbo:MovieGenre",
+            "dbo:MusicGenre",
+            "dbo:Ideology",
+            "dbo:SystemOfLaw",
+            "dbo:Fashion",
+            "dbo:Taxon",
+            "dbo:ChristianDoctrine"
+        ]
+    },
+    "dbo:Type": {
+        "level": 2,
+        "children": [
+            "dbo:DocumentType",
+            "dbo:GovernmentType"
+        ]
+    },
+    "dbo:DocumentType": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:GovernmentType": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Genre": {
+        "level": 2,
+        "children": [
+            "dbo:MovieGenre",
+            "dbo:MusicGenre"
+        ]
+    },
+    "dbo:MovieGenre": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:MusicGenre": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Ideology": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:SystemOfLaw": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Fashion": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Taxon": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:ChristianDoctrine": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:SnookerWorldRanking": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:Unknown": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:MeanOfTransportation": {
+        "level": 1,
+        "children": [
+            "dbo:Ship",
+            "dbo:Spacecraft",
+            "dbo:SpaceShuttle",
+            "dbo:Aircraft",
+            "dbo:SpaceStation",
+            "dbo:Automobile",
+            "dbo:Motorcycle",
+            "dbo:Rocket",
+            "dbo:Train",
+            "dbo:Locomotive"
+        ]
+    },
+    "dbo:Ship": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Spacecraft": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:SpaceShuttle": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Aircraft": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:SpaceStation": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Automobile": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Motorcycle": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Rocket": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Train": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Locomotive": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:CelestialBody": {
+        "level": 1,
+        "children": [
+            "dbo:Star",
+            "dbo:BrownDwarf",
+            "dbo:Asteroid",
+            "dbo:Planet",
+            "dbo:Constellation",
+            "dbo:Galaxy"
+        ]
+    },
+    "dbo:Star": {
+        "level": 2,
+        "children": [
+            "dbo:BrownDwarf"
+        ]
+    },
+    "dbo:BrownDwarf": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Asteroid": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Planet": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Constellation": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Galaxy": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Biomolecule": {
+        "level": 1,
+        "children": [
+            "dbo:Protein",
+            "dbo:Enzyme",
+            "dbo:Gene",
+            "dbo:MouseGene",
+            "dbo:HumanGene"
+        ]
+    },
+    "dbo:Protein": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Enzyme": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Gene": {
+        "level": 2,
+        "children": [
+            "dbo:MouseGene",
+            "dbo:HumanGene"
+        ]
+    },
+    "dbo:MouseGene": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:HumanGene": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Species": {
+        "level": 1,
+        "children": [
+            "dbo:Eukaryote",
+            "dbo:Fungus",
+            "dbo:Animal",
+            "dbo:Bird",
+            "dbo:Arachnid",
+            "dbo:Crustacean",
+            "dbo:Amphibian",
+            "dbo:Insect",
+            "dbo:Mammal",
+            "dbo:RaceHorse",
+            "dbo:Dog",
+            "dbo:Fish",
+            "dbo:Reptile",
+            "dbo:Mollusca",
+            "dbo:Plant",
+            "dbo:Gnetophytes",
+            "dbo:Conifer",
+            "dbo:Fern",
+            "dbo:FloweringPlant",
+            "dbo:Grape",
+            "dbo:Moss",
+            "dbo:GreenAlga",
+            "dbo:Ginkgo",
+            "dbo:CultivatedVariety",
+            "dbo:ClubMoss",
+            "dbo:Cycad",
+            "dbo:Archaea",
+            "dbo:Bacteria"
+        ]
+    },
+    "dbo:Eukaryote": {
+        "level": 2,
+        "children": [
+            "dbo:Fungus",
+            "dbo:Animal",
+            "dbo:Bird",
+            "dbo:Arachnid",
+            "dbo:Crustacean",
+            "dbo:Amphibian",
+            "dbo:Insect",
+            "dbo:Mammal",
+            "dbo:RaceHorse",
+            "dbo:Dog",
+            "dbo:Fish",
+            "dbo:Reptile",
+            "dbo:Mollusca",
+            "dbo:Plant",
+            "dbo:Gnetophytes",
+            "dbo:Conifer",
+            "dbo:Fern",
+            "dbo:FloweringPlant",
+            "dbo:Grape",
+            "dbo:Moss",
+            "dbo:GreenAlga",
+            "dbo:Ginkgo",
+            "dbo:CultivatedVariety",
+            "dbo:ClubMoss",
+            "dbo:Cycad"
+        ]
+    },
+    "dbo:Fungus": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Animal": {
+        "level": 3,
+        "children": [
+            "dbo:Bird",
+            "dbo:Arachnid",
+            "dbo:Crustacean",
+            "dbo:Amphibian",
+            "dbo:Insect",
+            "dbo:Mammal",
+            "dbo:RaceHorse",
+            "dbo:Dog",
+            "dbo:Fish",
+            "dbo:Reptile",
+            "dbo:Mollusca"
+        ]
+    },
+    "dbo:Bird": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Arachnid": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Crustacean": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Amphibian": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Insect": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Mammal": {
+        "level": 4,
+        "children": [
+            "dbo:RaceHorse",
+            "dbo:Dog"
+        ]
+    },
+    "dbo:RaceHorse": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Dog": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Fish": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Reptile": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Mollusca": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Plant": {
+        "level": 3,
+        "children": [
+            "dbo:Gnetophytes",
+            "dbo:Conifer",
+            "dbo:Fern",
+            "dbo:FloweringPlant",
+            "dbo:Grape",
+            "dbo:Moss",
+            "dbo:GreenAlga",
+            "dbo:Ginkgo",
+            "dbo:CultivatedVariety",
+            "dbo:ClubMoss",
+            "dbo:Cycad"
+        ]
+    },
+    "dbo:Gnetophytes": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Conifer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Fern": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:FloweringPlant": {
+        "level": 4,
+        "children": [
+            "dbo:Grape"
+        ]
+    },
+    "dbo:Grape": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Moss": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:GreenAlga": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Ginkgo": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:CultivatedVariety": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:ClubMoss": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Cycad": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Archaea": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Bacteria": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Event": {
+        "level": 1,
+        "children": [
+            "dbo:SocietalEvent",
+            "dbo:Election",
+            "dbo:ElectionDiagram",
+            "dbo:SportsEvent",
+            "dbo:Tournament",
+            "dbo:SoccerTournament",
+            "dbo:TennisTournament",
+            "dbo:WomensTennisAssociationTournament",
+            "dbo:GolfTournament",
+            "dbo:GrandPrix",
+            "dbo:NationalFootballLeagueEvent",
+            "dbo:FootballMatch",
+            "dbo:WrestlingEvent",
+            "dbo:Race",
+            "dbo:CyclingRace",
+            "dbo:HorseRace",
+            "dbo:Olympics",
+            "dbo:OlympicEvent",
+            "dbo:MixedMartialArtsEvent",
+            "dbo:CyclingCompetition",
+            "dbo:Convention",
+            "dbo:SpaceMission",
+            "dbo:Meeting",
+            "dbo:FilmFestival",
+            "dbo:MilitaryConflict",
+            "dbo:MusicFestival",
+            "dbo:LifeCycleEvent",
+            "dbo:PersonalEvent",
+            "dbo:Marriage",
+            "dbo:Divorce",
+            "dbo:Death",
+            "dbo:Birth",
+            "dbo:NaturalEvent",
+            "dbo:SolarEclipse"
+        ]
+    },
+    "dbo:SocietalEvent": {
+        "level": 2,
+        "children": [
+            "dbo:Election",
+            "dbo:ElectionDiagram",
+            "dbo:SportsEvent",
+            "dbo:Tournament",
+            "dbo:SoccerTournament",
+            "dbo:TennisTournament",
+            "dbo:WomensTennisAssociationTournament",
+            "dbo:GolfTournament",
+            "dbo:GrandPrix",
+            "dbo:NationalFootballLeagueEvent",
+            "dbo:FootballMatch",
+            "dbo:WrestlingEvent",
+            "dbo:Race",
+            "dbo:CyclingRace",
+            "dbo:HorseRace",
+            "dbo:Olympics",
+            "dbo:OlympicEvent",
+            "dbo:MixedMartialArtsEvent",
+            "dbo:CyclingCompetition",
+            "dbo:Convention",
+            "dbo:SpaceMission",
+            "dbo:Meeting",
+            "dbo:FilmFestival",
+            "dbo:MilitaryConflict",
+            "dbo:MusicFestival"
+        ]
+    },
+    "dbo:Election": {
+        "level": 3,
+        "children": [
+            "dbo:ElectionDiagram"
+        ]
+    },
+    "dbo:ElectionDiagram": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:SportsEvent": {
+        "level": 3,
+        "children": [
+            "dbo:Tournament",
+            "dbo:SoccerTournament",
+            "dbo:TennisTournament",
+            "dbo:WomensTennisAssociationTournament",
+            "dbo:GolfTournament",
+            "dbo:GrandPrix",
+            "dbo:NationalFootballLeagueEvent",
+            "dbo:FootballMatch",
+            "dbo:WrestlingEvent",
+            "dbo:Race",
+            "dbo:CyclingRace",
+            "dbo:HorseRace",
+            "dbo:Olympics",
+            "dbo:OlympicEvent",
+            "dbo:MixedMartialArtsEvent",
+            "dbo:CyclingCompetition"
+        ]
+    },
+    "dbo:Tournament": {
+        "level": 4,
+        "children": [
+            "dbo:SoccerTournament",
+            "dbo:TennisTournament",
+            "dbo:WomensTennisAssociationTournament",
+            "dbo:GolfTournament"
+        ]
+    },
+    "dbo:SoccerTournament": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:TennisTournament": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:WomensTennisAssociationTournament": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:GolfTournament": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:GrandPrix": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:NationalFootballLeagueEvent": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:FootballMatch": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:WrestlingEvent": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Race": {
+        "level": 4,
+        "children": [
+            "dbo:CyclingRace",
+            "dbo:HorseRace"
+        ]
+    },
+    "dbo:CyclingRace": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:HorseRace": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Olympics": {
+        "level": 4,
+        "children": [
+            "dbo:OlympicEvent"
+        ]
+    },
+    "dbo:OlympicEvent": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:MixedMartialArtsEvent": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:CyclingCompetition": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Convention": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:SpaceMission": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Meeting": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:FilmFestival": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:MilitaryConflict": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:MusicFestival": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:LifeCycleEvent": {
+        "level": 2,
+        "children": [
+            "dbo:PersonalEvent",
+            "dbo:Marriage",
+            "dbo:Divorce",
+            "dbo:Death",
+            "dbo:Birth"
+        ]
+    },
+    "dbo:PersonalEvent": {
+        "level": 3,
+        "children": [
+            "dbo:Marriage",
+            "dbo:Divorce",
+            "dbo:Death",
+            "dbo:Birth"
+        ]
+    },
+    "dbo:Marriage": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Divorce": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Death": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Birth": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:NaturalEvent": {
+        "level": 2,
+        "children": [
+            "dbo:SolarEclipse"
+        ]
+    },
+    "dbo:SolarEclipse": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:UnitOfWork": {
+        "level": 1,
+        "children": [
+            "dbo:Project",
+            "dbo:ResearchProject",
+            "dbo:Case",
+            "dbo:LegalCase",
+            "dbo:SupremeCourtOfTheUnitedStatesCase"
+        ]
+    },
+    "dbo:Project": {
+        "level": 2,
+        "children": [
+            "dbo:ResearchProject"
+        ]
+    },
+    "dbo:ResearchProject": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Case": {
+        "level": 2,
+        "children": [
+            "dbo:LegalCase",
+            "dbo:SupremeCourtOfTheUnitedStatesCase"
+        ]
+    },
+    "dbo:LegalCase": {
+        "level": 3,
+        "children": [
+            "dbo:SupremeCourtOfTheUnitedStatesCase"
+        ]
+    },
+    "dbo:SupremeCourtOfTheUnitedStatesCase": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:SportsSeason": {
+        "level": 1,
+        "children": [
+            "dbo:SportsTeamSeason",
+            "dbo:SoccerLeagueSeason",
+            "dbo:BaseballSeason",
+            "dbo:NCAATeamSeason",
+            "dbo:FootballLeagueSeason",
+            "dbo:NationalFootballLeagueSeason",
+            "dbo:SoccerClubSeason",
+            "dbo:MotorsportSeason"
+        ]
+    },
+    "dbo:SportsTeamSeason": {
+        "level": 2,
+        "children": [
+            "dbo:SoccerLeagueSeason",
+            "dbo:BaseballSeason",
+            "dbo:NCAATeamSeason",
+            "dbo:FootballLeagueSeason",
+            "dbo:NationalFootballLeagueSeason",
+            "dbo:SoccerClubSeason"
+        ]
+    },
+    "dbo:SoccerLeagueSeason": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:BaseballSeason": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:NCAATeamSeason": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:FootballLeagueSeason": {
+        "level": 3,
+        "children": [
+            "dbo:NationalFootballLeagueSeason"
+        ]
+    },
+    "dbo:NationalFootballLeagueSeason": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:SoccerClubSeason": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:MotorsportSeason": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Statistic": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:SportCompetitionResult": {
+        "level": 1,
+        "children": [
+            "dbo:OlympicResult"
+        ]
+    },
+    "dbo:OlympicResult": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Area": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:Media": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:Holiday": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:PersonFunction": {
+        "level": 1,
+        "children": [
+            "dbo:Profession",
+            "dbo:PoliticalFunction"
+        ]
+    },
+    "dbo:Profession": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:PoliticalFunction": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Polyhedron": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:Imdb": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:ChemicalSubstance": {
+        "level": 1,
+        "children": [
+            "dbo:Mineral",
+            "dbo:ChemicalCompound",
+            "dbo:ChemicalElement"
+        ]
+    },
+    "dbo:Mineral": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:ChemicalCompound": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:ChemicalElement": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Satellite": {
+        "level": 1,
+        "children": [
+            "dbo:ArtificialSatellite"
+        ]
+    },
+    "dbo:ArtificialSatellite": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Demographics": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:Device": {
+        "level": 1,
+        "children": [
+            "dbo:Weapon",
+            "dbo:Instrument",
+            "dbo:Organ",
+            "dbo:Guitar",
+            "dbo:Camera",
+            "dbo:DigitalCamera",
+            "dbo:InformationAppliance",
+            "dbo:AutomobileEngine"
+        ]
+    },
+    "dbo:Weapon": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Instrument": {
+        "level": 2,
+        "children": [
+            "dbo:Organ",
+            "dbo:Guitar"
+        ]
+    },
+    "dbo:Organ": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Guitar": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Camera": {
+        "level": 2,
+        "children": [
+            "dbo:DigitalCamera"
+        ]
+    },
+    "dbo:DigitalCamera": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:InformationAppliance": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:AutomobileEngine": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Agent": {
+        "level": 1,
+        "children": [
+            "dbo:Family",
+            "dbo:NobleFamily",
+            "dbo:Organisation",
+            "dbo:PoliticalParty",
+            "dbo:SportsTeam",
+            "dbo:BaseballTeam",
+            "dbo:CyclingTeam",
+            "dbo:BasketballTeam",
+            "dbo:CricketTeam",
+            "dbo:SpeedwayTeam",
+            "dbo:AmericanFootballTeam",
+            "dbo:RugbyClub",
+            "dbo:HandballTeam",
+            "dbo:AustralianFootballTeam",
+            "dbo:FormulaOneTeam",
+            "dbo:HockeyTeam",
+            "dbo:SoccerClub",
+            "dbo:NationalSoccerClub",
+            "dbo:CanadianFootballTeam",
+            "dbo:EducationalInstitution",
+            "dbo:Library",
+            "dbo:University",
+            "dbo:College",
+            "dbo:School",
+            "dbo:SportsLeague",
+            "dbo:AutoRacingLeague",
+            "dbo:MotorcycleRacingLeague",
+            "dbo:SpeedwayLeague",
+            "dbo:FormulaOneRacing",
+            "dbo:InlineHockeyLeague",
+            "dbo:BoxingLeague",
+            "dbo:AustralianFootballLeague",
+            "dbo:SoftballLeague",
+            "dbo:MixedMartialArtsLeague",
+            "dbo:TennisLeague",
+            "dbo:IceHockeyLeague",
+            "dbo:VolleyballLeague",
+            "dbo:HandballLeague",
+            "dbo:PaintballLeague",
+            "dbo:CricketLeague",
+            "dbo:PoloLeague",
+            "dbo:RugbyLeague",
+            "dbo:AmericanFootballLeague",
+            "dbo:FieldHockeyLeague",
+            "dbo:CurlingLeague",
+            "dbo:RadioControlledRacingLeague",
+            "dbo:GolfLeague",
+            "dbo:VideogamesLeague",
+            "dbo:BaseballLeague",
+            "dbo:LacrosseLeague",
+            "dbo:BowlingLeague",
+            "dbo:SoccerLeague",
+            "dbo:CanadianFootballLeague",
+            "dbo:BasketballLeague",
+            "dbo:CyclingLeague",
+            "dbo:GeopoliticalOrganisation",
+            "dbo:TradeUnion",
+            "dbo:Legislature",
+            "dbo:ComedyGroup",
+            "dbo:Group",
+            "dbo:Band",
+            "dbo:Parliament",
+            "dbo:ClericalOrder",
+            "dbo:Company",
+            "dbo:RecordLabel",
+            "dbo:Brewery",
+            "dbo:Airline",
+            "dbo:LawFirm",
+            "dbo:Winery",
+            "dbo:BusCompany",
+            "dbo:Publisher",
+            "dbo:SambaSchool",
+            "dbo:Broadcaster",
+            "dbo:TelevisionStation",
+            "dbo:BroadcastNetwork",
+            "dbo:RadioStation",
+            "dbo:TermOfOffice",
+            "dbo:Non-ProfitOrganisation",
+            "dbo:RecordOffice",
+            "dbo:GovernmentAgency",
+            "dbo:MilitaryUnit",
+            "dbo:PublicTransitSystem",
+            "dbo:Deity",
+            "dbo:Person",
+            "dbo:Architect",
+            "dbo:TelevisionPersonality",
+            "dbo:Host",
+            "dbo:Noble",
+            "dbo:Coach",
+            "dbo:AmericanFootballCoach",
+            "dbo:CollegeCoach",
+            "dbo:VolleyballCoach",
+            "dbo:TelevisionDirector",
+            "dbo:Philosopher",
+            "dbo:Presenter",
+            "dbo:RadioHost",
+            "dbo:TelevisionHost",
+            "dbo:Employer",
+            "dbo:Journalist",
+            "dbo:Scientist",
+            "dbo:Medician",
+            "dbo:Professor",
+            "dbo:Entomologist",
+            "dbo:Model",
+            "dbo:MythologicalFigure",
+            "dbo:Criminal",
+            "dbo:Murderer",
+            "dbo:SerialKiller",
+            "dbo:Religious",
+            "dbo:BusinessPerson",
+            "dbo:PlayboyPlaymate",
+            "dbo:Farmer",
+            "dbo:PoliticianSpouse",
+            "dbo:BeautyQueen",
+            "dbo:FictionalCharacter",
+            "dbo:DisneyCharacter",
+            "dbo:SoapCharacter",
+            "dbo:NarutoCharacter",
+            "dbo:ComicsCharacter",
+            "dbo:AnimangaCharacter",
+            "dbo:Engineer",
+            "dbo:Bullfighter",
+            "dbo:Astronaut",
+            "dbo:Aristocrat",
+            "dbo:Psychologist",
+            "dbo:Linguist",
+            "dbo:Ambassador",
+            "dbo:Economist",
+            "dbo:OfficeHolder",
+            "dbo:Producer",
+            "dbo:TheatreDirector",
+            "dbo:HorseTrainer",
+            "dbo:Referee",
+            "dbo:MovieDirector",
+            "dbo:SportsManager",
+            "dbo:SoccerManager",
+            "dbo:Royalty",
+            "dbo:PolishKing",
+            "dbo:BritishRoyalty",
+            "dbo:Baronet",
+            "dbo:Athlete",
+            "dbo:Surfer",
+            "dbo:VolleyballPlayer",
+            "dbo:BeachVolleyballPlayer",
+            "dbo:Wrestler",
+            "dbo:SumoWrestler",
+            "dbo:MartialArtist",
+            "dbo:GridironFootballPlayer",
+            "dbo:CanadianFootballPlayer",
+            "dbo:AmericanFootballPlayer",
+            "dbo:NationalCollegiateAthleticAssociationAthlete",
+            "dbo:AthleticsPlayer",
+            "dbo:Skater",
+            "dbo:LacrossePlayer",
+            "dbo:Canoeist",
+            "dbo:HorseRider",
+            "dbo:IceHockeyPlayer",
+            "dbo:Cricketer",
+            "dbo:Boxer",
+            "dbo:AmateurBoxer",
+            "dbo:TennisPlayer",
+            "dbo:SnookerPlayer",
+            "dbo:SnookerChamp",
+            "dbo:Swimmer",
+            "dbo:Gymnast",
+            "dbo:SoccerPlayer",
+            "dbo:BaseballPlayer",
+            "dbo:Bodybuilder",
+            "dbo:GaelicGamesPlayer",
+            "dbo:BasketballPlayer",
+            "dbo:Jockey",
+            "dbo:TeamMember",
+            "dbo:FigureSkater",
+            "dbo:SquashPlayer",
+            "dbo:BullFighter",
+            "dbo:WaterPoloPlayer",
+            "dbo:ChessPlayer",
+            "dbo:PokerPlayer",
+            "dbo:TableTennisPlayer",
+            "dbo:Skier",
+            "dbo:GolfPlayer",
+            "dbo:MotorsportRacer",
+            "dbo:RacingDriver",
+            "dbo:NascarDriver",
+            "dbo:RallyDriver",
+            "dbo:MotocycleRacer",
+            "dbo:FormulaOneRacer",
+            "dbo:MotorcycleRider",
+            "dbo:SpeedwayRider",
+            "dbo:Rower",
+            "dbo:Curler",
+            "dbo:Fencer",
+            "dbo:HandballPlayer",
+            "dbo:AustralianRulesFootballPlayer",
+            "dbo:DartsPlayer",
+            "dbo:BadmintonPlayer",
+            "dbo:RugbyPlayer",
+            "dbo:NetballPlayer",
+            "dbo:Cyclist",
+            "dbo:Celebrity",
+            "dbo:Egyptologist",
+            "dbo:RomanEmperor",
+            "dbo:Lawyer",
+            "dbo:Politician",
+            "dbo:Mayor",
+            "dbo:PrimeMinister",
+            "dbo:VicePresident",
+            "dbo:VicePrimeMinister",
+            "dbo:MemberOfParliament",
+            "dbo:Senator",
+            "dbo:Lieutenant",
+            "dbo:Congressman",
+            "dbo:Deputy",
+            "dbo:President",
+            "dbo:Governor",
+            "dbo:Chancellor",
+            "dbo:Judge",
+            "dbo:MilitaryPerson",
+            "dbo:OrganisationMember",
+            "dbo:SportsTeamMember",
+            "dbo:Artist",
+            "dbo:Actor",
+            "dbo:VoiceActor",
+            "dbo:AdultActor",
+            "dbo:Dancer",
+            "dbo:Sculptor",
+            "dbo:FashionDesigner",
+            "dbo:Photographer",
+            "dbo:Painter",
+            "dbo:MusicalArtist",
+            "dbo:BackScene",
+            "dbo:Instrumentalist",
+            "dbo:Guitarist",
+            "dbo:MusicDirector",
+            "dbo:ClassicalMusicArtist",
+            "dbo:Singer",
+            "dbo:Humorist",
+            "dbo:Comedian",
+            "dbo:ComicsCreator",
+            "dbo:Writer",
+            "dbo:Poet",
+            "dbo:PlayWright",
+            "dbo:MusicComposer",
+            "dbo:ScreenWriter",
+            "dbo:SongWriter",
+            "dbo:Chef",
+            "dbo:Cleric",
+            "dbo:ChristianBishop",
+            "dbo:Pope",
+            "dbo:Saint",
+            "dbo:Priest",
+            "dbo:Vicar",
+            "dbo:Cardinal",
+            "dbo:ChristianPatriarch",
+            "dbo:Historian",
+            "dbo:Monarch",
+            "dbo:Archeologist"
+        ]
+    },
+    "dbo:Family": {
+        "level": 2,
+        "children": [
+            "dbo:NobleFamily"
+        ]
+    },
+    "dbo:NobleFamily": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Organisation": {
+        "level": 2,
+        "children": [
+            "dbo:PoliticalParty",
+            "dbo:SportsTeam",
+            "dbo:BaseballTeam",
+            "dbo:CyclingTeam",
+            "dbo:BasketballTeam",
+            "dbo:CricketTeam",
+            "dbo:SpeedwayTeam",
+            "dbo:AmericanFootballTeam",
+            "dbo:RugbyClub",
+            "dbo:HandballTeam",
+            "dbo:AustralianFootballTeam",
+            "dbo:FormulaOneTeam",
+            "dbo:HockeyTeam",
+            "dbo:SoccerClub",
+            "dbo:NationalSoccerClub",
+            "dbo:CanadianFootballTeam",
+            "dbo:EducationalInstitution",
+            "dbo:Library",
+            "dbo:University",
+            "dbo:College",
+            "dbo:School",
+            "dbo:SportsLeague",
+            "dbo:AutoRacingLeague",
+            "dbo:MotorcycleRacingLeague",
+            "dbo:SpeedwayLeague",
+            "dbo:FormulaOneRacing",
+            "dbo:InlineHockeyLeague",
+            "dbo:BoxingLeague",
+            "dbo:AustralianFootballLeague",
+            "dbo:SoftballLeague",
+            "dbo:MixedMartialArtsLeague",
+            "dbo:TennisLeague",
+            "dbo:IceHockeyLeague",
+            "dbo:VolleyballLeague",
+            "dbo:HandballLeague",
+            "dbo:PaintballLeague",
+            "dbo:CricketLeague",
+            "dbo:PoloLeague",
+            "dbo:RugbyLeague",
+            "dbo:AmericanFootballLeague",
+            "dbo:FieldHockeyLeague",
+            "dbo:CurlingLeague",
+            "dbo:RadioControlledRacingLeague",
+            "dbo:GolfLeague",
+            "dbo:VideogamesLeague",
+            "dbo:BaseballLeague",
+            "dbo:LacrosseLeague",
+            "dbo:BowlingLeague",
+            "dbo:SoccerLeague",
+            "dbo:CanadianFootballLeague",
+            "dbo:BasketballLeague",
+            "dbo:CyclingLeague",
+            "dbo:GeopoliticalOrganisation",
+            "dbo:TradeUnion",
+            "dbo:Legislature",
+            "dbo:ComedyGroup",
+            "dbo:Group",
+            "dbo:Band",
+            "dbo:Parliament",
+            "dbo:ClericalOrder",
+            "dbo:Company",
+            "dbo:RecordLabel",
+            "dbo:Brewery",
+            "dbo:Airline",
+            "dbo:LawFirm",
+            "dbo:Winery",
+            "dbo:BusCompany",
+            "dbo:Publisher",
+            "dbo:SambaSchool",
+            "dbo:Broadcaster",
+            "dbo:TelevisionStation",
+            "dbo:BroadcastNetwork",
+            "dbo:RadioStation",
+            "dbo:TermOfOffice",
+            "dbo:Non-ProfitOrganisation",
+            "dbo:RecordOffice",
+            "dbo:GovernmentAgency",
+            "dbo:MilitaryUnit",
+            "dbo:PublicTransitSystem"
+        ]
+    },
+    "dbo:PoliticalParty": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:SportsTeam": {
+        "level": 3,
+        "children": [
+            "dbo:BaseballTeam",
+            "dbo:CyclingTeam",
+            "dbo:BasketballTeam",
+            "dbo:CricketTeam",
+            "dbo:SpeedwayTeam",
+            "dbo:AmericanFootballTeam",
+            "dbo:RugbyClub",
+            "dbo:HandballTeam",
+            "dbo:AustralianFootballTeam",
+            "dbo:FormulaOneTeam",
+            "dbo:HockeyTeam",
+            "dbo:SoccerClub",
+            "dbo:NationalSoccerClub",
+            "dbo:CanadianFootballTeam"
+        ]
+    },
+    "dbo:BaseballTeam": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:CyclingTeam": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:BasketballTeam": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:CricketTeam": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:SpeedwayTeam": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:AmericanFootballTeam": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:RugbyClub": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:HandballTeam": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:AustralianFootballTeam": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:FormulaOneTeam": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:HockeyTeam": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:SoccerClub": {
+        "level": 4,
+        "children": [
+            "dbo:NationalSoccerClub"
+        ]
+    },
+    "dbo:NationalSoccerClub": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:CanadianFootballTeam": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:EducationalInstitution": {
+        "level": 3,
+        "children": [
+            "dbo:Library",
+            "dbo:University",
+            "dbo:College",
+            "dbo:School"
+        ]
+    },
+    "dbo:University": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:College": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:School": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:SportsLeague": {
+        "level": 3,
+        "children": [
+            "dbo:AutoRacingLeague",
+            "dbo:MotorcycleRacingLeague",
+            "dbo:SpeedwayLeague",
+            "dbo:FormulaOneRacing",
+            "dbo:InlineHockeyLeague",
+            "dbo:BoxingLeague",
+            "dbo:AustralianFootballLeague",
+            "dbo:SoftballLeague",
+            "dbo:MixedMartialArtsLeague",
+            "dbo:TennisLeague",
+            "dbo:IceHockeyLeague",
+            "dbo:VolleyballLeague",
+            "dbo:HandballLeague",
+            "dbo:PaintballLeague",
+            "dbo:CricketLeague",
+            "dbo:PoloLeague",
+            "dbo:RugbyLeague",
+            "dbo:AmericanFootballLeague",
+            "dbo:FieldHockeyLeague",
+            "dbo:CurlingLeague",
+            "dbo:RadioControlledRacingLeague",
+            "dbo:GolfLeague",
+            "dbo:VideogamesLeague",
+            "dbo:BaseballLeague",
+            "dbo:LacrosseLeague",
+            "dbo:BowlingLeague",
+            "dbo:SoccerLeague",
+            "dbo:CanadianFootballLeague",
+            "dbo:BasketballLeague",
+            "dbo:CyclingLeague"
+        ]
+    },
+    "dbo:AutoRacingLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:MotorcycleRacingLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:SpeedwayLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:FormulaOneRacing": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:InlineHockeyLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:BoxingLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:AustralianFootballLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:SoftballLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:MixedMartialArtsLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:TennisLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:IceHockeyLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:VolleyballLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:HandballLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:PaintballLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:CricketLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:PoloLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:RugbyLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:AmericanFootballLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:FieldHockeyLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:CurlingLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:RadioControlledRacingLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:GolfLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:VideogamesLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:BaseballLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:LacrosseLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:BowlingLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:SoccerLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:CanadianFootballLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:BasketballLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:CyclingLeague": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:GeopoliticalOrganisation": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:TradeUnion": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Legislature": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:ComedyGroup": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Group": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Band": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Parliament": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:ClericalOrder": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Company": {
+        "level": 3,
+        "children": [
+            "dbo:RecordLabel",
+            "dbo:Brewery",
+            "dbo:Airline",
+            "dbo:LawFirm",
+            "dbo:Winery",
+            "dbo:BusCompany",
+            "dbo:Publisher"
+        ]
+    },
+    "dbo:RecordLabel": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Brewery": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Airline": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:LawFirm": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Winery": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:BusCompany": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Publisher": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:SambaSchool": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Broadcaster": {
+        "level": 3,
+        "children": [
+            "dbo:TelevisionStation",
+            "dbo:BroadcastNetwork",
+            "dbo:RadioStation"
+        ]
+    },
+    "dbo:TelevisionStation": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:BroadcastNetwork": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:RadioStation": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:TermOfOffice": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Non-ProfitOrganisation": {
+        "level": 3,
+        "children": [
+            "dbo:RecordOffice"
+        ]
+    },
+    "dbo:RecordOffice": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:GovernmentAgency": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:MilitaryUnit": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:PublicTransitSystem": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Deity": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Person": {
+        "level": 2,
+        "children": [
+            "dbo:Architect",
+            "dbo:TelevisionPersonality",
+            "dbo:Host",
+            "dbo:Noble",
+            "dbo:Coach",
+            "dbo:AmericanFootballCoach",
+            "dbo:CollegeCoach",
+            "dbo:VolleyballCoach",
+            "dbo:TelevisionDirector",
+            "dbo:Philosopher",
+            "dbo:Presenter",
+            "dbo:RadioHost",
+            "dbo:TelevisionHost",
+            "dbo:Employer",
+            "dbo:Journalist",
+            "dbo:Scientist",
+            "dbo:Medician",
+            "dbo:Professor",
+            "dbo:Entomologist",
+            "dbo:Model",
+            "dbo:MythologicalFigure",
+            "dbo:Criminal",
+            "dbo:Murderer",
+            "dbo:SerialKiller",
+            "dbo:Religious",
+            "dbo:BusinessPerson",
+            "dbo:PlayboyPlaymate",
+            "dbo:Farmer",
+            "dbo:PoliticianSpouse",
+            "dbo:BeautyQueen",
+            "dbo:FictionalCharacter",
+            "dbo:DisneyCharacter",
+            "dbo:SoapCharacter",
+            "dbo:NarutoCharacter",
+            "dbo:ComicsCharacter",
+            "dbo:AnimangaCharacter",
+            "dbo:Engineer",
+            "dbo:Bullfighter",
+            "dbo:Astronaut",
+            "dbo:Aristocrat",
+            "dbo:Psychologist",
+            "dbo:Linguist",
+            "dbo:Ambassador",
+            "dbo:Economist",
+            "dbo:OfficeHolder",
+            "dbo:Producer",
+            "dbo:TheatreDirector",
+            "dbo:HorseTrainer",
+            "dbo:Referee",
+            "dbo:MovieDirector",
+            "dbo:SportsManager",
+            "dbo:SoccerManager",
+            "dbo:Royalty",
+            "dbo:PolishKing",
+            "dbo:BritishRoyalty",
+            "dbo:Baronet",
+            "dbo:Athlete",
+            "dbo:Surfer",
+            "dbo:VolleyballPlayer",
+            "dbo:BeachVolleyballPlayer",
+            "dbo:Wrestler",
+            "dbo:SumoWrestler",
+            "dbo:MartialArtist",
+            "dbo:GridironFootballPlayer",
+            "dbo:CanadianFootballPlayer",
+            "dbo:AmericanFootballPlayer",
+            "dbo:NationalCollegiateAthleticAssociationAthlete",
+            "dbo:AthleticsPlayer",
+            "dbo:Skater",
+            "dbo:LacrossePlayer",
+            "dbo:Canoeist",
+            "dbo:HorseRider",
+            "dbo:IceHockeyPlayer",
+            "dbo:Cricketer",
+            "dbo:Boxer",
+            "dbo:AmateurBoxer",
+            "dbo:TennisPlayer",
+            "dbo:SnookerPlayer",
+            "dbo:SnookerChamp",
+            "dbo:Swimmer",
+            "dbo:Gymnast",
+            "dbo:SoccerPlayer",
+            "dbo:BaseballPlayer",
+            "dbo:Bodybuilder",
+            "dbo:GaelicGamesPlayer",
+            "dbo:BasketballPlayer",
+            "dbo:Jockey",
+            "dbo:TeamMember",
+            "dbo:FigureSkater",
+            "dbo:SquashPlayer",
+            "dbo:BullFighter",
+            "dbo:WaterPoloPlayer",
+            "dbo:ChessPlayer",
+            "dbo:PokerPlayer",
+            "dbo:TableTennisPlayer",
+            "dbo:Skier",
+            "dbo:GolfPlayer",
+            "dbo:MotorsportRacer",
+            "dbo:RacingDriver",
+            "dbo:NascarDriver",
+            "dbo:RallyDriver",
+            "dbo:MotocycleRacer",
+            "dbo:FormulaOneRacer",
+            "dbo:MotorcycleRider",
+            "dbo:SpeedwayRider",
+            "dbo:Rower",
+            "dbo:Curler",
+            "dbo:Fencer",
+            "dbo:HandballPlayer",
+            "dbo:AustralianRulesFootballPlayer",
+            "dbo:DartsPlayer",
+            "dbo:BadmintonPlayer",
+            "dbo:RugbyPlayer",
+            "dbo:NetballPlayer",
+            "dbo:Cyclist",
+            "dbo:Celebrity",
+            "dbo:Egyptologist",
+            "dbo:RomanEmperor",
+            "dbo:Lawyer",
+            "dbo:Politician",
+            "dbo:Mayor",
+            "dbo:PrimeMinister",
+            "dbo:VicePresident",
+            "dbo:VicePrimeMinister",
+            "dbo:MemberOfParliament",
+            "dbo:Senator",
+            "dbo:Lieutenant",
+            "dbo:Congressman",
+            "dbo:Deputy",
+            "dbo:President",
+            "dbo:Governor",
+            "dbo:Chancellor",
+            "dbo:Judge",
+            "dbo:MilitaryPerson",
+            "dbo:OrganisationMember",
+            "dbo:SportsTeamMember",
+            "dbo:Artist",
+            "dbo:Actor",
+            "dbo:VoiceActor",
+            "dbo:AdultActor",
+            "dbo:Dancer",
+            "dbo:Sculptor",
+            "dbo:FashionDesigner",
+            "dbo:Photographer",
+            "dbo:Painter",
+            "dbo:MusicalArtist",
+            "dbo:BackScene",
+            "dbo:Instrumentalist",
+            "dbo:Guitarist",
+            "dbo:MusicDirector",
+            "dbo:ClassicalMusicArtist",
+            "dbo:Singer",
+            "dbo:Humorist",
+            "dbo:Comedian",
+            "dbo:ComicsCreator",
+            "dbo:Writer",
+            "dbo:Poet",
+            "dbo:PlayWright",
+            "dbo:MusicComposer",
+            "dbo:ScreenWriter",
+            "dbo:SongWriter",
+            "dbo:Chef",
+            "dbo:Cleric",
+            "dbo:ChristianBishop",
+            "dbo:Pope",
+            "dbo:Saint",
+            "dbo:Priest",
+            "dbo:Vicar",
+            "dbo:Cardinal",
+            "dbo:ChristianPatriarch",
+            "dbo:Historian",
+            "dbo:Monarch",
+            "dbo:Archeologist"
+        ]
+    },
+    "dbo:Architect": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:TelevisionPersonality": {
+        "level": 3,
+        "children": [
+            "dbo:Host"
+        ]
+    },
+    "dbo:Host": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Noble": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Coach": {
+        "level": 3,
+        "children": [
+            "dbo:AmericanFootballCoach",
+            "dbo:CollegeCoach",
+            "dbo:VolleyballCoach"
+        ]
+    },
+    "dbo:AmericanFootballCoach": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:CollegeCoach": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:VolleyballCoach": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:TelevisionDirector": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Philosopher": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Presenter": {
+        "level": 3,
+        "children": [
+            "dbo:RadioHost",
+            "dbo:TelevisionHost"
+        ]
+    },
+    "dbo:RadioHost": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:TelevisionHost": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Employer": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Journalist": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Scientist": {
+        "level": 3,
+        "children": [
+            "dbo:Medician",
+            "dbo:Professor",
+            "dbo:Entomologist"
+        ]
+    },
+    "dbo:Medician": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Professor": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Entomologist": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Model": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:MythologicalFigure": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Criminal": {
+        "level": 3,
+        "children": [
+            "dbo:Murderer",
+            "dbo:SerialKiller"
+        ]
+    },
+    "dbo:Murderer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:SerialKiller": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Religious": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:BusinessPerson": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:PlayboyPlaymate": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Farmer": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:PoliticianSpouse": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:BeautyQueen": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:FictionalCharacter": {
+        "level": 3,
+        "children": [
+            "dbo:DisneyCharacter",
+            "dbo:SoapCharacter",
+            "dbo:NarutoCharacter",
+            "dbo:ComicsCharacter",
+            "dbo:AnimangaCharacter"
+        ]
+    },
+    "dbo:DisneyCharacter": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:SoapCharacter": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:NarutoCharacter": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:ComicsCharacter": {
+        "level": 4,
+        "children": [
+            "dbo:AnimangaCharacter"
+        ]
+    },
+    "dbo:AnimangaCharacter": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Engineer": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Bullfighter": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Astronaut": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Aristocrat": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Psychologist": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Linguist": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Ambassador": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Economist": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:OfficeHolder": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Producer": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:TheatreDirector": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:HorseTrainer": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Referee": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:MovieDirector": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:SportsManager": {
+        "level": 3,
+        "children": [
+            "dbo:SoccerManager"
+        ]
+    },
+    "dbo:SoccerManager": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Royalty": {
+        "level": 3,
+        "children": [
+            "dbo:PolishKing",
+            "dbo:BritishRoyalty",
+            "dbo:Baronet"
+        ]
+    },
+    "dbo:PolishKing": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:BritishRoyalty": {
+        "level": 4,
+        "children": [
+            "dbo:Baronet"
+        ]
+    },
+    "dbo:Baronet": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Athlete": {
+        "level": 3,
+        "children": [
+            "dbo:Surfer",
+            "dbo:VolleyballPlayer",
+            "dbo:BeachVolleyballPlayer",
+            "dbo:Wrestler",
+            "dbo:SumoWrestler",
+            "dbo:MartialArtist",
+            "dbo:GridironFootballPlayer",
+            "dbo:CanadianFootballPlayer",
+            "dbo:AmericanFootballPlayer",
+            "dbo:NationalCollegiateAthleticAssociationAthlete",
+            "dbo:AthleticsPlayer",
+            "dbo:Skater",
+            "dbo:LacrossePlayer",
+            "dbo:Canoeist",
+            "dbo:HorseRider",
+            "dbo:IceHockeyPlayer",
+            "dbo:Cricketer",
+            "dbo:Boxer",
+            "dbo:AmateurBoxer",
+            "dbo:TennisPlayer",
+            "dbo:SnookerPlayer",
+            "dbo:SnookerChamp",
+            "dbo:Swimmer",
+            "dbo:Gymnast",
+            "dbo:SoccerPlayer",
+            "dbo:BaseballPlayer",
+            "dbo:Bodybuilder",
+            "dbo:GaelicGamesPlayer",
+            "dbo:BasketballPlayer",
+            "dbo:Jockey",
+            "dbo:TeamMember",
+            "dbo:FigureSkater",
+            "dbo:SquashPlayer",
+            "dbo:BullFighter",
+            "dbo:WaterPoloPlayer",
+            "dbo:ChessPlayer",
+            "dbo:PokerPlayer",
+            "dbo:TableTennisPlayer",
+            "dbo:Skier",
+            "dbo:GolfPlayer",
+            "dbo:MotorsportRacer",
+            "dbo:RacingDriver",
+            "dbo:NascarDriver",
+            "dbo:RallyDriver",
+            "dbo:MotocycleRacer",
+            "dbo:FormulaOneRacer",
+            "dbo:MotorcycleRider",
+            "dbo:SpeedwayRider",
+            "dbo:Rower",
+            "dbo:Curler",
+            "dbo:Fencer",
+            "dbo:HandballPlayer",
+            "dbo:AustralianRulesFootballPlayer",
+            "dbo:DartsPlayer",
+            "dbo:BadmintonPlayer",
+            "dbo:RugbyPlayer",
+            "dbo:NetballPlayer",
+            "dbo:Cyclist"
+        ]
+    },
+    "dbo:Surfer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:VolleyballPlayer": {
+        "level": 4,
+        "children": [
+            "dbo:BeachVolleyballPlayer"
+        ]
+    },
+    "dbo:BeachVolleyballPlayer": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Wrestler": {
+        "level": 4,
+        "children": [
+            "dbo:SumoWrestler"
+        ]
+    },
+    "dbo:SumoWrestler": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:MartialArtist": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:GridironFootballPlayer": {
+        "level": 4,
+        "children": [
+            "dbo:CanadianFootballPlayer",
+            "dbo:AmericanFootballPlayer"
+        ]
+    },
+    "dbo:CanadianFootballPlayer": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:AmericanFootballPlayer": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:NationalCollegiateAthleticAssociationAthlete": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:AthleticsPlayer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Skater": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:LacrossePlayer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Canoeist": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:HorseRider": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:IceHockeyPlayer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Cricketer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Boxer": {
+        "level": 4,
+        "children": [
+            "dbo:AmateurBoxer"
+        ]
+    },
+    "dbo:AmateurBoxer": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:TennisPlayer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:SnookerPlayer": {
+        "level": 4,
+        "children": [
+            "dbo:SnookerChamp"
+        ]
+    },
+    "dbo:SnookerChamp": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Swimmer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Gymnast": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:SoccerPlayer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:BaseballPlayer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Bodybuilder": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:GaelicGamesPlayer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:BasketballPlayer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Jockey": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:TeamMember": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:FigureSkater": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:SquashPlayer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:BullFighter": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:WaterPoloPlayer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:ChessPlayer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:PokerPlayer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:TableTennisPlayer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Skier": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:GolfPlayer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:MotorsportRacer": {
+        "level": 4,
+        "children": [
+            "dbo:RacingDriver",
+            "dbo:NascarDriver",
+            "dbo:RallyDriver",
+            "dbo:MotocycleRacer",
+            "dbo:FormulaOneRacer",
+            "dbo:MotorcycleRider",
+            "dbo:SpeedwayRider"
+        ]
+    },
+    "dbo:RacingDriver": {
+        "level": 5,
+        "children": [
+            "dbo:NascarDriver",
+            "dbo:RallyDriver",
+            "dbo:MotocycleRacer",
+            "dbo:FormulaOneRacer"
+        ]
+    },
+    "dbo:NascarDriver": {
+        "level": 6,
+        "children": []
+    },
+    "dbo:RallyDriver": {
+        "level": 6,
+        "children": []
+    },
+    "dbo:MotocycleRacer": {
+        "level": 6,
+        "children": []
+    },
+    "dbo:FormulaOneRacer": {
+        "level": 6,
+        "children": []
+    },
+    "dbo:MotorcycleRider": {
+        "level": 5,
+        "children": [
+            "dbo:SpeedwayRider"
+        ]
+    },
+    "dbo:SpeedwayRider": {
+        "level": 6,
+        "children": []
+    },
+    "dbo:Rower": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Curler": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Fencer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:HandballPlayer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:AustralianRulesFootballPlayer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:DartsPlayer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:BadmintonPlayer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:RugbyPlayer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:NetballPlayer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Cyclist": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Celebrity": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Egyptologist": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:RomanEmperor": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Lawyer": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Politician": {
+        "level": 3,
+        "children": [
+            "dbo:Mayor",
+            "dbo:PrimeMinister",
+            "dbo:VicePresident",
+            "dbo:VicePrimeMinister",
+            "dbo:MemberOfParliament",
+            "dbo:Senator",
+            "dbo:Lieutenant",
+            "dbo:Congressman",
+            "dbo:Deputy",
+            "dbo:President",
+            "dbo:Governor",
+            "dbo:Chancellor"
+        ]
+    },
+    "dbo:Mayor": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:PrimeMinister": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:VicePresident": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:VicePrimeMinister": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:MemberOfParliament": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Senator": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Lieutenant": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Congressman": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Deputy": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:President": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Governor": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Chancellor": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Judge": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:MilitaryPerson": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:OrganisationMember": {
+        "level": 3,
+        "children": [
+            "dbo:SportsTeamMember"
+        ]
+    },
+    "dbo:SportsTeamMember": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Artist": {
+        "level": 3,
+        "children": [
+            "dbo:Actor",
+            "dbo:VoiceActor",
+            "dbo:AdultActor",
+            "dbo:Dancer",
+            "dbo:Sculptor",
+            "dbo:FashionDesigner",
+            "dbo:Photographer",
+            "dbo:Painter",
+            "dbo:MusicalArtist",
+            "dbo:BackScene",
+            "dbo:Instrumentalist",
+            "dbo:Guitarist",
+            "dbo:MusicDirector",
+            "dbo:ClassicalMusicArtist",
+            "dbo:Singer",
+            "dbo:Humorist",
+            "dbo:Comedian",
+            "dbo:ComicsCreator",
+            "dbo:Writer",
+            "dbo:Poet",
+            "dbo:PlayWright",
+            "dbo:MusicComposer",
+            "dbo:ScreenWriter",
+            "dbo:SongWriter"
+        ]
+    },
+    "dbo:Actor": {
+        "level": 4,
+        "children": [
+            "dbo:VoiceActor",
+            "dbo:AdultActor"
+        ]
+    },
+    "dbo:VoiceActor": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:AdultActor": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Dancer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Sculptor": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:FashionDesigner": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Photographer": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Painter": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:MusicalArtist": {
+        "level": 4,
+        "children": [
+            "dbo:BackScene",
+            "dbo:Instrumentalist",
+            "dbo:Guitarist",
+            "dbo:MusicDirector",
+            "dbo:ClassicalMusicArtist",
+            "dbo:Singer"
+        ]
+    },
+    "dbo:BackScene": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Instrumentalist": {
+        "level": 5,
+        "children": [
+            "dbo:Guitarist"
+        ]
+    },
+    "dbo:Guitarist": {
+        "level": 6,
+        "children": []
+    },
+    "dbo:MusicDirector": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:ClassicalMusicArtist": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Singer": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Humorist": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Comedian": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:ComicsCreator": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Writer": {
+        "level": 4,
+        "children": [
+            "dbo:Poet",
+            "dbo:PlayWright",
+            "dbo:MusicComposer",
+            "dbo:ScreenWriter",
+            "dbo:SongWriter"
+        ]
+    },
+    "dbo:Poet": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:PlayWright": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:MusicComposer": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:ScreenWriter": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:SongWriter": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:Chef": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Cleric": {
+        "level": 3,
+        "children": [
+            "dbo:ChristianBishop",
+            "dbo:Pope",
+            "dbo:Saint",
+            "dbo:Priest",
+            "dbo:Vicar",
+            "dbo:Cardinal",
+            "dbo:ChristianPatriarch"
+        ]
+    },
+    "dbo:ChristianBishop": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Pope": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Saint": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Priest": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Vicar": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Cardinal": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:ChristianPatriarch": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Historian": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Monarch": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Archeologist": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Activity": {
+        "level": 1,
+        "children": [
+            "dbo:Game",
+            "dbo:BoardGame",
+            "dbo:Sport",
+            "dbo:Boxing",
+            "dbo:BoxingCategory",
+            "dbo:BoxingStyle",
+            "dbo:Athletics",
+            "dbo:HorseRiding"
+        ]
+    },
+    "dbo:Game": {
+        "level": 2,
+        "children": [
+            "dbo:BoardGame"
+        ]
+    },
+    "dbo:BoardGame": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Sport": {
+        "level": 2,
+        "children": [
+            "dbo:Boxing",
+            "dbo:BoxingCategory",
+            "dbo:BoxingStyle",
+            "dbo:Athletics",
+            "dbo:HorseRiding"
+        ]
+    },
+    "dbo:Boxing": {
+        "level": 3,
+        "children": [
+            "dbo:BoxingCategory",
+            "dbo:BoxingStyle"
+        ]
+    },
+    "dbo:BoxingCategory": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:BoxingStyle": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Athletics": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:HorseRiding": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Food": {
+        "level": 1,
+        "children": [
+            "dbo:Beverage",
+            "dbo:Beer",
+            "dbo:Wine",
+            "dbo:ControlledDesignationOfOriginWine",
+            "dbo:Cheese"
+        ]
+    },
+    "dbo:Beverage": {
+        "level": 2,
+        "children": [
+            "dbo:Beer",
+            "dbo:Wine",
+            "dbo:ControlledDesignationOfOriginWine"
+        ]
+    },
+    "dbo:Beer": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Wine": {
+        "level": 3,
+        "children": [
+            "dbo:ControlledDesignationOfOriginWine"
+        ]
+    },
+    "dbo:ControlledDesignationOfOriginWine": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Cheese": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Work": {
+        "level": 1,
+        "children": [
+            "dbo:Website",
+            "dbo:TelevisionEpisode",
+            "dbo:CollectionOfValuables",
+            "dbo:Archive",
+            "dbo:Cartoon",
+            "dbo:HollywoodCartoon",
+            "dbo:Anime",
+            "dbo:Database",
+            "dbo:BiologicalDatabase",
+            "dbo:WrittenWork",
+            "dbo:Play",
+            "dbo:Comic",
+            "dbo:Poem",
+            "dbo:PeriodicalLiterature",
+            "dbo:AcademicJournal",
+            "dbo:Magazine",
+            "dbo:Newspaper",
+            "dbo:MultiVolumePublication",
+            "dbo:Installment",
+            "dbo:Comics",
+            "dbo:Manhua",
+            "dbo:ComicStrip",
+            "dbo:Manga",
+            "dbo:Manhwa",
+            "dbo:Book",
+            "dbo:Novel",
+            "dbo:LightNovel",
+            "dbo:StatedResolution",
+            "dbo:Annotation",
+            "dbo:Reference",
+            "dbo:Resume",
+            "dbo:Drama",
+            "dbo:TelevisionSeason",
+            "dbo:Film",
+            "dbo:Document",
+            "dbo:Image",
+            "dbo:MovingImage",
+            "dbo:StillImage",
+            "dbo:Sound",
+            "dbo:File",
+            "dbo:TelevisionShow",
+            "dbo:Artwork",
+            "dbo:Painting",
+            "dbo:Sculpture",
+            "dbo:LineOfFashion",
+            "dbo:MusicalWork",
+            "dbo:Song",
+            "dbo:EurovisionSongContestEntry",
+            "dbo:ArtistDiscography",
+            "dbo:NationalAnthem",
+            "dbo:Single",
+            "dbo:Album",
+            "dbo:ClassicalMusicComposition",
+            "dbo:Opera",
+            "dbo:RadioProgram",
+            "dbo:Software",
+            "dbo:VideoGame",
+            "dbo:ProgrammingLanguage",
+            "dbo:Musical"
+        ]
+    },
+    "dbo:Website": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:TelevisionEpisode": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:CollectionOfValuables": {
+        "level": 2,
+        "children": [
+            "dbo:Archive"
+        ]
+    },
+    "dbo:Archive": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Cartoon": {
+        "level": 2,
+        "children": [
+            "dbo:HollywoodCartoon",
+            "dbo:Anime"
+        ]
+    },
+    "dbo:HollywoodCartoon": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Anime": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Database": {
+        "level": 2,
+        "children": [
+            "dbo:BiologicalDatabase"
+        ]
+    },
+    "dbo:BiologicalDatabase": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:WrittenWork": {
+        "level": 2,
+        "children": [
+            "dbo:Play",
+            "dbo:Comic",
+            "dbo:Poem",
+            "dbo:PeriodicalLiterature",
+            "dbo:AcademicJournal",
+            "dbo:Magazine",
+            "dbo:Newspaper",
+            "dbo:MultiVolumePublication",
+            "dbo:Installment",
+            "dbo:Comics",
+            "dbo:Manhua",
+            "dbo:ComicStrip",
+            "dbo:Manga",
+            "dbo:Manhwa",
+            "dbo:Book",
+            "dbo:Novel",
+            "dbo:LightNovel",
+            "dbo:StatedResolution",
+            "dbo:Annotation",
+            "dbo:Reference",
+            "dbo:Resume",
+            "dbo:Drama"
+        ]
+    },
+    "dbo:Play": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Comic": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Poem": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:PeriodicalLiterature": {
+        "level": 3,
+        "children": [
+            "dbo:AcademicJournal",
+            "dbo:Magazine",
+            "dbo:Newspaper"
+        ]
+    },
+    "dbo:AcademicJournal": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Magazine": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Newspaper": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:MultiVolumePublication": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Installment": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Comics": {
+        "level": 3,
+        "children": [
+            "dbo:Manhua",
+            "dbo:ComicStrip",
+            "dbo:Manga",
+            "dbo:Manhwa"
+        ]
+    },
+    "dbo:Manhua": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:ComicStrip": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Manga": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Manhwa": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Book": {
+        "level": 3,
+        "children": [
+            "dbo:Novel",
+            "dbo:LightNovel"
+        ]
+    },
+    "dbo:Novel": {
+        "level": 4,
+        "children": [
+            "dbo:LightNovel"
+        ]
+    },
+    "dbo:LightNovel": {
+        "level": 5,
+        "children": []
+    },
+    "dbo:StatedResolution": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Annotation": {
+        "level": 3,
+        "children": [
+            "dbo:Reference"
+        ]
+    },
+    "dbo:Reference": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Resume": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Drama": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:TelevisionSeason": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Film": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Document": {
+        "level": 2,
+        "children": [
+            "dbo:Image",
+            "dbo:MovingImage",
+            "dbo:StillImage",
+            "dbo:Sound",
+            "dbo:File"
+        ]
+    },
+    "dbo:Image": {
+        "level": 3,
+        "children": [
+            "dbo:MovingImage",
+            "dbo:StillImage"
+        ]
+    },
+    "dbo:MovingImage": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:StillImage": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:Sound": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:File": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:TelevisionShow": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Artwork": {
+        "level": 2,
+        "children": [
+            "dbo:Painting",
+            "dbo:Sculpture"
+        ]
+    },
+    "dbo:Painting": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Sculpture": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:LineOfFashion": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:MusicalWork": {
+        "level": 2,
+        "children": [
+            "dbo:Song",
+            "dbo:EurovisionSongContestEntry",
+            "dbo:ArtistDiscography",
+            "dbo:NationalAnthem",
+            "dbo:Single",
+            "dbo:Album",
+            "dbo:ClassicalMusicComposition",
+            "dbo:Opera"
+        ]
+    },
+    "dbo:Song": {
+        "level": 3,
+        "children": [
+            "dbo:EurovisionSongContestEntry"
+        ]
+    },
+    "dbo:EurovisionSongContestEntry": {
+        "level": 4,
+        "children": []
+    },
+    "dbo:ArtistDiscography": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:NationalAnthem": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Single": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Album": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:ClassicalMusicComposition": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Opera": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:RadioProgram": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Software": {
+        "level": 2,
+        "children": [
+            "dbo:VideoGame"
+        ]
+    },
+    "dbo:VideoGame": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:ProgrammingLanguage": {
+        "level": 3,
+        "children": []
+    },
+    "dbo:Musical": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Tax": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:Drug": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:Currency": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:Disease": {
+        "level": 1,
+        "children": []
+    },
+    "dbo:Swarm": {
+        "level": 1,
+        "children": [
+            "dbo:Globularswarm",
+            "dbo:Openswarm"
+        ]
+    },
+    "dbo:Globularswarm": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Openswarm": {
+        "level": 2,
+        "children": []
+    },
+    "dbo:Colour": {
+        "level": 1,
+        "children": []
+    }
+}
