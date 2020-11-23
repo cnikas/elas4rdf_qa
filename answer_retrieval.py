@@ -3,12 +3,11 @@ import json
 
 def get_entities(query_string,size):
     payload = {
-        "id" : "dbpedia",
         "type" : "entities",
         "query" : query_string,
         "size" : 100
     }
-    url = "http://139.91.183.46:8080/elas4rdf_rest/high-level"
+    url = "https://demos.isl.ics.forth.gr/elas4rdf/entities_json"
     response = requests.get(url,params=payload)
     return [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response.json()['results']['entities'][0:size]]
 
