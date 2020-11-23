@@ -23,4 +23,4 @@ if __name__ == "__main__":
     print('Initializing...')
     ae = AnswerExtraction()
     print('\tDONE')
-    app.run()
+    app.run(host= '0.0.0.0')
