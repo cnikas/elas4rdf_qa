@@ -85,7 +85,13 @@ def api_more_entities():
 
     return jsonify(entities)
 
-
+ @app.before_first_request
+ def _initialize():
+    print('Initializing...')
+    ae = AnswerExtraction()
+    atp = AnswerTypePrediction()
+    print('\tDONE')
+   
 if __name__ == "__main__":
     print('Initializing...')
     ae = AnswerExtraction()
