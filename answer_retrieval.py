@@ -20,7 +20,8 @@ def get_entities_updated(selected_entities,selected_type):
     return new_entities
     
 def sparql_query(query_string):
-    url = "http://139.91.183.46:8899/sparql"
+    #url = "http://139.91.183.46:8899/sparql"
+    url = "http://dbpedia.org/sparql"
     payload = {
         "query": query_string,
         "default-graph-uri": "http://dbpedia.org"
