@@ -5,22 +5,19 @@ def get_entities(query_string,size):
     payload = {
         "type" : "entities",
         "query" : query_string,
-        "size" : 100
+        "size" : size
     }
     url = "https://demos.isl.ics.forth.gr/elas4rdf/entities_json"
     response = requests.get(url,params=payload)
     return [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response.json()['results']['entities'][0:size]]
 
-def annotate_spotlight(query):
-    payload = {
-        "text" : query
-    }
-    url = "https://api.dbpedia-spotlight.org/en/annotate"
-    response = requests.get(url,params=payload)
-    if "Resources" in response:
-        return response["Resources"][0]["@URI"]
-    else:
-        return ""
+def get_entities_updated(selected_entities,selected_type):
+    ### get neighbor entities matching answer type ###
+    selected_type_uri = "http://dbpedia.org/ontology/"+selected_type
+    new_entities = []
+    for se in selected_entities:
+        new_entities.extend(objects_of_type(se,selected_type_uri))
+    return new_entities
     
 def sparql_query(query_string):
     url = "http://139.91.183.46:8899/sparql"
@@ -43,17 +40,6 @@ def sparql_query(query_string):
         results.append(result)
     return results
 
-def get_entity_types(entity_uri):
-    types = []
-    query_string = ("select ?t1 where {{"
-                    "<{}> rdf:type ?t1 . "
-                    "}}"
-                    ).format(entity_uri)
-    response = sparql_query(query_string)
-    for r in response:
-        types.append(r['t1'])
-    return list(map(lambda x: x[x.rindex('/')+1:],types))
-
 def objects_of_type(entity_uri,type_uri):
     query_string_o = ("select ?answer ?rdfsComment where {{"
                         "<{0}> ?p ?answer . "
@@ -68,29 +54,11 @@ def objects_of_type(entity_uri,type_uri):
                     "}}").format(entity_uri,type_uri)
     response = sparql_query(query_string_o)
     response.extend(sparql_query(query_string_s))
+    entities = []
     for r in response:
-        r['entity'] = entity_uri 
-    return response
-
-def objects_in_range(entity_uri):
-    query_string = ("select ?answer ?answerType where {{"
-                        "<{}> ?p ?answer . "
-                        "?p rdfs:range ?answerType . "
-                        "?p rdfs:label ?predicateLabel . "
-                        "FILTER(isLiteral(?answer)) "
-                        "FILTER(lang(?answer) = 'en' || lang(?answer) = '') "
-                    "}}").format(entity_uri)         
-    response = sparql_query(query_string)          
-    for r in response:
-        r['entity'] = entity_uri 
-    return response
-
-
-
-if __name__ == "__main__":
-    #print(objects_of_type("http://dbpedia.org/resource/Greece","http://dbpedia.org/ontology/Work"))
-    #print(objects_in_range("http://dbpedia.org/resource/Greece"))
-    print(get_entity_types("http://dbpedia.org/resource/Greece"))
-    #for r in response['results']['bindings']
-    #    r['sl']['value']
-    
+        if(r['answer'].startswith("http")):
+            entities.append({
+                "uri":r['answer'],
+                "rdfs_comment":r['rdfsComment']
+            })
+    return entities

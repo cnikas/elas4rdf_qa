@@ -38,6 +38,7 @@ class AnswerTypePrediction:
         types = ['boolean','date','number','string','']
         return categories[result], types[result]
 
+
     def classify_resource(self,q):
         input_ids = torch.tensor(self.resource_tokenizer.encode(q, add_special_tokens=True)).unsqueeze(0)  # Batch size 1
         labels = torch.tensor([1]).unsqueeze(0)  # Batch size 1
@@ -63,11 +64,4 @@ class AnswerTypePrediction:
         result_mapped = []
         for r in result:
             result_mapped.append(self.id_to_label[str(r)])
-        return list(map(lambda x: x[x.rindex(':')+1:],result_mapped))
-    
-    def predict_answer_type(self,q,found_category):
-        if found_category == 'resource':
-            found_type = self.classify_resource(q)[0:10]
-        else:
-            found_type = [found_category]
-        return found_type
+        return result_mapped

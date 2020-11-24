@@ -1,3 +1,0 @@
-ng generate component type-tree
-add -> start from (owl:Thing)
-edit -> start from (type)
