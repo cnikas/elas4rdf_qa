@@ -45,7 +45,7 @@ def api_answer():
 def api_update():
     args = request.args.to_dict(flat=False)
 
-    required = ['question','category','type','entities']
+    required = ['question','category','type','selected_entities']
     if(not all(arg in args for arg in required)):
         error_output = {'error':True}
         return jsonify(error_output)
@@ -55,7 +55,7 @@ def api_update():
     
     selected_type = args['type'][0]
     
-    selected_entities = args['entities']
+    selected_entities = args['selected_entities']
     entities = ar.get_entities_updated(selected_entities,selected_type)
     print(entities)
     answers = ae.answer_extractive(question,entities)
@@ -68,6 +68,23 @@ def api_update():
     }
 
     return jsonify(response)
+
+@app.route('/more_entities', methods=['GET'])
+def api_more_entities():
+    args = request.args.to_dict(flat=False)
+
+    required = ['type','entities']
+    if(not all(arg in args for arg in required)):
+        error_output = {'error':True}
+        return jsonify(error_output)
+
+    selected_type = args['type'][0]
+    
+    selected_entities = args['entities']
+    entities = ar.get_entities_updated(selected_entities,selected_type)
+
+    return jsonify(entities)
+
 
 if __name__ == "__main__":
     print('Initializing...')
