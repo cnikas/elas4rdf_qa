@@ -11,14 +11,6 @@ def get_entities(query_string,size):
     response = requests.get(url,params=payload)
     return [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response.json()['results']['entities'][0:size]]
 
-def get_entities_updated(selected_entities,selected_type):
-    ### get neighbor entities matching answer type ###
-    selected_type_uri = "http://dbpedia.org/ontology/"+selected_type
-    new_entities = []
-    for se in selected_entities:
-        new_entities.extend(objects_of_type(se,selected_type_uri))
-    return new_entities
-    
 def sparql_query(query_string):
     #url = "http://139.91.183.46:8899/sparql"
     url = "http://dbpedia.org/sparql"
@@ -41,25 +33,67 @@ def sparql_query(query_string):
         results.append(result)
     return results
 
-def objects_of_type(entity_uri,type_uri):
-    query_string_o = ("select ?answer ?rdfsComment where {{"
-                        "<{0}> ?p ?answer . "
-                        "?answer rdf:type <{1}> . "
-                        "?answer rdfs:comment ?rdfsComment . "
-                        "FILTER(lang(?predicateLabel) = 'en' || lang(?predicateLabel) = '') "
-                    "}}").format(entity_uri,type_uri)
-    query_string_s = ("select ?answer ?rdfsComment where {{"
-                        "?answer ?p <{0}> . "
-                        "?answer rdf:type <{1}> . "
-                        "?answer rdfs:comment ?rdfsComment . "
+def resource_sentences(entity_uri,type_uri):
+    sentences = []
+    query_string_o = ("select str(?pl) as ?pLabel ?a where {{"
+                        "<{0}> ?p ?a . "
+                        "?a rdf:type <{1}> . "
+                        "?p rdfs:label ?pl . "
+                        "FILTER(lang(?pl) = 'en' || lang(?pl) = '') "
                     "}}").format(entity_uri,type_uri)
     response = sparql_query(query_string_o)
-    response.extend(sparql_query(query_string_s))
-    entities = []
     for r in response:
-        if(r['answer'].startswith("http")):
-            entities.append({
-                "uri":r['answer'],
-                "rdfs_comment":r['rdfsComment']
-            })
-    return entities
+        sentences.append(entity_to_str(entity_uri)+' '+r['pLabel']+' '+entity_to_str(r['a']))
+    #query_string_s = ("select str(?pl) as ?pLabel ?a where {{"
+    #                    "?a ?p <{0}> . "
+    #                    "?a rdf:type <{1}> . "
+    #                    "?p rdfs:label ?pl . "
+    #                    "FILTER(lang(?pl) = 'en' || lang(?pl) = '') "
+    #                "}}").format(entity_uri,type_uri)
+    #response = sparql_query(query_string_s)
+    #for r in response:
+    #    sentences.append(entity_to_str(r['a'])+' '+r['pLabel']+' '+entity_to_str(entity_uri))
+    return sentences
+
+def literal_sentences(entity_uri,literal_type):
+    sentences = []
+    entity_string = entity_to_str(entity_uri)
+    if literal_type == 'date':
+        query_string = ("select str(?answer) as ?a str(?pl) as ?pLabel where {{"
+                        "<{}> ?p ?answer . "
+                        "?p rdfs:range xsd:date . "
+                        "?p rdfs:label ?pl . "
+                        "FILTER(isLiteral(?answer)) "
+                        "FILTER(lang(?pl) = 'en' || lang(?pl) = '') "
+                        "}}").format(entity_uri)  
+        response = sparql_query(query_string)                 
+        for r in response:
+            sentences.append(entity_string+' '+r['pLabel']+' '+r['a'])
+    else: # if number or string
+        query_string = ("select str(?answer) as ?a str(?pl) as ?pLabel where {{"
+                        "<{}> ?p ?answer . "
+                        "?p rdfs:range ?answerType . "
+                        "?p rdfs:label ?pl . "
+                        "FILTER(isLiteral(?answer)) "
+                        "FILTER(lang(?pl) = 'en' || lang(?pl) = '') "
+                        "}}").format(entity_uri)         
+        response = sparql_query(query_string)   
+        for r in response:
+            if len(r['a'])<100:
+                isNumber = r['a'].replace('.','',1).isdigit()
+                if(literal_type == 'number' and isNumber):
+                    sentences.append(entity_string+' '+r['pLabel']+' '+r['a'])
+                elif(literal_type =='string' and (not isNumber)):
+                    sentences.append(entity_string+' '+r['pLabel']+' '+r['a'])
+
+    return sentences
+
+def entity_to_str(e):
+    return e[e.rindex("/")+1:].replace('_',' ')
+
+if __name__ == '__main__':
+    print(resource_sentences('http://dbpedia.org/resource/Greece','http://dbpedia.org/ontology/Person'))
+    print(literal_sentences('http://dbpedia.org/resource/Greece','date'))
+    print(literal_sentences('http://dbpedia.org/resource/Greece','number'))
+    print(literal_sentences('http://dbpedia.org/resource/Greece','string'))
+

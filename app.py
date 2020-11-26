@@ -4,6 +4,7 @@ from answer_extraction import AnswerExtraction
 from answer_type_prediction import AnswerTypePrediction
 import answer_retrieval as ar
 import json
+import re
 
 app = flask.Flask(__name__)
 app.config['SECRET_KEY'] =  'e2b35432632f190f45201266'
@@ -12,9 +13,7 @@ print('Initializing...')
 ae = AnswerExtraction()
 atp = AnswerTypePrediction()
 print('\tDONE')
-
-
-
+ 
 @app.route('/answer', methods=['GET'])
 def api_answer():
     args = request.args.to_dict(flat=False)
@@ -33,63 +32,18 @@ def api_answer():
         found_types = [found_category]
 
     q_no_stopwords = filtered_words = ' '.join([word for word in question.split() if word not in stopwords])
-    entities = ar.get_entities(q_no_stopwords,10)
-    
-    answers = ae.answer_extractive(question,entities)
+    entities = ar.get_entities(re.sub('[^a-zA-Z0-9 ]', '', q_no_stopwords),10)
+    extended_entities = ae.extend_entities(entities,found_category,found_types[0])
+    answers = ae.answer_extractive(question,extended_entities)
 
     response = {
         "category":found_category,
         "types":found_types,
-        "entities":entities,
-        "answers":answers
-    }
-    print(response)
-
-    return jsonify(response)
-
-@app.route('/update', methods=['GET'])
-def api_update():
-    args = request.args.to_dict(flat=False)
-
-    required = ['question','category','type','selected_entities']
-    if(not all(arg in args for arg in required)):
-        error_output = {'error':True}
-        return jsonify(error_output)
-
-    question = args['question'][0]
-    found_category = args['category'][0]
-    
-    selected_type = args['type'][0]
-    
-    selected_entities = args['selected_entities']
-    entities = ar.get_entities_updated(selected_entities,selected_type)
-    print(entities)
-    answers = ae.answer_extractive(question,entities)
-    
-    response = {
-        "category":found_category,
-        "types":[selected_type],
-        "entities":entities,
+        "entities":extended_entities,
         "answers":answers
     }
 
     return jsonify(response)
-
-@app.route('/more_entities', methods=['GET'])
-def api_more_entities():
-    args = request.args.to_dict(flat=False)
-
-    required = ['type','entities']
-    if(not all(arg in args for arg in required)):
-        error_output = {'error':True}
-        return jsonify(error_output)
-
-    selected_type = args['type'][0]
-    
-    selected_entities = args['entities']
-    entities = ar.get_entities_updated(selected_entities,selected_type)
-
-    return jsonify(entities)
    
 if __name__ == "__main__":
     print('Initializing...')

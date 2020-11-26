@@ -1,5 +1,6 @@
 from transformers import RobertaTokenizer, RobertaForQuestionAnswering, QuestionAnsweringPipeline
 import torch
+import answer_retrieval as ar
 
 class AnswerExtraction:
 
@@ -12,6 +13,28 @@ class AnswerExtraction:
     def answer_extractive(self,question,entities):
         answers = []
         for e in entities:
-            output = self.pipeline(question,e['rdfs_comment'])
+            output = self.pipeline(question,e['text'])
             answers.append({'entity':e['uri'],'answer':output['answer'],'score':output['score']})
         return sorted(answers, key=lambda k: k['score'],reverse=True) 
+
+    def extend_entities(self,entities,category,atype):
+        extended = []
+        for e in entities:
+            if(category=='literal'):
+                sentences = ar.literal_sentences(e['uri'],atype)
+            elif(category=='resource'):
+                type_uri = 'http://dbpedia.org/resource/'+atype
+                sentences = ar.resource_sentences(e['uri'],type_uri)
+            else:
+                sentences = []
+            if(e['rdfs_comment'] == "[]"):
+                clean_rdfs_comment = ""
+            else:
+                clean_rdfs_comment = e['rdfs_comment'][3:-4]
+            new_text = clean_rdfs_comment + ". ".join(sentences)
+            extended.append({
+                'uri':e['uri'],
+                'text':new_text
+                })
+        print(extended)
+        return extended
