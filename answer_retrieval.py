@@ -23,7 +23,7 @@ def sparql_query(query_string):
     try:
         response_json =  response.json()
     except json.decoder.JSONDecodeError:
-        print(query_string) 
+        print("sparql error") 
     keys = response_json['head']['vars']
     results = []
     for b in response_json['results']['bindings']:

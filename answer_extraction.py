@@ -36,5 +36,4 @@ class AnswerExtraction:
                 'uri':e['uri'],
                 'text':new_text
                 })
-        print(extended)
         return extended

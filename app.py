@@ -29,7 +29,7 @@ def api_answer():
     if found_category == "resource":
         found_types = atp.classify_resource(question)[0:10]
     else:
-        found_types = [found_category]
+        found_types = [found_type]
 
     q_no_stopwords = filtered_words = ' '.join([word for word in question.split() if word not in stopwords])
     entities = ar.get_entities(re.sub('[^a-zA-Z0-9 ]', '', q_no_stopwords),10)
