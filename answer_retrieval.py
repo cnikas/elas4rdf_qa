@@ -1,16 +1,6 @@
 import requests
 import json
 
-def get_entities(query_string,size):
-    payload = {
-        "type" : "entities",
-        "query" : query_string,
-        "size" : size
-    }
-    url = "https://demos.isl.ics.forth.gr/elas4rdf/entities_json"
-    response = requests.get(url,params=payload)
-    return [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response.json()['results']['entities'][0:size]]
-
 def sparql_query(query_string):
     #url = "http://139.91.183.46:8899/sparql"
     url = "http://dbpedia.org/sparql"
