@@ -8,10 +8,10 @@ import re
 
 app = flask.Flask(__name__)
 app.config['SECRET_KEY'] =  'e2b35432632f190f45201266'
-#print('Initializing...')
-#ae = AnswerExtraction()
-#atp = AnswerTypePrediction()
-#print('\tDONE')
+print('Initializing...')
+ae = AnswerExtraction()
+atp = AnswerTypePrediction()
+print('\tDONE')
  
 @app.route('/answer', methods=['GET'])
 def api_answer():
