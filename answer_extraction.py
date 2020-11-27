@@ -14,7 +14,7 @@ class AnswerExtraction:
         answers = []
         for e in entities:
             output = self.pipeline(question,e['text'])
-            answers.append({'entity':e['uri'],'answer':output['answer'],'score':output['score']})
+            answers.append({'entity':e['uri'],'answer':output['answer'],'score':round(output['score'],3)})
         return sorted(answers, key=lambda k: k['score'],reverse=True) 
 
     def extend_entities(self,entities,category,atype):
