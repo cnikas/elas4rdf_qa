@@ -38,8 +38,7 @@ def api_answer():
 
     response = {
         "category":found_category,
-        "types":found_types,
-        "entities":extended_entities,
+        "types":found_types[0],
         "answers":answers
     }
 
