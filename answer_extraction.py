@@ -29,7 +29,7 @@ class AnswerExtraction:
             if(category=='literal'):
                 sentences = ar.literal_sentences(e['uri'],atype)
             elif(category=='resource'):
-                type_uri = 'http://dbpedia.org/resource/'+atype
+                type_uri = 'http://dbpedia.org/ontology/'+atype
                 sentences = ar.resource_sentences(e['uri'],type_uri)
             else:
                 sentences = []

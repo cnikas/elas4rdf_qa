@@ -44,9 +44,4 @@ def api_answer():
 
     return jsonify(response)
    
-if __name__ == "__main__":
-    print('Initializing...')
-    ae = AnswerExtraction()
-    atp = AnswerTypePrediction()
-    print('\tDONE')
-    app.run(host= '0.0.0.0')
+#app.run(host= '0.0.0.0')

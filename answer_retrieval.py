@@ -25,10 +25,11 @@ def sparql_query(query_string):
 
 def resource_sentences(entity_uri,type_uri):
     sentences = []
-    query_string_o = ("select str(?pl) as ?pLabel ?a where {{"
+    query_string_o = ("select distinct str(?pl) as ?pLabel ?a where {{"
                         "<{0}> ?p ?a . "
-                        "?a rdf:type <{1}> . "
                         "?p rdfs:label ?pl . "
+                        "<{1}> owl:equivalentClass ?eq . "
+                        "?a rdf:type ?eq . "
                         "FILTER(lang(?pl) = 'en' || lang(?pl) = '') "
                     "}}").format(entity_uri,type_uri)
     response = sparql_query(query_string_o)
@@ -56,7 +57,7 @@ def literal_sentences(entity_uri,literal_type):
                         "FILTER(isLiteral(?answer)) "
                         "FILTER(lang(?pl) = 'en' || lang(?pl) = '') "
                         "}}").format(entity_uri)  
-        response = sparql_query(query_string)                 
+        response = sparql_query(query_string)      
         for r in response:
             sentences.append(entity_string+' '+r['pLabel']+' '+r['a'])
     else: # if number or string
@@ -67,7 +68,7 @@ def literal_sentences(entity_uri,literal_type):
                         "FILTER(isLiteral(?answer)) "
                         "FILTER(lang(?pl) = 'en' || lang(?pl) = '') "
                         "}}").format(entity_uri)         
-        response = sparql_query(query_string)   
+        response = sparql_query(query_string)
         for r in response:
             if len(r['a'])<100:
                 isNumber = r['a'].replace('.','',1).isdigit()
