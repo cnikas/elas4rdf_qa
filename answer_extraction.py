@@ -1,16 +1,19 @@
 from transformers import RobertaTokenizer, RobertaForQuestionAnswering, QuestionAnsweringPipeline
 import torch
-import answer_retrieval as ar
+import entity_expansion as expansion
 
 class AnswerExtraction:
+    # This class contains methods for the answer extraction stage
 
     def __init__(self):
+        # Initalisation of pretrained extractive QA model
         model_name = "deepset/roberta-base-squad2"
         tokenizer = RobertaTokenizer.from_pretrained(model_name)
         model = RobertaForQuestionAnswering.from_pretrained(model_name)
         self.pipeline = QuestionAnsweringPipeline(model=model,tokenizer=tokenizer,framework="pt",device=-1)
         
     def answer_extractive(self,question,entities):
+        # Obtain a question from each given entity
         answers = []
         for e in entities:
             output = self.pipeline(question,e['text'])
@@ -24,13 +27,14 @@ class AnswerExtraction:
         return sorted(answers, key=lambda k: k['score'],reverse=True) 
 
     def extend_entities(self,entities,category,atype):
+        # Extend entity descriptions with RDF nodes matching the answer type
         extended = []
         for e in entities:
             if(category=='literal'):
-                sentences = ar.literal_sentences(e['uri'],atype)
+                sentences = expansion.literal_sentences(e['uri'],atype)
             elif(category=='resource'):
                 type_uri = 'http://dbpedia.org/ontology/'+atype
-                sentences = ar.resource_sentences(e['uri'],type_uri)
+                sentences = expansion.resource_sentences(e['uri'],type_uri)
             else:
                 sentences = []
             if(e['rdfs_comment'] == "[]"):

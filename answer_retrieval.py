@@ -1,7 +1,13 @@
 import requests
 import json
 
+"""This module contains methods to retrieve
+RDF nodes that match the answer type to a question
+and generate sentences to extend entity descriptions
+"""
+
 def sparql_query(query_string):
+    # Execute a query on a SPARQL endpoint
     #url = "http://139.91.183.46:8899/sparql"
     url = "http://dbpedia.org/sparql"
     payload = {
@@ -24,6 +30,9 @@ def sparql_query(query_string):
     return results
 
 def resource_sentences(entity_uri,type_uri):
+    """ Find subjects of the entity that match the answer type
+    and generate sentences of the form "entity predicate label answer"
+    """
     sentences = []
     query_string_o = ("select distinct str(?pl) as ?pLabel ?a where {{"
                         "<{0}> ?p ?a . "
@@ -35,18 +44,13 @@ def resource_sentences(entity_uri,type_uri):
     response = sparql_query(query_string_o)
     for r in response:
         sentences.append(entity_to_str(entity_uri)+' '+r['pLabel']+' '+entity_to_str(r['a']))
-    #query_string_s = ("select str(?pl) as ?pLabel ?a where {{"
-    #                    "?a ?p <{0}> . "
-    #                    "?a rdf:type <{1}> . "
-    #                    "?p rdfs:label ?pl . "
-    #                    "FILTER(lang(?pl) = 'en' || lang(?pl) = '') "
-    #                "}}").format(entity_uri,type_uri)
-    #response = sparql_query(query_string_s)
-    #for r in response:
-    #    sentences.append(entity_to_str(r['a'])+' '+r['pLabel']+' '+entity_to_str(entity_uri))
     return sentences
 
 def literal_sentences(entity_uri,literal_type):
+    """ Find literal subjects of the entity that match
+    the answer type and generate sentences of the form
+    "entity predicate label answer"
+    """
     sentences = []
     entity_string = entity_to_str(entity_uri)
     if literal_type == 'date':
@@ -80,11 +84,5 @@ def literal_sentences(entity_uri,literal_type):
     return sentences
 
 def entity_to_str(e):
+    # convert a dbpedia uri to a readable string
     return e[e.rindex("/")+1:].replace('_',' ')
-
-if __name__ == '__main__':
-    print(resource_sentences('http://dbpedia.org/resource/Greece','http://dbpedia.org/ontology/Person'))
-    print(literal_sentences('http://dbpedia.org/resource/Greece','date'))
-    print(literal_sentences('http://dbpedia.org/resource/Greece','number'))
-    print(literal_sentences('http://dbpedia.org/resource/Greece','string'))
-

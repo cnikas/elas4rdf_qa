@@ -2,9 +2,7 @@ import flask
 from flask import request, jsonify
 from answer_extraction import AnswerExtraction
 from answer_type_prediction import AnswerTypePrediction
-import answer_retrieval as ar
 import json
-import re
 
 app = flask.Flask(__name__)
 app.config['SECRET_KEY'] =  'e2b35432632f190f45201266'
@@ -44,4 +42,3 @@ def api_answer():
 
     return jsonify(response)
    
-#app.run(host= '0.0.0.0')

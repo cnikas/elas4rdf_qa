@@ -5,6 +5,8 @@ import csv
 import json
 
 class AnswerTypePrediction:
+    #This class contains methods for category and type prediction
+
     def __init__(self):
         category_model_dir = './resources/category_model'
         resource_model_dir = './resources/resource_type_model'
@@ -41,14 +43,12 @@ class AnswerTypePrediction:
 
     def classify_resource(self,q):
         input_ids = torch.tensor(self.resource_tokenizer.encode(q, add_special_tokens=True)).unsqueeze(0)  # Batch size 1
-        labels = torch.tensor([1]).unsqueeze(0)  # Batch size 1
         with torch.no_grad():
-            outputs = self.resource_model(input_ids, labels=labels)
-        logits = outputs[1]
+            outputs = self.resource_model(input_ids)
+        logits = outputs[0]
         l_array = logits.detach().numpy()[0]
         #normalize logits so that max is 1
         norm = [float(i)/max(l_array) for i in l_array]
-        result_before = np.argsort(norm)[::-1]
         #reward top class
         initial_top_index = np.argmax(norm)
         initial_top = self.hierarchy[self.id_to_label[str(initial_top_index)]]
@@ -59,7 +59,7 @@ class AnswerTypePrediction:
             for c in initial_top_children:
                 if c in self.label_to_id:
                     norm[int(self.label_to_id[c])] = norm[int(self.label_to_id[c])] + int(self.hierarchy[c]['level'])/6
-        #classes in descending order
+        #sort classes in descending order
         result = np.argsort(norm)[::-1]
         result_mapped = []
         for r in result:
