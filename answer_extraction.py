@@ -16,14 +16,15 @@ class AnswerExtraction:
         # Obtain a question from each given entity
         answers = []
         for e in entities:
-            output = self.pipeline(question,e['text'])
-            highlighted_text = e['text'][0:output['start']]+'<b>'+e['text'][output['start']:output['end']]+'</b>'+e['text'][output['end']:] 
-            answers.append({
-                'entity':e['uri'],
-                'answer':output['answer'],
-                'score':round(output['score'],3),
-                'text':highlighted_text
-                })
+            if e['text'] != '':
+                output = self.pipeline(question,e['text'])
+                highlighted_text = e['text'][0:output['start']]+'<b>'+e['text'][output['start']:output['end']]+'</b>'+e['text'][output['end']:] 
+                answers.append({
+                    'entity':e['uri'],
+                    'answer':output['answer'],
+                    'score':round(output['score'],3),
+                    'text':highlighted_text
+                    })
         return sorted(answers, key=lambda k: k['score'],reverse=True) 
 
     def extend_entities(self,entities,category,atype):
