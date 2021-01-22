@@ -42,6 +42,8 @@ def resource_sentences(entity_uri,type_uri):
                         "FILTER(lang(?pl) = 'en' || lang(?pl) = '') "
                     "}}").format(entity_uri,type_uri)
     response = sparql_query(query_string_o)
+    if len(response)>20:
+    	response = response[0:20]
     for r in response:
         sentences.append(entity_to_str(entity_uri)+' '+r['pLabel']+' '+entity_to_str(r['a']))
     return sentences
@@ -73,6 +75,8 @@ def literal_sentences(entity_uri,literal_type):
                         "FILTER(lang(?pl) = 'en' || lang(?pl) = '') "
                         "}}").format(entity_uri)         
         response = sparql_query(query_string)
+        if len(response)>20:
+    	    response = response[0:20]
         for r in response:
             if len(r['a'])<100:
                 isNumber = r['a'].replace('.','',1).isdigit()
