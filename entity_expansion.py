@@ -18,15 +18,16 @@ def sparql_query(query_string):
     response = requests.get(url,params=payload,headers=headers)
     try:
         response_json =  response.json()
+        keys = response_json['head']['vars']
+        results = []
+        for b in response_json['results']['bindings']:
+            result = {}
+            for k in keys:
+                result[k] = b[k]['value']
+            results.append(result)
     except json.decoder.JSONDecodeError:
-        print("sparql error") 
-    keys = response_json['head']['vars']
-    results = []
-    for b in response_json['results']['bindings']:
-        result = {}
-        for k in keys:
-            result[k] = b[k]['value']
-        results.append(result)
+        print("sparql error")
+        results = [] 
     return results
 
 def resource_sentences(entity_uri,type_uri):
