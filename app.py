@@ -35,7 +35,7 @@ def api_answer():
             found_types = atp.classify_resource(question)[0:10]
         else:
             found_types = [found_type]
-            without = False
+        without = False
 
     extended_entities = ae.extend_entities(entities,found_category,found_types[0],without)
     answers = ae.answer_extractive(question,extended_entities)
