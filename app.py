@@ -21,17 +21,23 @@ def api_answer():
         error_output = {'error':True}
         return jsonify(error_output)
 
-    found_category, found_type = atp.classify_category(question)
-
-    if found_category == "resource":
-        found_types = atp.classify_resource(question)[0:10]
-    else:
-        found_types = [found_type]
 
     entities_json = json.loads(args['entities'])
     entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in entities_json['results']['entities']]
-    print(entities)
-    extended_entities = ae.extend_entities(entities,found_category,found_types[0])
+    
+    if "without" in args:
+        found_category = ""
+        found_types = [""]
+        without = True
+    else:    
+        found_category, found_type = atp.classify_category(question)
+        if found_category == "resource":
+            found_types = atp.classify_resource(question)[0:10]
+        else:
+            found_types = [found_type]
+            without = False
+
+    extended_entities = ae.extend_entities(entities,found_category,found_types[0],without)
     answers = ae.answer_extractive(question,extended_entities)
 
     response = {
