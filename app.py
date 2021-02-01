@@ -49,7 +49,7 @@ def api_answer():
         response = {
             "category":found_category,
             "types":found_types[0],
-            "answers":answers
+            "answers":answers,
             "times":[round(t2-t1),round(t3-t2),round(t4-t3),round(t4-t1)]
         }
     else:
