@@ -45,7 +45,7 @@ def api_answer():
     answers = ae.answer_extractive(question,extended_entities)
     t4 = time.time()
 
-    it "time" in args:
+    if "time" in args:
         response = {
             "category":found_category,
             "types":found_types[0],
