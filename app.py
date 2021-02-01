@@ -46,7 +46,7 @@ def api_answer():
     t3 = time.time()
     answers = ae.answer_extractive(question,extended_entities)
     t4 = time.time()
-    times = [round(t2-t1,3),round(t3-t2,3),round(t4-t3,3),round(t4-t1,3)]
+    times.append([round(t2-t1,3),round(t3-t2,3),round(t4-t3,3),round(t4-t1,3)])
     with open('system_output_times.json', 'w') as outfile:
         json.dump(times, outfile)
 
