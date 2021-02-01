@@ -44,13 +44,14 @@ def api_answer():
     t3 = time.time()
     answers = ae.answer_extractive(question,extended_entities)
     t4 = time.time()
-
+    times = [str(round(t2-t1,3)),str(round(t3-t2,3)),str(round(t4-t3,3)),str(round(t4-t1,3))]
+    print(times)
     if "time" in args:
         response = {
             "category":found_category,
             "types":found_types[0],
             "answers":answers,
-            "times":[str(round(t2-t1,3)),str(round(t3-t2,3)),str(round(t4-t3,3)),str(round(t4-t1,3))]
+            "times":[round(t2-t1,3),round(t3-t2,3),round(t4-t3,3),round(t4-t1,3)]
         }
     else:
         response = {
