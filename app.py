@@ -11,6 +11,8 @@ print('Initializing...')
 ae = AnswerExtraction()
 atp = AnswerTypePrediction()
 print('\tDONE')
+
+times = []
  
 @app.route('/answer', methods=['GET'])
 def api_answer():
@@ -44,21 +46,15 @@ def api_answer():
     t3 = time.time()
     answers = ae.answer_extractive(question,extended_entities)
     t4 = time.time()
-    times = [str(round(t2-t1,3)),str(round(t3-t2,3)),str(round(t4-t3,3)),str(round(t4-t1,3))]
-    print(times)
-    if "time" in args:
-        response = {
-            "category":found_category,
-            "types":found_types[0],
-            "answers":answers,
-            "times":[round(t2-t1,3),round(t3-t2,3),round(t4-t3,3),round(t4-t1,3)]
-        }
-    else:
-        response = {
-            "category":found_category,
-            "types":found_types[0],
-            "answers":answers
-        }
+    times = [round(t2-t1,3),round(t3-t2,3),round(t4-t3,3),round(t4-t1,3)]
+    with open('system_output_times.json', 'w') as outfile:
+        json.dump(times, outfile)
+
+    response = {
+        "category":found_category,
+        "types":found_types[0],
+        "answers":answers
+    }
 
     return jsonify(response)
    
