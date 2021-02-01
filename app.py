@@ -3,6 +3,7 @@ from flask import request, jsonify
 from answer_extraction import AnswerExtraction
 from answer_type_prediction import AnswerTypePrediction
 import json
+import time
 
 app = flask.Flask(__name__)
 app.config['SECRET_KEY'] =  'e2b35432632f190f45201266'
@@ -25,6 +26,7 @@ def api_answer():
     entities_json = json.loads(args['entities'])
     entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in entities_json['results']['entities']]
     
+    t1 = time.time()
     if "without" in args:
         found_category = ""
         found_types = [""]
@@ -36,15 +38,26 @@ def api_answer():
         else:
             found_types = [found_type]
         without = False
-
+    
+    t2 = time.time()
     extended_entities = ae.extend_entities(entities,found_category,found_types[0],without)
+    t3 = time.time()
     answers = ae.answer_extractive(question,extended_entities)
+    t4 = time.time()
 
-    response = {
-        "category":found_category,
-        "types":found_types[0],
-        "answers":answers
-    }
+    it "time" in args:
+        response = {
+            "category":found_category,
+            "types":found_types[0],
+            "answers":answers
+            "times":[round(t2-t1),round(t3-t2),round(t4-t3),round(t4-t1)]
+        }
+    else:
+        response = {
+            "category":found_category,
+            "types":found_types[0],
+            "answers":answers
+        }
 
     return jsonify(response)
    
