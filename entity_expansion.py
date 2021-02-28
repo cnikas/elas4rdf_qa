@@ -1,7 +1,9 @@
 import requests
 import json
 
-"""This module contains methods to retrieve
+"""
+This module contains methods to retrieve entities
+from the elas4rdf search service, retrieve
 RDF nodes that match the answer type to a question
 and generate sentences to extend entity descriptions
 """
@@ -89,5 +91,27 @@ def literal_sentences(entity_uri,literal_type):
     return sentences
 
 def entity_to_str(e):
-    # convert a dbpedia uri to a readable string
+    # Convert a dbpedia uri to a readable string
     return e[e.rindex("/")+1:].replace('_',' ')
+
+def get_entities_from_elas4rdf(query, size=1000):
+    """
+    Get the list of entities from the elas4rdf search service
+    The parameter 'size' defines the number of triples to use to create the entities
+    """
+    url = "139.91.183.46:8080/elas4rdf_rest/high-level/"
+    payload = {
+        "query": query,
+        "type": entities,
+        "id": "dbpedia",
+        "size": size
+    }
+    headers = {"Accept":"application/json"}
+    response = requests.get(url,params=payload,headers=headers)
+    try:
+        response_json =  response.json()
+        entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response_json['results']['entities']]
+    except json.decoder.JSONDecodeError:
+        print("error from elas4rdf search service")
+        entities = [] 
+    return entities

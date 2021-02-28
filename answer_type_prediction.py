@@ -5,7 +5,7 @@ import csv
 import json
 
 class AnswerTypePrediction:
-    #This class contains methods for category and type prediction
+    #This class contains methods for question category prediction and answer type prediction
 
     def __init__(self):
         category_model_dir = './resources/category_model'

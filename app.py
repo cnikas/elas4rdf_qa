@@ -2,54 +2,42 @@ import flask
 from flask import request, jsonify
 from answer_extraction import AnswerExtraction
 from answer_type_prediction import AnswerTypePrediction
+from entity_expansion import get_entities_from_elas4rdf
 import json
-import time
 
 app = flask.Flask(__name__)
-app.config['SECRET_KEY'] =  'e2b35432632f190f45201266'
+
+# Initialize answer extraction and answer type prediction components
 print('Initializing...')
 ae = AnswerExtraction()
 atp = AnswerTypePrediction()
 print('\tDONE')
 
-times = []
- 
+"""
+Parameters: question - a natural language question
+Returns: question category, answer type, and a list of answers
+""" 
 @app.route('/answer', methods=['GET'])
 def api_answer():
-    args = request.args.to_dict()
 
+    args = request.args.to_dict()
     if 'question' in args:
         question = args['question']
     else:
         error_output = {'error':True}
         return jsonify(error_output)
 
+    entities = get_entities_from_elas4rdf(question)
 
-    entities_json = json.loads(args['entities'])
-    entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in entities_json['results']['entities']]
+    found_category, found_type = atp.classify_category(question)
+    if found_category == "resource":
+        found_types = atp.classify_resource(question)[0:10]
+    else:
+        found_types = [found_type]
     
-    t1 = time.time()
-    if "without" in args:
-        found_category = ""
-        found_types = [""]
-        without = True
-    else:    
-        found_category, found_type = atp.classify_category(question)
-        if found_category == "resource":
-            found_types = atp.classify_resource(question)[0:10]
-        else:
-            found_types = [found_type]
-        without = False
-    
-    t2 = time.time()
     extended_entities = ae.extend_entities(entities,found_category,found_types[0],without)
-    t3 = time.time()
     answers = ae.answer_extractive(question,extended_entities)
-    t4 = time.time()
-    times.append([round(t2-t1,3),round(t3-t2,3),round(t4-t3,3),round(t4-t1,3)])
-    with open('system_output_times.json', 'w') as outfile:
-        json.dump(times, outfile)
-
+    
     response = {
         "category":found_category,
         "types":found_types[0],
@@ -57,4 +45,3 @@ def api_answer():
     }
 
     return jsonify(response)
-   
