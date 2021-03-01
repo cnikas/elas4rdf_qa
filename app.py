@@ -48,5 +48,4 @@ def api_answer():
 
 @app.route('/', methods=['GET'])
 def greet():
-    return """
-        Usage: /answer?question=...
+    return "Usage: /answer?question=..."
