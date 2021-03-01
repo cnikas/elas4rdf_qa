@@ -45,3 +45,8 @@ def api_answer():
     }
 
     return jsonify(response)
+
+@app.route('/', methods=['GET'])
+def greet():
+    return """
+        Usage: /answer?question=...
