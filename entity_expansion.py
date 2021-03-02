@@ -99,11 +99,9 @@ def get_entities_from_elas4rdf(query, size=1000):
     Get the list of entities from the elas4rdf search service
     The parameter 'size' defines the number of triples to use to create the entities
     """
-    url = "http://139.91.183.46:8080/elas4rdf_rest/high-level/"
+    url = "https://demos.isl.ics.forth.gr/elas4rdf/entities_json"
     payload = {
         "query": query,
-        "type": "entities",
-        "id": "dbpedia",
         "size": size
     }
     headers = {"Accept":"application/json"}
