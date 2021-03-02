@@ -9,8 +9,8 @@ app = flask.Flask(__name__)
 app.config['SECRET_KEY'] =  'e2b35432632f190f45201266'
 # Initialize answer extraction and answer type prediction components
 print('Initializing...')
-ae = AnswerExtraction()
-atp = AnswerTypePrediction()
+#ae = AnswerExtraction()
+#atp = AnswerTypePrediction()
 print('\tDONE')
 
 """
@@ -35,7 +35,7 @@ def api_answer():
     else:
         found_types = [found_type]
     
-    extended_entities = ae.extend_entities(entities,found_category,found_types[0],without)
+    extended_entities = ae.extend_entities(entities,found_category,found_types[0])
     answers = ae.answer_extractive(question,extended_entities)
     
     response = {
