@@ -102,7 +102,7 @@ def get_entities_from_elas4rdf(query, size=1000):
     url = "139.91.183.46:8080/elas4rdf_rest/high-level/"
     payload = {
         "query": query,
-        "type": entities,
+        "type": "entities",
         "id": "dbpedia",
         "size": size
     }
