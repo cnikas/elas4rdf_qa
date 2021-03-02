@@ -99,7 +99,7 @@ def get_entities_from_elas4rdf(query, size=1000):
     Get the list of entities from the elas4rdf search service
     The parameter 'size' defines the number of triples to use to create the entities
     """
-    url = "139.91.183.46:8080/elas4rdf_rest/high-level/"
+    url = "http://139.91.183.46:8080/elas4rdf_rest/high-level/"
     payload = {
         "query": query,
         "type": "entities",
