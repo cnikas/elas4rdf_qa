@@ -28,6 +28,7 @@ def api_answer():
         return jsonify(error_output)
 
     entities = get_entities_from_elas4rdf(question)
+    print(entities)
 
     found_category, found_type = atp.classify_category(question)
     if found_category == "resource":

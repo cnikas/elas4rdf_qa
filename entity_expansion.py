@@ -102,7 +102,7 @@ def get_entities_from_elas4rdf(query, size=1000):
     url = "https://demos.isl.ics.forth.gr/elas4rdf/entities_json"
     payload = {
         "query": query,
-        "size": size
+        "size": str(size)
     }
     headers = {"Accept":"application/json"}
     response = requests.get(url,params=payload,headers=headers)
