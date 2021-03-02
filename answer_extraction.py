@@ -27,27 +27,24 @@ class AnswerExtraction:
                     })
         return sorted(answers, key=lambda k: k['score'],reverse=True) 
 
-    def extend_entities(self,entities,category,atype,without):
+    def extend_entities(self,entities,category,atype):
         # Extend entity descriptions with RDF nodes matching the answer type
-        if without:
-            extended = entities
-        else:
-            extended = []
-            for e in entities:
-                if(category=='literal'):
-                    sentences = expansion.literal_sentences(e['uri'],atype)
-                elif(category=='resource'):
-                    type_uri = 'http://dbpedia.org/ontology/'+atype
-                    sentences = expansion.resource_sentences(e['uri'],type_uri)
-                else:
-                    sentences = []
-                if(e['rdfs_comment'] == "[]"):
-                    clean_rdfs_comment = ""
-                else:
-                    clean_rdfs_comment = e['rdfs_comment'][3:-4]
-                new_text = clean_rdfs_comment + ". ".join(sentences)
-                extended.append({
-                    'uri':e['uri'],
-                    'text':new_text
-                    })
+        extended = []
+        for e in entities:
+            if(category=='literal'):
+                sentences = expansion.literal_sentences(e['uri'],atype)
+            elif(category=='resource'):
+                type_uri = 'http://dbpedia.org/ontology/'+atype
+                sentences = expansion.resource_sentences(e['uri'],type_uri)
+            else:
+                sentences = []
+            if(e['rdfs_comment'] == "[]"):
+                clean_rdfs_comment = ""
+            else:
+                clean_rdfs_comment = e['rdfs_comment'][3:-4]
+            new_text = clean_rdfs_comment + ". ".join(sentences)
+            extended.append({
+                'uri':e['uri'],
+                'text':new_text
+                })
         return extended
