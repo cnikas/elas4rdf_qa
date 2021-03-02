@@ -28,7 +28,12 @@ def api_answer():
         return jsonify(error_output)
 
     entities = get_entities_from_elas4rdf(question)
-    print(entities)
+    """
+    to improve performance when we receive a large number of entities
+    we use only the first 10
+    """
+    if len(entities)>10:
+        entities = entities[0:10]
 
     found_category, found_type = atp.classify_category(question)
     if found_category == "resource":

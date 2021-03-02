@@ -1,0 +1,74 @@
+[2021-03-02 17:53:15 +0200] [7263] [INFO] Starting gunicorn 20.0.4
+[2021-03-02 17:53:15 +0200] [7263] [ERROR] Invalid address: ('139.91.183.46', 5000)
+[2021-03-02 17:53:15 +0200] [7263] [ERROR] Retrying in 1 second.
+[2021-03-02 17:53:16 +0200] [7263] [ERROR] Invalid address: ('139.91.183.46', 5000)
+[2021-03-02 17:53:16 +0200] [7263] [ERROR] Retrying in 1 second.
+[2021-03-02 17:53:17 +0200] [7263] [ERROR] Invalid address: ('139.91.183.46', 5000)
+[2021-03-02 17:53:17 +0200] [7263] [ERROR] Retrying in 1 second.
+[2021-03-02 17:53:18 +0200] [7263] [ERROR] Invalid address: ('139.91.183.46', 5000)
+[2021-03-02 17:53:18 +0200] [7263] [ERROR] Retrying in 1 second.
+[2021-03-02 17:53:19 +0200] [7263] [ERROR] Invalid address: ('139.91.183.46', 5000)
+[2021-03-02 17:53:19 +0200] [7263] [ERROR] Retrying in 1 second.
+[2021-03-02 17:53:20 +0200] [7263] [ERROR] Can't connect to ('139.91.183.46', 5000)
+[2021-03-02 17:53:43 +0200] [7311] [INFO] Starting gunicorn 20.0.4
+[2021-03-02 17:53:43 +0200] [7311] [INFO] Listening at: http://83.212.113.65:5000 (7311)
+[2021-03-02 17:53:43 +0200] [7311] [INFO] Using worker: sync
+[2021-03-02 17:53:43 +0200] [7314] [INFO] Booting worker with pid: 7314
+[2021-03-02 17:53:54 +0200] [7339] [INFO] Booting worker with pid: 7339
+[2021-03-02 17:54:00 +0200] [7353] [INFO] Starting gunicorn 20.0.4
+[2021-03-02 17:54:00 +0200] [7353] [ERROR] Connection in use: ('83.212.113.65', 5000)
+[2021-03-02 17:54:00 +0200] [7353] [ERROR] Retrying in 1 second.
+[2021-03-02 17:54:01 +0200] [7353] [ERROR] Connection in use: ('83.212.113.65', 5000)
+[2021-03-02 17:54:01 +0200] [7353] [ERROR] Retrying in 1 second.
+[2021-03-02 17:54:02 +0200] [7353] [ERROR] Connection in use: ('83.212.113.65', 5000)
+[2021-03-02 17:54:02 +0200] [7353] [ERROR] Retrying in 1 second.
+[2021-03-02 17:54:03 +0200] [7353] [ERROR] Connection in use: ('83.212.113.65', 5000)
+[2021-03-02 17:54:03 +0200] [7353] [ERROR] Retrying in 1 second.
+[2021-03-02 17:54:04 +0200] [7353] [ERROR] Connection in use: ('83.212.113.65', 5000)
+[2021-03-02 17:54:04 +0200] [7353] [ERROR] Retrying in 1 second.
+[2021-03-02 17:54:05 +0200] [7353] [ERROR] Can't connect to ('83.212.113.65', 5000)
+[2021-03-02 17:54:56 +0200] [7447] [INFO] Starting gunicorn 20.0.4
+[2021-03-02 17:54:56 +0200] [7447] [INFO] Listening at: http://0.0.0.0:5000 (7447)
+[2021-03-02 17:54:56 +0200] [7447] [INFO] Using worker: sync
+[2021-03-02 17:54:56 +0200] [7450] [INFO] Booting worker with pid: 7450
+[2021-03-02 17:56:21 +0200] [7592] [INFO] Booting worker with pid: 7592
+[2021-03-02 17:56:52 +0200] [7648] [INFO] Starting gunicorn 20.0.4
+[2021-03-02 17:56:52 +0200] [7648] [INFO] Listening at: http://83.212.113.65:5000 (7648)
+[2021-03-02 17:56:52 +0200] [7648] [INFO] Using worker: sync
+[2021-03-02 17:56:52 +0200] [7651] [INFO] Booting worker with pid: 7651
+[2021-03-02 18:07:16 +0200] [7648] [CRITICAL] WORKER TIMEOUT (pid:7651)
+[2021-03-02 18:07:16 +0200] [7651] [INFO] Worker exiting (pid: 7651)
+[2021-03-02 18:07:17 +0200] [8604] [INFO] Booting worker with pid: 8604
+[2021-03-02 18:10:11 +0200] [7648] [CRITICAL] WORKER TIMEOUT (pid:8604)
+[2021-03-02 18:10:11 +0200] [8604] [INFO] Worker exiting (pid: 8604)
+[2021-03-02 18:10:12 +0200] [8873] [INFO] Booting worker with pid: 8873
+[2021-03-02 18:13:03 +0200] [7648] [CRITICAL] WORKER TIMEOUT (pid:8873)
+[2021-03-02 18:13:03 +0200] [8873] [INFO] Worker exiting (pid: 8873)
+[2021-03-02 18:13:04 +0200] [9218] [INFO] Booting worker with pid: 9218
+[2021-03-02 18:15:57 +0200] [7648] [CRITICAL] WORKER TIMEOUT (pid:9218)
+[2021-03-02 18:15:57 +0200] [9218] [INFO] Worker exiting (pid: 9218)
+[2021-03-02 18:15:58 +0200] [9491] [INFO] Booting worker with pid: 9491
+[2021-03-02 18:18:49 +0200] [7648] [CRITICAL] WORKER TIMEOUT (pid:9491)
+[2021-03-02 18:18:49 +0200] [9491] [INFO] Worker exiting (pid: 9491)
+[2021-03-02 18:18:50 +0200] [9759] [INFO] Booting worker with pid: 9759
+[2021-03-02 18:21:42 +0200] [7648] [CRITICAL] WORKER TIMEOUT (pid:9759)
+[2021-03-02 18:21:42 +0200] [9759] [INFO] Worker exiting (pid: 9759)
+[2021-03-02 18:21:43 +0200] [10030] [INFO] Booting worker with pid: 10030
+[2021-03-02 18:30:16 +0200] [7648] [INFO] Handling signal: term
+[2021-03-02 18:30:16 +0200] [10030] [INFO] Worker exiting (pid: 10030)
+[2021-03-02 18:30:17 +0200] [7648] [INFO] Shutting down: Master
+[2021-03-02 18:30:49 +0200] [10867] [INFO] Starting gunicorn 20.0.4
+[2021-03-02 18:30:49 +0200] [10867] [INFO] Listening at: http://83.212.113.65:5000 (10867)
+[2021-03-02 18:30:49 +0200] [10867] [INFO] Using worker: sync
+[2021-03-02 18:30:49 +0200] [10870] [INFO] Booting worker with pid: 10870
+[2021-03-02 18:37:13 +0200] [11472] [INFO] Starting gunicorn 20.0.4
+[2021-03-02 18:37:13 +0200] [11472] [INFO] Listening at: http://83.212.113.65:5000 (11472)
+[2021-03-02 18:37:13 +0200] [11472] [INFO] Using worker: sync
+[2021-03-02 18:37:13 +0200] [11475] [INFO] Booting worker with pid: 11475
+[2021-03-02 19:24:26 +0200] [16238] [INFO] Starting gunicorn 20.0.4
+[2021-03-02 19:24:26 +0200] [16238] [INFO] Listening at: http://83.212.113.65:5000 (16238)
+[2021-03-02 19:24:26 +0200] [16238] [INFO] Using worker: sync
+[2021-03-02 19:24:27 +0200] [16241] [INFO] Booting worker with pid: 16241
+[2021-03-02 19:27:46 +0200] [16238] [CRITICAL] WORKER TIMEOUT (pid:16241)
+[2021-03-02 19:27:46 +0200] [16241] [INFO] Worker exiting (pid: 16241)
+[2021-03-02 19:27:47 +0200] [16557] [INFO] Booting worker with pid: 16557
