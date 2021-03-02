@@ -9,8 +9,8 @@ app = flask.Flask(__name__)
 app.config['SECRET_KEY'] =  'e2b35432632f190f45201266'
 # Initialize answer extraction and answer type prediction components
 print('Initializing...')
-#ae = AnswerExtraction()
-#atp = AnswerTypePrediction()
+ae = AnswerExtraction()
+atp = AnswerTypePrediction()
 print('\tDONE')
 
 """
