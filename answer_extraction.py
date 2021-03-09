@@ -1,4 +1,4 @@
-from transformers import RobertaTokenizer, RobertaForQuestionAnswering, QuestionAnsweringPipeline
+from transformers import DistilBertTokenizer, DistilBertForQuestionAnswering, QuestionAnsweringPipeline
 import torch
 import entity_expansion as expansion
 
@@ -7,9 +7,10 @@ class AnswerExtraction:
 
     def __init__(self):
         # Initalisation of pretrained extractive QA model
-        model_name = "deepset/roberta-base-squad2"
-        tokenizer = RobertaTokenizer.from_pretrained(model_name)
-        model = RobertaForQuestionAnswering.from_pretrained(model_name)
+        #model_name = "deepset/roberta-base-squad2"
+        model_name = "distilbert-base-uncased-distilled-squad" 
+        tokenizer = DistilBertTokenizer.from_pretrained(model_name)
+        model = DistilBertForQuestionAnswering.from_pretrained(model_name)
         self.pipeline = QuestionAnsweringPipeline(model=model,tokenizer=tokenizer,framework="pt",device=-1)
         
     def answer_extractive(self,question,entities):
