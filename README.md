@@ -14,7 +14,7 @@ Endpoint: `/answer`, Parameter: `question`, Example: `/answer?question=who is th
 
 ## To Start:
 1. development server: `flask run --host=0.0.0.0`
-2. production server: `gunicorn IP:PORT --workers 1 --limit-request-line 0 app:app --daemon --error-logfile gunicorn_error.log --timeout 120`
+2. production server: `gunicorn -b IP:PORT --workers 1 --limit-request-line 0 app:app --daemon --error-logfile gunicorn_error.log --timeout 120`
 
 ## To Stop
 1. top -u `USERNAME`
