@@ -25,6 +25,7 @@ for q in data:
         "question": q["utterance"],
         "answers": clean_answers(q["targetValue"])
     }
+    id += 1
     output.append(current)
     
 with open('webquestions_test_converted.json', 'w') as outfile:
