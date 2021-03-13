@@ -108,7 +108,16 @@ def get_entities_from_elas4rdf(query, size=1000):
     response = requests.get(url,params=payload,headers=headers)
     try:
         response_json =  response.json()
-        entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response_json['results']['entities']]
+        entities = []
+        for e in response_json['results']['entities']:
+            rdfs = "[]"
+            if 'rdfs_comment' in e['ext']:
+                rdfs = e['ext']['rdfs_comment']
+            entities.append({
+                'uri':e['entity'],
+                'rdfs_comment': rdfs
+            })
+        # entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response_json['results']['entities']]
     except json.decoder.JSONDecodeError:
         print("error from elas4rdf search service")
         entities = [] 
