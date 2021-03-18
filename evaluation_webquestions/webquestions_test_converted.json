@@ -158,7 +158,7 @@
         "question": "what is my timezone in louisiana?",
         "answers": [
             "Central Time Zone",
-            "UTC−06:00"
+            "UTC\u221206:00"
         ]
     },
     {
@@ -249,7 +249,7 @@
         "id": 31,
         "question": "what are some of the traditions of islam?",
         "answers": [
-            "Zakāt",
+            "Zak\u0101t",
             "Salah",
             "Hajj",
             "Islamic dietary laws",
@@ -336,7 +336,7 @@
         "question": "where is the galapagos islands located on a world map?",
         "answers": [
             "Pacific Ocean",
-            "Galápagos Province"
+            "Gal\u00e1pagos Province"
         ]
     },
     {
@@ -405,7 +405,7 @@
         "id": 50,
         "question": "what did the islamic people believe in?",
         "answers": [
-            "Zakāt",
+            "Zak\u0101t",
             "Salah",
             "Hajj",
             "Islamic dietary laws",
@@ -1305,7 +1305,7 @@
         "id": 153,
         "question": "where herman cain stance on the issues?",
         "answers": [
-            "Évocateur: The Morton Downey Jr. Movie"
+            "\u00c9vocateur: The Morton Downey Jr. Movie"
         ]
     },
     {
@@ -1319,8 +1319,8 @@
             "Puerta del Sol",
             "Royal Palace of Madrid",
             "Museo de Lazaro Galdiano",
-            "Gran Vía",
-            "Museo Nacional Centro de Arte Reina Sofía",
+            "Gran V\u00eda",
+            "Museo Nacional Centro de Arte Reina Sof\u00eda",
             "Plaza Mayor, Madrid"
         ]
     },
@@ -1365,7 +1365,7 @@
         "id": 160,
         "question": "what time in hilo hawaii?",
         "answers": [
-            "Hawaii–Aleutian Time Zone"
+            "Hawaii\u2013Aleutian Time Zone"
         ]
     },
     {
@@ -1373,7 +1373,7 @@
         "question": "where did rudolf virchow conduct his research?",
         "answers": [
             "Humboldt University of Berlin",
-            "University of Würzburg"
+            "University of W\u00fcrzburg"
         ]
     },
     {
@@ -1475,7 +1475,7 @@
         "question": "what airport do you fly into to get to destin fl?",
         "answers": [
             "Northwest Florida Regional Airport",
-            "Destin–Fort Walton Beach Airport"
+            "Destin\u2013Fort Walton Beach Airport"
         ]
     },
     {
@@ -1645,7 +1645,7 @@
         "id": 195,
         "question": "where did the iroquois indians come from?",
         "answers": [
-            "Québec"
+            "Qu\u00e9bec"
         ]
     },
     {
@@ -1682,8 +1682,8 @@
             "El Salvador",
             "Guatemala",
             "Costa Rica",
-            "Cuauhtémoc, D.F.",
-            "Great Pyramid of Tenochtitlán",
+            "Cuauht\u00e9moc, D.F.",
+            "Great Pyramid of Tenochtitl\u00e1n",
             "Paraguay",
             "Belize"
         ]
@@ -2102,7 +2102,7 @@
         "id": 252,
         "question": "what type of currency do they use in england?",
         "answers": [
-            "UK £"
+            "UK \u00a3"
         ]
     },
     {
@@ -2130,7 +2130,7 @@
             "Brunei",
             "Singapore",
             "Malaysia",
-            "Shěn",
+            "Sh\u011bn",
             "Vietnam",
             "China"
         ]
@@ -2227,10 +2227,10 @@
         "id": 266,
         "question": "which airport to fly into rome?",
         "answers": [
-            "Ciampino – G.B. Pastine International Airport",
+            "Ciampino \u2013 G.B. Pastine International Airport",
             "Roma Termini railway station",
             "Civitavecchia Ferry Terminal",
-            "Leonardo da Vinci–Fiumicino Airport"
+            "Leonardo da Vinci\u2013Fiumicino Airport"
         ]
     },
     {
@@ -2260,7 +2260,7 @@
         "id": 269,
         "question": "what year was lebron james rookie season?",
         "answers": [
-            "2003–04 NBA season"
+            "2003\u201304 NBA season"
         ]
     },
     {
@@ -2296,7 +2296,7 @@
         "id": 274,
         "question": "when did michael jordan return to the nba?",
         "answers": [
-            "2001–02 NBA season"
+            "2001\u201302 NBA season"
         ]
     },
     {
@@ -2600,7 +2600,7 @@
         "id": 311,
         "question": "what kind of money should i take to costa rica?",
         "answers": [
-            "Costa Rican colón"
+            "Costa Rican col\u00f3n"
         ]
     },
     {
@@ -2729,7 +2729,7 @@
         "id": 326,
         "question": "who is shakira married to?",
         "answers": [
-            "Gerard Piqué"
+            "Gerard Piqu\u00e9"
         ]
     },
     {
@@ -3032,7 +3032,7 @@
             "Prater",
             "St. Peter's Church",
             "St. Stephen's Cathedral, Vienna",
-            "Schönbrunn Palace",
+            "Sch\u00f6nbrunn Palace",
             "Jesuit Church, Vienna",
             "Karlskirche, Vienna",
             "Rathaus, Vienna",
@@ -3089,9 +3089,9 @@
             "Irish",
             "English Language",
             "Welsh Language",
-            "Guernésiais",
+            "Guern\u00e9siais",
             "Ulster Scots dialects",
-            "Jèrriais",
+            "J\u00e8rriais",
             "Manx Language"
         ]
     },
@@ -3239,7 +3239,7 @@
             "Chinese",
             "Simplified Chinese character",
             "'Phags-pa script",
-            "Nüshu script",
+            "N\u00fcshu script",
             "Chinese characters"
         ]
     },
@@ -3317,7 +3317,7 @@
         "id": 394,
         "question": "what are the two official languages of paraguay?",
         "answers": [
-            "Paraguayan Guaraní",
+            "Paraguayan Guaran\u00ed",
             "Spanish Language"
         ]
     },
@@ -3533,7 +3533,7 @@
         "answers": [
             "Yugoslav Wars",
             "Operation Tiger",
-            "Croat–Bosniak War",
+            "Croat\u2013Bosniak War",
             "Operation Deny Flight",
             "Operation Summer '95",
             "Operation Sana",
@@ -3681,7 +3681,7 @@
         "id": 438,
         "question": "where did they find jenni rivera's body?",
         "answers": [
-            "Iturbide, Nuevo León"
+            "Iturbide, Nuevo Le\u00f3n"
         ]
     },
     {
@@ -3702,8 +3702,8 @@
         "answers": [
             "Mountain Time Zone",
             "Central Time Zone",
-            "UTC−07:00",
-            "UTC−06:00"
+            "UTC\u221207:00",
+            "UTC\u221206:00"
         ]
     },
     {
@@ -4097,7 +4097,7 @@
         "id": 488,
         "question": "who did veronica lake mary?",
         "answers": [
-            "André De Toth",
+            "Andr\u00e9 De Toth",
             "Joseph A. McCarthy",
             "Robert Carleton-Munro",
             "John S. Detlie"
@@ -4138,7 +4138,7 @@
             "Sweet Little Sixteen",
             "California Calling",
             "Honey Don't",
-            "Don’t Pass Me By"
+            "Don\u2019t Pass Me By"
         ]
     },
     {
@@ -4273,7 +4273,7 @@
         "question": "what the time zone in england?",
         "answers": [
             "Greenwich Mean Time",
-            "UTC±00:00"
+            "UTC\u00b100:00"
         ]
     },
     {
@@ -4365,7 +4365,7 @@
         "id": 519,
         "question": "what type of money do they use in costa rica?",
         "answers": [
-            "Costa Rican colón"
+            "Costa Rican col\u00f3n"
         ]
     },
     {
@@ -4513,7 +4513,7 @@
         "id": 537,
         "question": "who led the mexican army at the battle of the alamo?",
         "answers": [
-            "Joaquín Amaro"
+            "Joaqu\u00edn Amaro"
         ]
     },
     {
@@ -4602,7 +4602,7 @@
         "id": 548,
         "question": "what money do i use in costa rica?",
         "answers": [
-            "Costa Rican colón"
+            "Costa Rican col\u00f3n"
         ]
     },
     {
@@ -4742,7 +4742,7 @@
         "id": 567,
         "question": "where to go in vietnam beaches?",
         "answers": [
-            "Đắk Nông Province"
+            "\u0110\u1eafk N\u00f4ng Province"
         ]
     },
     {
@@ -4911,7 +4911,7 @@
         "id": 589,
         "question": "what wars did robert e lee served in?",
         "answers": [
-            "Mexican–American War",
+            "Mexican\u2013American War",
             "American Civil War",
             "Battle of Chancellorsville"
         ]
@@ -5251,10 +5251,10 @@
             "Uw Cuwa",
             "Andoque language",
             "Spanish Language",
-            "Camsá Language",
+            "Cams\u00e1 Language",
             "Cogui Language",
             "Guambiano Language",
-            "Páez language",
+            "P\u00e1ez language",
             "Arhuaco Language"
         ]
     },
@@ -5322,7 +5322,7 @@
         "id": 640,
         "question": "what year did the bulls get rodman?",
         "answers": [
-            "1995–96 NBA season"
+            "1995\u201396 NBA season"
         ]
     },
     {
@@ -5364,11 +5364,11 @@
         "answers": [
             "William Torres Alegria",
             "Ana Sol Gutierrez",
-            "Julio Enrique Martínez",
-            "Andrés Eduardo Menéndez",
+            "Julio Enrique Mart\u00ednez",
+            "Andr\u00e9s Eduardo Men\u00e9ndez",
             "Erwin Raphael McManus",
             "Willian Renderos Iraheta",
-            "Óscar Navarro",
+            "\u00d3scar Navarro",
             "Ruben Cedillos",
             "Roberto Carlos Martinez",
             "Raul Antonio Garcia"
@@ -5669,8 +5669,8 @@
         "answers": [
             "Argentina national football team",
             "Manchester City F.C.",
-            "Club Atlético Independiente",
-            "Atlético Madrid"
+            "Club Atl\u00e9tico Independiente",
+            "Atl\u00e9tico Madrid"
         ]
     },
     {
@@ -6101,7 +6101,7 @@
         "id": 736,
         "question": "what kind of money do i need in costa rica?",
         "answers": [
-            "Costa Rican colón"
+            "Costa Rican col\u00f3n"
         ]
     },
     {
@@ -6134,13 +6134,13 @@
             "Cello Sonata",
             "La chute de la maison Usher",
             "L'enfant prodigue",
-            "Prélude à l'après-midi d'un faune",
+            "Pr\u00e9lude \u00e0 l'apr\u00e8s-midi d'un faune",
             "Jeux",
             "String Quartet",
-            "Le martyre de Saint Sébastien",
+            "Le martyre de Saint S\u00e9bastien",
             "Le diable dans le beffroi",
-            "Rodrigue et Chimène",
-            "Pelléas et Mélisande"
+            "Rodrigue et Chim\u00e8ne",
+            "Pell\u00e9as et M\u00e9lisande"
         ]
     },
     {
@@ -6183,7 +6183,7 @@
             "Kathleen Cavendish",
             "Patricia Kennedy Lawford",
             "Jean Kennedy Smith",
-            "Eunice- Kennedy Shriver",
+            "Eunice Kennedy Shriver",
             "Joseph P. Kennedy, Jr."
         ]
     },
@@ -6219,10 +6219,10 @@
             "Uw Cuwa",
             "Andoque language",
             "Spanish Language",
-            "Camsá Language",
+            "Cams\u00e1 Language",
             "Cogui Language",
             "Guambiano Language",
-            "Páez language",
+            "P\u00e1ez language",
             "Arhuaco Language"
         ]
     },
@@ -6577,14 +6577,14 @@
         "answers": [
             "Amitabha Sutra",
             "Tibetan Buddhist canon",
-            "Mahāvastu",
-            "Āgama",
+            "Mah\u0101vastu",
+            "\u0100gama",
             "Srimala Sutra",
             "Longchen Nyingthig",
-            "Gangōji Garan Engi",
+            "Gang\u014dji Garan Engi",
             "Mahayana sutras",
             "Vimalakirti Sutra",
-            "Pāli Canon"
+            "P\u0101li Canon"
         ]
     },
     {
@@ -7213,7 +7213,7 @@
             "Kemah Boardwalk",
             "Space Center Houston",
             "Downtown Aquarium, Houston",
-            "Hanna–Barbera Land",
+            "Hanna\u2013Barbera Land",
             "Bayou Bend",
             "SplashTown Houston",
             "Houston Zoo"
@@ -7235,7 +7235,7 @@
             "Garden Party",
             "The Burning Plain",
             "Like Crazy",
-            "Winter’s Bone",
+            "Winter\u2019s Bone",
             "The Beaver",
             "X-Men: First Class",
             "Devil You Know",
@@ -7298,7 +7298,7 @@
         "question": "where did hugo chavez go to school?",
         "answers": [
             "Daniel Florencio O'Leary School",
-            "Universidad Simón Bolívar",
+            "Universidad Sim\u00f3n Bol\u00edvar",
             "Experimental Security University",
             "Julian Pino School",
             "Military academy of Venezuela"
@@ -7950,7 +7950,7 @@
         "id": 952,
         "question": "where did the israel palestine conflict start?",
         "answers": [
-            "1936–39 Arab revolt in Palestine"
+            "1936\u201339 Arab revolt in Palestine"
         ]
     },
     {
@@ -8003,11 +8003,11 @@
         "answers": [
             "William Torres Alegria",
             "Ana Sol Gutierrez",
-            "Julio Enrique Martínez",
-            "Andrés Eduardo Menéndez",
+            "Julio Enrique Mart\u00ednez",
+            "Andr\u00e9s Eduardo Men\u00e9ndez",
             "Erwin Raphael McManus",
             "Willian Renderos Iraheta",
-            "Óscar Navarro",
+            "\u00d3scar Navarro",
             "Ruben Cedillos",
             "Roberto Carlos Martinez",
             "Raul Antonio Garcia"
@@ -8212,7 +8212,7 @@
         "question": "where did tennessee williams go to college?",
         "answers": [
             "Washington University in St. Louis",
-            "University of Missouri–Columbia",
+            "University of Missouri\u2013Columbia",
             "University of Iowa",
             "The New School"
         ]
@@ -8289,7 +8289,7 @@
             "2010 Australian Open",
             "2012 Wimbledon Championships",
             "2012 US Open",
-            "2010 Mutua Madrileña Madrid Open",
+            "2010 Mutua Madrile\u00f1a Madrid Open",
             "2011 Rogers Cup",
             "2010 Wimbledon Championships",
             "2009 Australian Open",
@@ -8434,9 +8434,9 @@
         "id": 1008,
         "question": "what district does nancy pelosi represent?",
         "answers": [
-            "California’s 5th congressional district",
-            "California’s 8th congressional district",
-            "California’s 12th congressional district"
+            "California\u2019s 5th congressional district",
+            "California\u2019s 8th congressional district",
+            "California\u2019s 12th congressional district"
         ]
     },
     {
@@ -8637,9 +8637,9 @@
             "Academy Award for Actress in a Supporting Role",
             "BFCA Critics' Choice Award for Best Supporting Actress",
             "Golden Globe Award for Best Performance by an Actress In A Mini-series or Motion Picture Made for Television",
-            "Satellite Award for Best Actress – Miniseries or Television Film",
+            "Satellite Award for Best Actress \u2013 Miniseries or Television Film",
             "People's Choice Award for Favorite Female Action Star",
-            "Satellite Award for Best Actress – Motion Picture Drama",
+            "Satellite Award for Best Actress \u2013 Motion Picture Drama",
             "Golden Globe Award for Best Supporting Actress - Film"
         ]
     },
@@ -8711,10 +8711,10 @@
             "Uw Cuwa",
             "Andoque language",
             "Spanish Language",
-            "Camsá Language",
+            "Cams\u00e1 Language",
             "Cogui Language",
             "Guambiano Language",
-            "Páez language",
+            "P\u00e1ez language",
             "Arhuaco Language"
         ]
     },
@@ -8722,7 +8722,7 @@
         "id": 1042,
         "question": "what currency does england use now?",
         "answers": [
-            "UK £"
+            "UK \u00a3"
         ]
     },
     {
@@ -8944,7 +8944,7 @@
         "id": 1068,
         "question": "what school did douglas macarthur go to?",
         "answers": [
-            "TMI — The Episcopal School of Texas"
+            "TMI \u2014 The Episcopal School of Texas"
         ]
     },
     {
@@ -9019,7 +9019,7 @@
         "question": "who designed national flag of italy?",
         "answers": [
             "Corriere della Sera",
-            "l'Unità",
+            "l'Unit\u00e0",
             "Il Foglio",
             "la Repubblica",
             "Il Messaggero",
@@ -9663,8 +9663,8 @@
         "id": 1151,
         "question": "who was juan ponce de leon family?",
         "answers": [
-            "Leonor de Guzmán de Silva",
-            "Juan Ponce de León, II conde de Arcos"
+            "Leonor de Guzm\u00e1n de Silva",
+            "Juan Ponce de Le\u00f3n, II conde de Arcos"
         ]
     },
     {
@@ -9901,8 +9901,8 @@
         "id": 1182,
         "question": "what is the current time in kauai hawaii?",
         "answers": [
-            "Hawaii–Aleutian Time Zone",
-            "UTC−10:00"
+            "Hawaii\u2013Aleutian Time Zone",
+            "UTC\u221210:00"
         ]
     },
     {
@@ -10337,16 +10337,16 @@
         "id": 1237,
         "question": "where to visit in paris with children?",
         "answers": [
-            "Musée Maillol",
+            "Mus\u00e9e Maillol",
             "Palace of Versailles",
             "Eiffel Tower",
-            "Île de la Cité",
-            "Café Volpini",
+            "\u00cele de la Cit\u00e9",
+            "Caf\u00e9 Volpini",
             "Notre Dame de Paris",
-            "Folies Bergère",
+            "Folies Berg\u00e8re",
             "Arc de Triomphe",
-            "Basilica of the Sacré Cœur",
-            "Panthéon, Paris"
+            "Basilica of the Sacr\u00e9 C\u0153ur",
+            "Panth\u00e9on, Paris"
         ]
     },
     {
@@ -10555,7 +10555,7 @@
         "question": "what books did ernest hemingway write?",
         "answers": [
             "The Sun Also Rises",
-            "The Complete Short Stories of Ernest Hemingway: The Finca Vigía Edition",
+            "The Complete Short Stories of Ernest Hemingway: The Finca Vig\u00eda Edition",
             "A Farewell to Arms",
             "The Old Man and the Sea",
             "A Moveable Feast",
@@ -10758,16 +10758,16 @@
         "id": 1285,
         "question": "what to do in paris in 1 day?",
         "answers": [
-            "Musée Maillol",
+            "Mus\u00e9e Maillol",
             "Palace of Versailles",
             "Eiffel Tower",
-            "Île de la Cité",
-            "Café Volpini",
+            "\u00cele de la Cit\u00e9",
+            "Caf\u00e9 Volpini",
             "Notre Dame de Paris",
-            "Folies Bergère",
+            "Folies Berg\u00e8re",
             "Arc de Triomphe",
-            "Basilica of the Sacré Cœur",
-            "Panthéon, Paris"
+            "Basilica of the Sacr\u00e9 C\u0153ur",
+            "Panth\u00e9on, Paris"
         ]
     },
     {
@@ -10840,7 +10840,7 @@
         "id": 1293,
         "question": "which barcelona airport is closest to the port?",
         "answers": [
-            "Barcelona–El Prat Airport"
+            "Barcelona\u2013El Prat Airport"
         ]
     },
     {
@@ -10993,7 +10993,7 @@
         "question": "what was antoni gaudi inspired by?",
         "answers": [
             "William Morris",
-            "Eugène Viollet-le-Duc"
+            "Eug\u00e8ne Viollet-le-Duc"
         ]
     },
     {
@@ -11015,8 +11015,8 @@
         "id": 1315,
         "question": "where should a family stay in paris?",
         "answers": [
-            "Hôtel Ritz Paris",
-            "Hôtel de Crillon"
+            "H\u00f4tel Ritz Paris",
+            "H\u00f4tel de Crillon"
         ]
     },
     {
@@ -11229,7 +11229,7 @@
         "id": 1339,
         "question": "what city in florida has the lowest crime rate?",
         "answers": [
-            "Melquíades Rafael Martinez"
+            "Melqu\u00edades Rafael Martinez"
         ]
     },
     {
@@ -11266,7 +11266,7 @@
         "id": 1343,
         "question": "what kind of language does france speak?",
         "answers": [
-            "Provençal Language",
+            "Proven\u00e7al Language",
             "Occitan language",
             "French Language",
             "Basque Language",
@@ -11548,7 +11548,7 @@
         "id": 1377,
         "question": "what province is montreal canada located?",
         "answers": [
-            "Québec"
+            "Qu\u00e9bec"
         ]
     },
     {
@@ -11727,7 +11727,7 @@
         "id": 1399,
         "question": "what movies did joan crawford play in?",
         "answers": [
-            "Children’s Hospital Los Angeles"
+            "Children\u2019s Hospital Los Angeles"
         ]
     },
     {
@@ -11858,7 +11858,7 @@
             "Roman Forum",
             "Baths of Caracalla",
             "Castel Sant'Angelo",
-            "Bocca della Verità",
+            "Bocca della Verit\u00e0",
             "Pantheon",
             "St. Peter's Basilica",
             "Raphael Rooms",
@@ -11909,7 +11909,7 @@
             "Domenico Ghirlandaio",
             "Giovanni Pico della Mirandola",
             "Girolamo Savonarola",
-            "Melozzo da Forlì"
+            "Melozzo da Forl\u00ec"
         ]
     },
     {
@@ -11934,7 +11934,7 @@
         "question": "what language do they speak in sweden yahoo?",
         "answers": [
             "Yiddish Language",
-            "Meänkieli",
+            "Me\u00e4nkieli",
             "Swedish Language",
             "Finnish Language",
             "Romani language"
@@ -12108,7 +12108,7 @@
         "id": 1442,
         "question": "where all did picasso live?",
         "answers": [
-            "Málaga",
+            "M\u00e1laga",
             "France"
         ]
     },
@@ -12219,7 +12219,7 @@
         "id": 1456,
         "question": "what capital city of brazil?",
         "answers": [
-            "Brasília"
+            "Bras\u00edlia"
         ]
     },
     {
@@ -12533,7 +12533,7 @@
         "question": "what did isaac newton explain?",
         "answers": [
             "Newton fractal",
-            "Newton–Euler equations",
+            "Newton\u2013Euler equations",
             "Newton's laws of motion",
             "Newton's cannonball",
             "Newton",
@@ -12567,7 +12567,7 @@
             "Indianapolis International Airport",
             "Logan International Airport",
             "Chicago Midway International Airport",
-            "Fort Lauderdale–Hollywood International Airport",
+            "Fort Lauderdale\u2013Hollywood International Airport",
             "General Mitchell International Airport",
             "Akron-Canton Airport",
             "Port Columbus International Airport",
@@ -12585,7 +12585,7 @@
         "id": 1498,
         "question": "what to see in montreal downtown?",
         "answers": [
-            "Casino de Montréal",
+            "Casino de Montr\u00e9al",
             "Parc Jean-Drapeau",
             "La Ronde",
             "Canadian Centre for Architecture",
@@ -12594,7 +12594,7 @@
             "La Fontaine Park",
             "Mount Royal",
             "Old City",
-            "Musée d'art contemporain de Montréal"
+            "Mus\u00e9e d'art contemporain de Montr\u00e9al"
         ]
     },
     {
@@ -12655,7 +12655,7 @@
         "id": 1506,
         "question": "what do they do in cuba for fun?",
         "answers": [
-            "¡Cuba! Art and History from 1868 to Today"
+            "\u00a1Cuba! Art and History from 1868 to Today"
         ]
     },
     {
@@ -13213,14 +13213,14 @@
         "id": 1574,
         "question": "who influenced picasso art?",
         "answers": [
-            "Édouard Manet",
-            "Paul Cézanne",
+            "\u00c9douard Manet",
+            "Paul C\u00e9zanne",
             "Henri Rousseau",
             "Paul Gauguin",
             "Sara Murphy",
-            "Diego Velázquez",
+            "Diego Vel\u00e1zquez",
             "Jean Auguste Dominique Ingres",
-            "Eugène Delacroix",
+            "Eug\u00e8ne Delacroix",
             "Alfred Jarry",
             "Francisco Goya"
         ]
@@ -13980,7 +13980,7 @@
             "Roman Forum",
             "Baths of Caracalla",
             "Castel Sant'Angelo",
-            "Bocca della Verità",
+            "Bocca della Verit\u00e0",
             "Pantheon",
             "St. Peter's Basilica",
             "Raphael Rooms",
@@ -14463,16 +14463,16 @@
         "id": 1725,
         "question": "when did arsenal won the league?",
         "answers": [
-            "2004–05 FA Cup",
-            "FA Cup 2002–03",
+            "2004\u201305 FA Cup",
+            "FA Cup 2002\u201303",
             "2002 FA Cup Final",
-            "FA Cup 1978–79",
+            "FA Cup 1978\u201379",
             "2005 FA Cup Final",
             "2003 FA Cup Final",
-            "FA Cup 1997–98",
-            "FA Cup 1992–93",
-            "FA Cup 1970–71",
-            "2001–02 FA Cup"
+            "FA Cup 1997\u201398",
+            "FA Cup 1992\u201393",
+            "FA Cup 1970\u201371",
+            "2001\u201302 FA Cup"
         ]
     },
     {
@@ -14812,7 +14812,7 @@
         "question": "who are the st louis cardinals coaches?",
         "answers": [
             "Dave McKay",
-            "José Oquendo",
+            "Jos\u00e9 Oquendo",
             "Joe Pettini",
             "Marty Mason",
             "Dave Duncan",
@@ -14968,7 +14968,7 @@
             "George Bernard Shaw",
             "Hermann Minkowski",
             "James Clerk Maxwell",
-            "Paul Valéry",
+            "Paul Val\u00e9ry",
             "Karl Pearson",
             "Ernst Mach",
             "Bernhard Riemann"
@@ -15065,7 +15065,7 @@
         "id": 1794,
         "question": "where does marta play soccer?",
         "answers": [
-            "Umeå IK"
+            "Ume\u00e5 IK"
         ]
     },
     {
@@ -15246,7 +15246,7 @@
         "id": 1817,
         "question": "what airport is nearest to rome?",
         "answers": [
-            "Ciampino – G.B. Pastine International Airport"
+            "Ciampino \u2013 G.B. Pastine International Airport"
         ]
     },
     {
@@ -15376,7 +15376,7 @@
         "id": 1832,
         "question": "when was the last tsunami in the atlantic ocean?",
         "answers": [
-            "Île Saint-Joseph"
+            "\u00cele Saint-Joseph"
         ]
     },
     {
@@ -15464,7 +15464,7 @@
         "answers": [
             "Nynorsk",
             "Norwegian Language",
-            "Bokmål"
+            "Bokm\u00e5l"
         ]
     },
     {
@@ -15555,7 +15555,7 @@
         "id": 1853,
         "question": "when was michael jordan at his best?",
         "answers": [
-            "1995–96 NBA season"
+            "1995\u201396 NBA season"
         ]
     },
     {
@@ -15581,7 +15581,7 @@
             "Gare de Paris-Est",
             "Paris-Gare de Lyon",
             "Gare Saint-Lazare",
-            "Gare Routière Internationale",
+            "Gare Routi\u00e8re Internationale",
             "Charles de Gaulle Airport",
             "Aeroport de Paris Beauvais Tille",
             "Gare d'Austerlitz",
@@ -15727,7 +15727,7 @@
             "Brunei",
             "Singapore",
             "Malaysia",
-            "Shěn",
+            "Sh\u011bn",
             "Vietnam",
             "China"
         ]
@@ -15886,7 +15886,7 @@
             "Dante Symphony",
             "Concerto pathetique",
             "Don Sanche",
-            "Transcendental Études",
+            "Transcendental \u00c9tudes",
             "Faust Symphony"
         ]
     },
@@ -16099,15 +16099,15 @@
         "id": 1915,
         "question": "what year was allen iverson mvp?",
         "answers": [
-            "2000–01 NBA season"
+            "2000\u201301 NBA season"
         ]
     },
     {
         "id": 1916,
         "question": "where did harry s truman go to school?",
         "answers": [
-            "University of Missouri–Kansas City School of Law",
-            "University of Missouri–Kansas City",
+            "University of Missouri\u2013Kansas City School of Law",
+            "University of Missouri\u2013Kansas City",
             "William Chrisman High School"
         ]
     },
@@ -16225,16 +16225,16 @@
         "id": 1930,
         "question": "what do see in paris?",
         "answers": [
-            "Musée Maillol",
+            "Mus\u00e9e Maillol",
             "Palace of Versailles",
             "Eiffel Tower",
-            "Île de la Cité",
-            "Café Volpini",
+            "\u00cele de la Cit\u00e9",
+            "Caf\u00e9 Volpini",
             "Notre Dame de Paris",
-            "Folies Bergère",
+            "Folies Berg\u00e8re",
             "Arc de Triomphe",
-            "Basilica of the Sacré Cœur",
-            "Panthéon, Paris"
+            "Basilica of the Sacr\u00e9 C\u0153ur",
+            "Panth\u00e9on, Paris"
         ]
     },
     {
@@ -16494,7 +16494,7 @@
             "German Language",
             "Portuguese Language",
             "Plautdietsch Language",
-            "Hunsrückisch"
+            "Hunsr\u00fcckisch"
         ]
     },
     {
