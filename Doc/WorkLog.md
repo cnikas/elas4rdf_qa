@@ -3,7 +3,7 @@
 # DistilBERT
 ` a distilled version of BERT: smaller, faster, cheaper and lighter`
 
-## Performance in first 100 Questions 
+## Performance in first 100 Questions (using entity)
 
 ### Threshold = 0.5
 
@@ -23,7 +23,7 @@
 }
 ```
 
-## Performance in 2039 Questions (All)
+## Performance in all 2039 Questions (using entity)
 
 ### Threshold = 0.5
 
@@ -42,6 +42,15 @@
   "Total time": 31492.684856414795
 }
 ```
+
+## Performance in all 2039 Questions including all Thresholds (using entity)
+
+| Threshold | 0.0    | 0.1    | 0.2    | 0.3    | 0.4    | 0.5    | 0.6    | 0.7    | 0.8    | 0.9    |
+| --------- | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| Precision | 5.589  | 6.967  | 7.831  | 8.588  | 9.361  | 10.462 | 11.278 | 11.843 | 13.291 | 15.375 |
+| Recall    | 37.005 | 34.310 | 32.613 | 30.340 | 28.228 | 26.261 | 24.473 | 23.100 | 21.936 | 20.831 |
+| F1        | 37.005 | 9.936  | 10.742 | 11.145 | 11.563 | 12.098 | 12.386 | 12.568 | 13.313 | 14.455 |
+| Accuracy  | 60.285 | 55.857 | 53.339 | 50.000 | 46.173 | 42.986 | 39.615 | 37.361 | 35.334 | 33.042 |
 
 ## Problems
 
