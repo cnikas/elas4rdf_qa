@@ -4,8 +4,7 @@
 ` a distilled version of BERT: smaller, faster, cheaper and lighter`
 
 ## Performance in first 100 Questions (using entity)
-
-### Threshold = 0.5
+Threshold = 0.5
 
 ```json
 {
@@ -24,8 +23,7 @@
 ```
 
 ## Performance in all 2039 Questions (using entity)
-
-### Threshold = 0.5
+Threshold = 0.5
 
 ```json
 {
@@ -52,7 +50,30 @@
 | F1        | 37.005 | 9.936  | 10.742 | 11.145 | 11.563 | 12.098 | 12.386 | 12.568 | 13.313 | 14.455 |
 | Accuracy  | 60.285 | 55.857 | 53.339 | 50.000 | 46.173 | 42.986 | 39.615 | 37.361 | 35.334 | 33.042 |
 
-## Problems
+
+# RoBERTa
+`A Robustly Optimized BERT Pretraining Approach`
+
+## Performance in first 100 Questions (using entity)
+Threshold = 0.5
+```json
+{
+  "precision": 19.95683879612451,
+  "recall": 34.49843873636149,
+  "f1": 20.490980151118404,
+  "accuracy": 46.42857142857143,
+  "total": 84
+}
+```
+```json
+{
+  "Total time": 1293.2600502967834
+}
+```
+
+## Performance in all 2039 Questions (using entity)
+
+# Problems
 
  Questions: 
  * id:18 `who plays bilbo baggins in the hobbit?`
