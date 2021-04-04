@@ -1,11 +1,13 @@
-from transformers import DistilBertTokenizer, DistilBertForSequenceClassification
+# from transformers import DistilBertTokenizer, DistilBertForSequenceClassification
+from transformers import AutoTokenizer, RobertaForSequenceClassification
 import torch
 import numpy as np
 import csv
 import json
 
+
 class AnswerTypePrediction:
-    #This class contains methods for question category prediction and answer type prediction
+    # This class contains methods for question category prediction and answer type prediction
 
     def __init__(self):
         category_model_dir = './resources/category_model'
@@ -21,45 +23,52 @@ class AnswerTypePrediction:
                 label_to_id[row[1]] = row[0]
         self.id_to_label = id_to_label
         self.label_to_id = label_to_id
-        self.category_tokenizer = DistilBertTokenizer.from_pretrained(category_model_dir)
-        self.category_model = DistilBertForSequenceClassification.from_pretrained(category_model_dir,num_labels=5)
-        self.resource_tokenizer = DistilBertTokenizer.from_pretrained(resource_model_dir)
-        self.resource_model = DistilBertForSequenceClassification.from_pretrained(resource_model_dir,num_labels=len(id_to_label))
+        self.category_tokenizer = AutoTokenizer.from_pretrained(
+            category_model_dir)
+        self.category_model = RobertaForSequenceClassification.from_pretrained(
+            category_model_dir, num_labels=5)
+        self.resource_tokenizer = AutoTokenizer.from_pretrained(
+            resource_model_dir)
+        self.resource_model = RobertaForSequenceClassification.from_pretrained(
+            resource_model_dir, num_labels=len(id_to_label))
         hierarchy = {}
         with open(hierarchy_json) as json_file:
             hierarchy = json.load(json_file)
         self.hierarchy = hierarchy
 
-    def classify_category(self,q):
-        input_ids = torch.tensor(self.category_tokenizer.encode(q, add_special_tokens=True)).unsqueeze(0)
+    def classify_category(self, q):
+        input_ids = torch.tensor(self.category_tokenizer.encode(
+            q, add_special_tokens=True)).unsqueeze(0)
         with torch.no_grad():
             outputs = self.category_model(input_ids)
         logits = outputs[0]
-        result = np.argmax(logits.detach().numpy(),axis=1)[0]
-        categories = ['boolean','literal','literal','literal','resource']
-        types = ['boolean','date','number','string','']
+        result = np.argmax(logits.detach().numpy(), axis=1)[0]
+        categories = ['boolean', 'literal', 'literal', 'literal', 'resource']
+        types = ['boolean', 'date', 'number', 'string', '']
         return categories[result], types[result]
 
-
-    def classify_resource(self,q):
-        input_ids = torch.tensor(self.resource_tokenizer.encode(q, add_special_tokens=True)).unsqueeze(0)  # Batch size 1
+    def classify_resource(self, q):
+        input_ids = torch.tensor(self.resource_tokenizer.encode(
+            q, add_special_tokens=True)).unsqueeze(0)  # Batch size 1
         with torch.no_grad():
             outputs = self.resource_model(input_ids)
         logits = outputs[0]
         l_array = logits.detach().numpy()[0]
-        #normalize logits so that max is 1
+        # normalize logits so that max is 1
         norm = [float(i)/max(l_array) for i in l_array]
-        #reward top class
+        # reward top class
         initial_top_index = np.argmax(norm)
         initial_top = self.hierarchy[self.id_to_label[str(initial_top_index)]]
         if initial_top != {}:
-            norm[initial_top_index] = norm[initial_top_index] + int(initial_top['level'])/6
-            #reward sub classes of top class
+            norm[initial_top_index] = norm[initial_top_index] + \
+                int(initial_top['level'])/6
+            # reward sub classes of top class
             initial_top_children = initial_top['children']
             for c in initial_top_children:
                 if c in self.label_to_id:
-                    norm[int(self.label_to_id[c])] = norm[int(self.label_to_id[c])] + int(self.hierarchy[c]['level'])/6
-        #sort classes in descending order
+                    norm[int(self.label_to_id[c])] = norm[int(
+                        self.label_to_id[c])] + int(self.hierarchy[c]['level'])/6
+        # sort classes in descending order
         result = np.argsort(norm)[::-1]
         result_mapped = []
         for r in result:
