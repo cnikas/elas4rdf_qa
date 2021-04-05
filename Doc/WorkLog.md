@@ -71,7 +71,22 @@ Threshold = 0.5
 }
 ```
 
-## Performance in all 2039 Questions (using entity)
+## Performance in all 2039 Questions (using entity) (Auto tokenizer)
+Threshold = 0.5
+```json
+{
+  "Total time": 22393.874516248703
+}
+```
+
+## Performance in all 2039 Questions including all Thresholds (using entity) (Auto tokenizer)
+
+| Threshold | 0.0    | 0.1    | 0.2    | 0.3    | 0.4    | 0.5    | 0.6    | 0.7    | 0.8    | 0.9    |
+| --------- | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| Precision | 5.598  | 7.776  | 9.574  | 10.948 | 12.384 | 13.722 | 15.518 | 16.710 | 18.765 | 23.232 |
+| Recall    | 34.836 | 31.761 | 29.255 | 27.537 | 26.007 | 24.774 | 24.093 | 23.272 | 23.158 | 25.959 |
+| F1        | 9.647  | 12.493 | 14.427 | 15.668 | 16.778 | 17.661 | 18.877 | 19.452 | 20.731 | 24.520 |
+| Accuracy  | 58.66  | 52.728 | 48.730 | 44.986 | 42.465 | 40.503 | 38.570 | 38.055 | 36.909 | 39.721 |
 
 # Problems
 
