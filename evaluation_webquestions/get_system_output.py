@@ -5,15 +5,15 @@ import time
 
 qa_url = 'http://139.91.183.96:5001/answer'
 output_file = 'system_output.json'
-time_output = 'get_system_output_time.json'
+time_output = 'system_output_time.json'
 
 dataset = []
 with open('webquestions_test_converted.json', encoding='utf8') as json_file:
     # 100 questions
-    dataset = json.load(json_file)[0:100]
+    #dataset = json.load(json_file)[0:100]
 
     # all questions (2039)
-    #dataset = json.load(json_file)
+    dataset = json.load(json_file)
 try:
     with open(output_file, encoding='utf8') as json_file:
         answered = json.load(json_file)
