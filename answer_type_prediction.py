@@ -1,5 +1,5 @@
-# from transformers import DistilBertTokenizer, DistilBertForSequenceClassification
-from transformers import AutoTokenizer, RobertaForSequenceClassification
+from transformers import DistilBertTokenizer, DistilBertForSequenceClassification
+# from transformers import RobertaTokenizer, RobertaForSequenceClassification
 import torch
 import numpy as np
 import csv
@@ -23,13 +23,13 @@ class AnswerTypePrediction:
                 label_to_id[row[1]] = row[0]
         self.id_to_label = id_to_label
         self.label_to_id = label_to_id
-        self.category_tokenizer = AutoTokenizer.from_pretrained(
+        self.category_tokenizer = DistilBertTokenizer.from_pretrained(
             category_model_dir)
-        self.category_model = RobertaForSequenceClassification.from_pretrained(
+        self.category_model = DistilBertForSequenceClassification.from_pretrained(
             category_model_dir, num_labels=5)
-        self.resource_tokenizer = AutoTokenizer.from_pretrained(
+        self.resource_tokenizer = DistilBertTokenizer.from_pretrained(
             resource_model_dir)
-        self.resource_model = RobertaForSequenceClassification.from_pretrained(
+        self.resource_model = DistilBertForSequenceClassification.from_pretrained(
             resource_model_dir, num_labels=len(id_to_label))
         hierarchy = {}
         with open(hierarchy_json) as json_file:
