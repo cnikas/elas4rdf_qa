@@ -13,7 +13,7 @@ Endpoint: `/answer`, Parameter: `question`, Example: `/answer?question=who is th
 4.	model files ([download here](https://drive.google.com/drive/folders/1-oGWdh5Zbl9bF_BpyXd__beJRAiyg-Ug?usp=sharing) to /resources folder)
 
 ## To Start:
-1. development server: `flask run --host=0.0.0.0`
+1. development server: `flask run --host=139.91.183.96 --port=5001`
 2. production server: `gunicorn -b IP:PORT --workers 1 --limit-request-line 0 app:app --daemon --error-logfile gunicorn_error.log --timeout 120`
 
 ## To Stop
