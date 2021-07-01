@@ -1,3 +1,5 @@
 category_model
 resource_type_model
 __pycache__
+debug.py
+.vscode

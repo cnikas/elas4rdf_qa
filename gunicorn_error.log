@@ -14,3 +14,491 @@
 [2021-03-11 18:23:42 +0200] [1530] [INFO] Listening at: http://139.91.183.96:5001 (1530)
 [2021-03-11 18:23:42 +0200] [1530] [INFO] Using worker: sync
 [2021-03-11 18:23:42 +0200] [1533] [INFO] Booting worker with pid: 1533
+[2021-03-13 13:33:36 +0200] [10709] [INFO] Starting gunicorn 20.0.4
+[2021-03-13 13:33:36 +0200] [10709] [INFO] Listening at: http://139.91.183.96:5001 (10709)
+[2021-03-13 13:33:36 +0200] [10709] [INFO] Using worker: sync
+[2021-03-13 13:33:36 +0200] [10712] [INFO] Booting worker with pid: 10712
+[2021-03-13 14:56:28,410] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 29, in api_answer
+    entities = get_entities_from_elas4rdf(question)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 111, in get_entities_from_elas4rdf
+    entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response_json['results']['entities']]
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 111, in <listcomp>
+    entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response_json['results']['entities']]
+KeyError: 'rdfs_comment'
+[2021-03-13 15:12:07,477] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 29, in api_answer
+    entities = get_entities_from_elas4rdf(question)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 111, in get_entities_from_elas4rdf
+    entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response_json['results']['entities']]
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 111, in <listcomp>
+    entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response_json['results']['entities']]
+KeyError: 'rdfs_comment'
+[2021-03-13 15:14:00,823] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 29, in api_answer
+    entities = get_entities_from_elas4rdf(question)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 111, in get_entities_from_elas4rdf
+    entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response_json['results']['entities']]
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 111, in <listcomp>
+    entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response_json['results']['entities']]
+KeyError: 'rdfs_comment'
+[2021-03-13 15:14:05,686] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 29, in api_answer
+    entities = get_entities_from_elas4rdf(question)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 111, in get_entities_from_elas4rdf
+    entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response_json['results']['entities']]
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 111, in <listcomp>
+    entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response_json['results']['entities']]
+KeyError: 'rdfs_comment'
+[2021-03-13 15:25:58,942] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 29, in api_answer
+    entities = get_entities_from_elas4rdf(question)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 111, in get_entities_from_elas4rdf
+    with open('debug.json',encoding='utf8') as output:
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 111, in <listcomp>
+    with open('debug.json',encoding='utf8') as output:
+KeyError: 'rdfs_comment'
+[2021-03-13 15:38:36 +0200] [42788] [INFO] Starting gunicorn 20.0.4
+[2021-03-13 15:38:36 +0200] [42788] [INFO] Listening at: http://139.91.183.96:5001 (42788)
+[2021-03-13 15:38:36 +0200] [42788] [INFO] Using worker: sync
+[2021-03-13 15:38:36 +0200] [42791] [INFO] Booting worker with pid: 42791
+[2021-03-13 15:38:51,829] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 29, in api_answer
+    entities = get_entities_from_elas4rdf(question)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 111, in get_entities_from_elas4rdf
+    with open('debug.json',encoding='utf8') as output:
+FileNotFoundError: [Errno 2] No such file or directory: 'debug.json'
+[2021-03-13 15:40:35 +0200] [43113] [INFO] Starting gunicorn 20.0.4
+[2021-03-13 15:40:35 +0200] [43113] [INFO] Listening at: http://139.91.183.96:5001 (43113)
+[2021-03-13 15:40:35 +0200] [43113] [INFO] Using worker: sync
+[2021-03-13 15:40:35 +0200] [43116] [INFO] Booting worker with pid: 43116
+[2021-03-13 15:42:34,154] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 29, in api_answer
+    entities = get_entities_from_elas4rdf(question)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 111, in get_entities_from_elas4rdf
+    with open('debug.json',encoding='utf8') as output:
+FileNotFoundError: [Errno 2] No such file or directory: 'debug.json'
+[2021-03-13 15:43:59 +0200] [43566] [INFO] Starting gunicorn 20.0.4
+[2021-03-13 15:43:59 +0200] [43566] [INFO] Listening at: http://139.91.183.96:5001 (43566)
+[2021-03-13 15:43:59 +0200] [43566] [INFO] Using worker: sync
+[2021-03-13 15:43:59 +0200] [43569] [INFO] Booting worker with pid: 43569
+[2021-03-13 15:44:14,548] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 29, in api_answer
+    entities = get_entities_from_elas4rdf(question)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 109, in get_entities_from_elas4rdf
+    with open('debug.txt') as output:
+FileNotFoundError: [Errno 2] No such file or directory: 'debug.txt'
+[2021-03-13 15:46:50 +0200] [43930] [INFO] Starting gunicorn 20.0.4
+[2021-03-13 15:46:50 +0200] [43930] [INFO] Listening at: http://139.91.183.96:5001 (43930)
+[2021-03-13 15:46:50 +0200] [43930] [INFO] Using worker: sync
+[2021-03-13 15:46:50 +0200] [43933] [INFO] Booting worker with pid: 43933
+[2021-03-13 16:02:57,158] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 29, in api_answer
+    entities = get_entities_from_elas4rdf(question)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 112, in get_entities_from_elas4rdf
+    entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response_json['results']['entities']]
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 112, in <listcomp>
+    entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response_json['results']['entities']]
+KeyError: 'rdfs_comment'
+[2021-03-13 16:05:10,316] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 29, in api_answer
+    entities = get_entities_from_elas4rdf(question)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 112, in get_entities_from_elas4rdf
+    entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response_json['results']['entities']]
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 112, in <listcomp>
+    entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response_json['results']['entities']]
+KeyError: 'rdfs_comment'
+[2021-03-13 16:09:32,563] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 29, in api_answer
+    entities = get_entities_from_elas4rdf(question)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 112, in get_entities_from_elas4rdf
+    entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response_json['results']['entities']]
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 112, in <listcomp>
+    entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response_json['results']['entities']]
+KeyError: 'rdfs_comment'
+[2021-03-13 16:48:03 +0200] [43930] [CRITICAL] WORKER TIMEOUT (pid:43933)
+[2021-03-13 16:48:03 +0200] [43933] [INFO] Worker exiting (pid: 43933)
+[2021-03-13 16:48:04 +0200] [27548] [INFO] Booting worker with pid: 27548
+[2021-03-13 17:27:24,982] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 29, in api_answer
+    entities = get_entities_from_elas4rdf(question)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 113, in get_entities_from_elas4rdf
+    for e in response_json['results']['entities']:
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 113, in <listcomp>
+    for e in response_json['results']['entities']:
+KeyError: 'rdfs_comment'
+[2021-03-13 17:30:16 +0200] [37257] [INFO] Booting worker with pid: 37257
+[2021-03-13 17:30:21 +0200] [37344] [INFO] Starting gunicorn 20.0.4
+[2021-03-13 17:30:21 +0200] [37344] [ERROR] Connection in use: ('139.91.183.96', 5001)
+[2021-03-13 17:30:21 +0200] [37344] [ERROR] Retrying in 1 second.
+[2021-03-13 17:30:22 +0200] [37344] [ERROR] Connection in use: ('139.91.183.96', 5001)
+[2021-03-13 17:30:22 +0200] [37344] [ERROR] Retrying in 1 second.
+[2021-03-13 17:30:23 +0200] [37344] [ERROR] Connection in use: ('139.91.183.96', 5001)
+[2021-03-13 17:30:23 +0200] [37344] [ERROR] Retrying in 1 second.
+[2021-03-13 17:30:24 +0200] [37344] [ERROR] Connection in use: ('139.91.183.96', 5001)
+[2021-03-13 17:30:24 +0200] [37344] [ERROR] Retrying in 1 second.
+[2021-03-13 17:30:25 +0200] [37344] [ERROR] Connection in use: ('139.91.183.96', 5001)
+[2021-03-13 17:30:25 +0200] [37344] [ERROR] Retrying in 1 second.
+[2021-03-13 17:30:26 +0200] [37344] [ERROR] Can't connect to ('139.91.183.96', 5001)
+[2021-03-18 11:53:01 +0200] [32383] [INFO] Booting worker with pid: 32383
+[2021-03-18 11:53:12 +0200] [32383] [INFO] Parent changed, shutting down: <Worker 32383>
+[2021-03-18 11:53:12 +0200] [32383] [INFO] Worker exiting (pid: 32383)
+[2021-03-18 11:57:30 +0200] [32998] [INFO] Starting gunicorn 20.0.4
+[2021-03-18 11:57:30 +0200] [32998] [INFO] Listening at: http://139.91.183.96:5001 (32998)
+[2021-03-18 11:57:30 +0200] [32998] [INFO] Using worker: sync
+[2021-03-18 11:57:30 +0200] [33001] [INFO] Booting worker with pid: 33001
+[2021-03-18 11:57:41,562] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 29, in api_answer
+    entities = get_entities_from_elas4rdf(question)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 112, in get_entities_from_elas4rdf
+    for e in response_json['results']['entities']:
+KeyError: 'entities'
+[2021-03-21 11:21:15,842] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 29, in api_answer
+    entities = get_entities_from_elas4rdf(question)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 112, in get_entities_from_elas4rdf
+    for e in response_json['results']['entities']:
+KeyError: 'entities'
+[2021-03-21 11:21:20,143] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 29, in api_answer
+    entities = get_entities_from_elas4rdf(question)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 112, in get_entities_from_elas4rdf
+    for e in response_json['results']['entities']:
+KeyError: 'entities'
+[2021-03-21 11:28:20 +0200] [33001] [INFO] Parent changed, shutting down: <Worker 33001>
+[2021-03-21 11:28:20 +0200] [33001] [INFO] Worker exiting (pid: 33001)
+[2021-04-03 13:31:57 +0300] [54655] [INFO] Starting gunicorn 20.0.4
+[2021-04-03 13:31:57 +0300] [54655] [INFO] Listening at: http://139.91.183.96:5001 (54655)
+[2021-04-03 13:31:57 +0300] [54655] [INFO] Using worker: sync
+[2021-04-03 13:31:57 +0300] [54658] [INFO] Booting worker with pid: 54658
+[2021-04-03 19:19:18 +0300] [54655] [CRITICAL] WORKER TIMEOUT (pid:54658)
+[2021-04-03 19:19:18 +0300] [54658] [INFO] Worker exiting (pid: 54658)
+[2021-04-03 19:19:19 +0300] [12598] [INFO] Booting worker with pid: 12598
+[2021-04-04 17:00:31 +0300] [14840] [INFO] Booting worker with pid: 14840
+[2021-04-04 17:00:42 +0300] [14840] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 11, in <module>
+    ae = AnswerExtraction()
+  File "/home/nicolaig/elas4rdf_qa/answer_extraction.py", line 15, in __init__
+    self.pipeline = pipeline(model=model,tokenizer=tokenizer,framework="pt",device=-1)
+TypeError: pipeline() missing 1 required positional argument: 'task'
+[2021-04-04 17:00:42 +0300] [14840] [INFO] Worker exiting (pid: 14840)
+[2021-04-04 17:00:42 +0300] [54655] [INFO] Shutting down: Master
+[2021-04-04 17:00:42 +0300] [54655] [INFO] Reason: Worker failed to boot.
+[2021-04-04 17:04:37 +0300] [14997] [INFO] Starting gunicorn 20.0.4
+[2021-04-04 17:04:37 +0300] [14997] [INFO] Listening at: http://139.91.183.96:5001 (14997)
+[2021-04-04 17:04:37 +0300] [14997] [INFO] Using worker: sync
+[2021-04-04 17:04:37 +0300] [15000] [INFO] Booting worker with pid: 15000
+[2021-04-04 17:04:49 +0300] [15000] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 11, in <module>
+    ae = AnswerExtraction()
+  File "/home/nicolaig/elas4rdf_qa/answer_extraction.py", line 15, in __init__
+    self.pipeline = pipeline(model=model,tokenizer=tokenizer,framework="pt",device=-1)
+TypeError: pipeline() missing 1 required positional argument: 'task'
+[2021-04-04 17:04:49 +0300] [15000] [INFO] Worker exiting (pid: 15000)
+[2021-04-04 17:04:49 +0300] [14997] [INFO] Shutting down: Master
+[2021-04-04 17:04:49 +0300] [14997] [INFO] Reason: Worker failed to boot.
+[2021-04-04 17:05:35 +0300] [15132] [INFO] Starting gunicorn 20.0.4
+[2021-04-04 17:05:35 +0300] [15132] [INFO] Listening at: http://139.91.183.96:5001 (15132)
+[2021-04-04 17:05:35 +0300] [15132] [INFO] Using worker: sync
+[2021-04-04 17:05:35 +0300] [15135] [INFO] Booting worker with pid: 15135
+[2021-04-05 22:04:46 +0300] [23799] [INFO] Starting gunicorn 20.0.4
+[2021-04-05 22:04:46 +0300] [23799] [INFO] Listening at: http://139.91.183.96:5001 (23799)
+[2021-04-05 22:04:46 +0300] [23799] [INFO] Using worker: sync
+[2021-04-05 22:04:46 +0300] [23802] [INFO] Booting worker with pid: 23802
+[2021-04-07 18:51:40 +0300] [40252] [INFO] Starting gunicorn 20.0.4
+[2021-04-07 18:51:40 +0300] [40252] [INFO] Listening at: http://139.91.183.96:5001 (40252)
+[2021-04-07 18:51:40 +0300] [40252] [INFO] Using worker: sync
+[2021-04-07 18:51:40 +0300] [40255] [INFO] Booting worker with pid: 40255
+[2021-04-07 20:16:58 +0300] [40252] [CRITICAL] WORKER TIMEOUT (pid:40255)
+[2021-04-07 20:16:58 +0300] [40255] [INFO] Worker exiting (pid: 40255)
+[2021-04-07 20:16:59 +0300] [31214] [INFO] Booting worker with pid: 31214
+[2021-04-07 21:18:09 +0300] [40252] [CRITICAL] WORKER TIMEOUT (pid:31214)
+[2021-04-07 21:18:09 +0300] [31214] [INFO] Worker exiting (pid: 31214)
+[2021-04-07 21:18:10 +0300] [16012] [INFO] Booting worker with pid: 16012
+[2021-04-07 21:31:55 +0300] [40252] [CRITICAL] WORKER TIMEOUT (pid:16012)
+[2021-04-07 21:31:55 +0300] [16012] [INFO] Worker exiting (pid: 16012)
+[2021-04-07 21:31:55 +0300] [32413] [INFO] Booting worker with pid: 32413
+[2021-06-22 12:24:47 +0300] [49375] [INFO] Booting worker with pid: 49375
+[2021-06-22 12:25:16 +0300] [49375] [INFO] Parent changed, shutting down: <Worker 49375>
+[2021-06-22 12:25:16 +0300] [49375] [INFO] Worker exiting (pid: 49375)
+[2021-06-22 16:12:45 +0300] [62993] [INFO] Starting gunicorn 20.0.4
+[2021-06-22 16:12:45 +0300] [62993] [ERROR] Invalid address: ('139.91.183', 5001)
+[2021-06-22 16:12:45 +0300] [62993] [ERROR] Retrying in 1 second.
+[2021-06-22 16:12:46 +0300] [62993] [ERROR] Invalid address: ('139.91.183', 5001)
+[2021-06-22 16:12:46 +0300] [62993] [ERROR] Retrying in 1 second.
+[2021-06-22 16:12:47 +0300] [62993] [ERROR] Invalid address: ('139.91.183', 5001)
+[2021-06-22 16:12:47 +0300] [62993] [ERROR] Retrying in 1 second.
+[2021-06-22 16:12:48 +0300] [62993] [ERROR] Invalid address: ('139.91.183', 5001)
+[2021-06-22 16:12:48 +0300] [62993] [ERROR] Retrying in 1 second.
+[2021-06-22 16:12:49 +0300] [62993] [ERROR] Invalid address: ('139.91.183', 5001)
+[2021-06-22 16:12:49 +0300] [62993] [ERROR] Retrying in 1 second.
+[2021-06-22 16:12:50 +0300] [62993] [ERROR] Can't connect to ('139.91.183', 5001)
+[2021-06-22 16:14:26 +0300] [63105] [INFO] Starting gunicorn 20.0.4
+[2021-06-22 16:14:26 +0300] [63105] [INFO] Listening at: http://139.91.183.96:5001 (63105)
+[2021-06-22 16:14:26 +0300] [63105] [INFO] Using worker: sync
+[2021-06-22 16:14:26 +0300] [63108] [INFO] Booting worker with pid: 63108
+[2021-06-23 19:02:38 +0300] [58309] [INFO] Booting worker with pid: 58309
+[2021-06-23 19:03:47 +0300] [59405] [INFO] Booting worker with pid: 59405
+[2021-06-23 19:05:07 +0300] [60685] [INFO] Booting worker with pid: 60685
+[2021-06-23 19:05:19 +0300] [60770] [INFO] Booting worker with pid: 60770
+[2021-06-23 19:05:37 +0300] [60857] [INFO] Booting worker with pid: 60857
+[2021-06-23 19:07:52 +0300] [62023] [INFO] Booting worker with pid: 62023
+[2021-06-23 19:07:59 +0300] [62070] [INFO] Booting worker with pid: 62070
+[2021-06-23 19:08:04 +0300] [62117] [INFO] Booting worker with pid: 62117
+[2021-06-23 19:09:40 +0300] [62117] [INFO] Worker exiting (pid: 62117)
+[2021-06-23 19:09:40 +0300] [63105] [INFO] Handling signal: term
+[2021-06-23 19:09:41 +0300] [63105] [INFO] Shutting down: Master
+[2021-06-23 19:15:07 +0300] [62640] [INFO] Starting gunicorn 20.0.4
+[2021-06-23 19:15:07 +0300] [62640] [INFO] Listening at: http://139.91.183.96:5001 (62640)
+[2021-06-23 19:15:07 +0300] [62640] [INFO] Using worker: sync
+[2021-06-23 19:15:07 +0300] [62643] [INFO] Booting worker with pid: 62643
+[2021-06-24 12:44:04 +0300] [24258] [INFO] Booting worker with pid: 24258
+[2021-06-24 12:44:40 +0300] [24541] [INFO] Booting worker with pid: 24541
+[2021-06-24 12:45:09 +0300] [24541] [INFO] Worker exiting (pid: 24541)
+[2021-06-24 12:45:09 +0300] [62640] [INFO] Handling signal: term
+[2021-06-24 12:45:09 +0300] [62640] [INFO] Shutting down: Master
+[2021-06-24 12:46:05 +0300] [24869] [INFO] Starting gunicorn 20.0.4
+[2021-06-24 12:46:05 +0300] [24869] [INFO] Listening at: http://139.91.183.96:5001 (24869)
+[2021-06-24 12:46:05 +0300] [24869] [INFO] Using worker: sync
+[2021-06-24 12:46:05 +0300] [24872] [INFO] Booting worker with pid: 24872

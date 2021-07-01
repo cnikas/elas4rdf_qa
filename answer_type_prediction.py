@@ -1,5 +1,4 @@
 from transformers import DistilBertTokenizer, DistilBertForSequenceClassification
-# from transformers import RobertaTokenizer, RobertaForSequenceClassification
 import torch
 import numpy as np
 import csv
