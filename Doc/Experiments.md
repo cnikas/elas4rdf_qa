@@ -56,8 +56,6 @@
 
 ![paper_results_table_3](assets/paper_results_table_3.png)
 
-* from Threshold: 0.9 it seems that in the precision calculation it is not taken in consideration when the answer is smaller than n (n is the rank) so the max precision score is less than 1 and smaller than the precision at smaller ranks. 
-
 # Experiment 3: DBpedia Entity: QA + RANKING
  
 ## Aproach I: Keep the score from each entity and answer as computed by the entity search system and question answering component.
