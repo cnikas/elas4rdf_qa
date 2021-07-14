@@ -7,7 +7,7 @@ by the entity
 import json
 import sys
 
-system_output_path = "/home/nicolaig/elas4rdf_qa/evaluation/Experiment_2_3/system_output_entity.json"
+system_output_path = "/home/nicolaig/elas4rdf_qa/evaluation/Experiment_2_3/entity_output.json"
 qrels_path = "/home/nicolaig/elas4rdf_qa/evaluation/Experiment_2_3/qrels.txt"
 threshold = float(sys.argv[1])
 
@@ -57,7 +57,7 @@ def precisionAt_k(answers, relevant, k):
 def remove_answers(answers):
     a = []
     for i in range(len(answers)):
-        if answers[i]['score'] >= threshold:
+        if float(answers[i]['score']) >= threshold:
             a.append(answers[i])
     return a
 
@@ -71,7 +71,7 @@ with open(system_output_path, encoding="utf8") as jsonfile:
     scores = {"p1": [], "p3": [], "p5": []}
     for answer in system:
         relevant = getrelevant(qrels[answer['id']])
-        answers = remove_answers(answer['answers'])
+        answers = remove_answers(answer['entities'])
         # P@1 , P@3 , P@5 (Precision scores)
         p_1 = precisionAt_k(answers, relevant, 1)
         p_3 = precisionAt_k(answers, relevant, 3)

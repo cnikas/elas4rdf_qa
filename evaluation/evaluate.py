@@ -13,6 +13,8 @@ import string
 import sys
 
 system_output_path = sys.argv[1]
+failed = []
+total_time = 0
 
 
 def normalize_answer(s):
@@ -37,13 +39,18 @@ def normalize_answer(s):
     return normalized
 
 
-def compute_scores(a_gold, a_pred):
+def compute_scores(a_gold, a_pred, question):
     gold_toks = normalize_answer(a_gold)
     pred_toks = normalize_answer(a_pred)
     common = collections.Counter(gold_toks) & collections.Counter(pred_toks)
     num_same = sum(common.values())
 
     if num_same == 0:
+        failed.append({
+            'question': question,
+            'answer': a_pred,
+            'gold': a_gold
+        })
         return [0, 0, 0, 0]
     if num_same > 0:
         accuracy = 1
@@ -67,12 +74,15 @@ def make_eval_dict(scores):
     r = sum(recall_scores) / total
     f1 = f1Score(p, r)
     acc_scores = [i[3] for i in scores]
+    avg_time = total_time / total
     return collections.OrderedDict([
         ('precision', 100.0 * p),
         ('recall', 100.0 * r),
         ('f1', 100.0 * f1),
         ('accuracy', 100.0 * sum(acc_scores) / total),
         ('total', total),
+        ('failed', len(failed)/total),
+        ('query average time', avg_time)
     ])
 
 
@@ -83,8 +93,10 @@ def main():
         ground_truth = json.load(jsonfile)
     scores = []
     total_counter = 0
+    global total_time
     for q_output in system_output:
         if len(q_output["answers"]) > 0:
+            total_time += float(q_output['time'])
             answers_output = [a["answer"] for a in q_output["answers"]]
             a_pred = []
             for a in answers_output:
@@ -100,9 +112,13 @@ def main():
                     a_clean = a.split(" ")
                     for ac in a_clean:
                         a_gold.append(ac)
-                scores.append(compute_scores(a_gold, a_pred))
+                scores.append(compute_scores(
+                    a_gold, a_pred, q_output["question"]))
     out_eval = make_eval_dict(scores)
+    with open("failed_questions.json", "w", encoding="utf8") as fail:
+        fail.write(json.dumps(failed))
     print(json.dumps(out_eval, indent=2))
+    print("Failed: "+str(len(failed)))
 
 
 if __name__ == '__main__':

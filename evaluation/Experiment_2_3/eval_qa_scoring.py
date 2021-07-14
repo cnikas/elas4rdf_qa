@@ -8,7 +8,7 @@ import math
 from operator import itemgetter
 from copy import deepcopy
 
-system_output_path = "/home/nicolaig/elas4rdf_qa/evaluation/Experiment_2_3/system_output_entity.json"
+system_output_path = "/home/nicolaig/elas4rdf_qa/evaluation/Experiment_2_3/system_output.json"
 qrels_path = "/home/nicolaig/elas4rdf_qa/evaluation/Experiment_2_3/qrels.txt"
 output_file = "system_output_qa_ranking.json"
 
@@ -192,8 +192,6 @@ with open(system_output_path, encoding="utf8") as jsonfile:
         scores['approach2'][10]['ndcg100'].append(
             NDCG(a2_e10, qrels, answer['id'], 100))
 
-        if i == 11:
-            exit()
     # calculate average
     scores['approach1'][0]['ndcg10'] = sum(
         scores['approach1'][0]['ndcg10'])/len(scores['approach1'][0]['ndcg10'])

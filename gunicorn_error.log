@@ -502,3 +502,81 @@ TypeError: pipeline() missing 1 required positional argument: 'task'
 [2021-06-24 12:46:05 +0300] [24869] [INFO] Listening at: http://139.91.183.96:5001 (24869)
 [2021-06-24 12:46:05 +0300] [24869] [INFO] Using worker: sync
 [2021-06-24 12:46:05 +0300] [24872] [INFO] Booting worker with pid: 24872
+[2021-07-13 15:27:13,046] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 144, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 83, in create_connection
+    raise err
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 357, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1281, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1327, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1276, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1042, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 980, in send
+    self.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 169, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 153, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0a0a841828>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='dbpedia.org', port=80): Max retries exceeded with url: /sparql?query=select+distinct+str%28%3Fpl%29+as+%3FpLabel+%3Fa+where+%7B%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2FLisbon%3E+%3Fp+%3Fa+.+%3Fp+rdfs%3Alabel+%3Fpl+.+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPoliticalParty%3E+owl%3AequivalentClass+%3Feq+.+%3Fa+rdf%3Atype+%3Feq+.+FILTER%28lang%28%3Fpl%29+%3D+%27en%27+%7C%7C+lang%28%3Fpl%29+%3D+%27%27%29+%7D&default-graph-uri=http%3A%2F%2Fdbpedia.org (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0a0a841828>: Failed to establish a new connection: [Errno 111] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 54, in api_answer
+    entities, found_category, found_types[0])
+  File "/home/nicolaig/elas4rdf_qa/answer_extraction.py", line 42, in extend_entities
+    sentences = expansion.resource_sentences(e['uri'],type_uri)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 47, in resource_sentences
+    response = sparql_query(query_string_o)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 20, in sparql_query
+    response = requests.get(url,params=payload,headers=headers)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 520, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 630, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='dbpedia.org', port=80): Max retries exceeded with url: /sparql?query=select+distinct+str%28%3Fpl%29+as+%3FpLabel+%3Fa+where+%7B%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2FLisbon%3E+%3Fp+%3Fa+.+%3Fp+rdfs%3Alabel+%3Fpl+.+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPoliticalParty%3E+owl%3AequivalentClass+%3Feq+.+%3Fa+rdf%3Atype+%3Feq+.+FILTER%28lang%28%3Fpl%29+%3D+%27en%27+%7C%7C+lang%28%3Fpl%29+%3D+%27%27%29+%7D&default-graph-uri=http%3A%2F%2Fdbpedia.org (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0a0a841828>: Failed to establish a new connection: [Errno 111] Connection refused',))

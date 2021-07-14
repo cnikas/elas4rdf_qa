@@ -16,12 +16,13 @@ threshold = float(sys.argv[1])
 for q in dataset:
     newans = []
     for ans in q['answers']:
-        if float(ans['score']) >= threshold: 
+        if float(ans['score']) >= threshold:
             newans.append(ans)
     out2.append({
-    	"id": int(q["id"]),
-    	"question": q["question"],
-    	"answers": newans
+        "id": int(q["id"]),
+        "question": q["question"],
+        "answers": newans,
+        "time": float(q["time"])
     })
 
 with open('system_output_filtered.json', 'w') as outfile:
