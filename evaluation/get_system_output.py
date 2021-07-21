@@ -9,7 +9,7 @@ output_file = 'system_output.json'
 dataset = []
 with open('webquestions_test_converted.json', encoding='utf8') as json_file:
     # 100 questions
-    #dataset = json.load(json_file)[0:100]
+    # dataset = json.load(json_file)[0:100]
 
     # all questions (2039)
     dataset = json.load(json_file)
@@ -53,6 +53,6 @@ for q in dataset:
         ans.pop("entity")
     # if "text" in response
     answered.append(response)
-    print(response)
+    # print(response)
     with open(output_file, 'w') as outfile:
         json.dump(answered, outfile)

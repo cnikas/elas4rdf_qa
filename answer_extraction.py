@@ -18,7 +18,7 @@ class AnswerExtraction:
         # Obtain a question from each given entity
         answers = []
         for e in entities:
-            print('ans'+e['uri'])
+            # print('ans'+e['uri'])
             if e['text'] != '':
                 output = self.pipeline(question,e['text'])
                 highlighted_text = e['text'][0:output['start']]+'<b>'+e['text'][output['start']:output['end']]+'</b>'+e['text'][output['end']:] 
@@ -34,7 +34,7 @@ class AnswerExtraction:
         # Extend entity descriptions with RDF nodes matching the answer type
         extended = []
         for e in entities:
-            print('ext'+e['uri'])
+            # print('ext'+e['uri'])
             if(category=='literal'):
                 sentences = expansion.literal_sentences(e['uri'],atype)
             elif(category=='resource'):

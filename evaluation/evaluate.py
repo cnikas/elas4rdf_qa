@@ -81,7 +81,7 @@ def make_eval_dict(scores):
         ('f1', 100.0 * f1),
         ('accuracy', 100.0 * sum(acc_scores) / total),
         ('total', total),
-        ('failed', len(failed)/total),
+        ('failed', len(failed)*100.0/total),
         ('query average time', avg_time)
     ])
 
@@ -96,6 +96,7 @@ def main():
     global total_time
     for q_output in system_output:
         if len(q_output["answers"]) > 0:
+            total_counter += 1
             total_time += float(q_output['time'])
             answers_output = [a["answer"] for a in q_output["answers"]]
             a_pred = []
@@ -119,6 +120,7 @@ def main():
         fail.write(json.dumps(failed))
     print(json.dumps(out_eval, indent=2))
     print("Failed: "+str(len(failed)))
+    print("Average Query Time: "+str(total_time/total_counter))
 
 
 if __name__ == '__main__':

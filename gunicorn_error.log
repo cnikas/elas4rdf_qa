@@ -580,3 +580,20 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/requests/adapters.py", line 508, in send
     raise ConnectionError(e, request=request)
 requests.exceptions.ConnectionError: HTTPConnectionPool(host='dbpedia.org', port=80): Max retries exceeded with url: /sparql?query=select+distinct+str%28%3Fpl%29+as+%3FpLabel+%3Fa+where+%7B%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2FLisbon%3E+%3Fp+%3Fa+.+%3Fp+rdfs%3Alabel+%3Fpl+.+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPoliticalParty%3E+owl%3AequivalentClass+%3Feq+.+%3Fa+rdf%3Atype+%3Feq+.+FILTER%28lang%28%3Fpl%29+%3D+%27en%27+%7C%7C+lang%28%3Fpl%29+%3D+%27%27%29+%7D&default-graph-uri=http%3A%2F%2Fdbpedia.org (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0a0a841828>: Failed to establish a new connection: [Errno 111] Connection refused',))
+[2021-07-19 19:03:21 +0300] [7406] [INFO] Starting gunicorn 20.0.4
+[2021-07-19 19:03:21 +0300] [7406] [INFO] Listening at: http://139.91.183.96:5001 (7406)
+[2021-07-19 19:03:21 +0300] [7406] [INFO] Using worker: sync
+[2021-07-19 19:03:21 +0300] [7409] [INFO] Booting worker with pid: 7409
+[2021-07-20 12:22:46 +0300] [14313] [INFO] Starting gunicorn 20.0.4
+[2021-07-20 12:22:46 +0300] [14313] [INFO] Listening at: http://139.91.183.96:5001 (14313)
+[2021-07-20 12:22:46 +0300] [14313] [INFO] Using worker: sync
+[2021-07-20 12:22:46 +0300] [14316] [INFO] Booting worker with pid: 14316
+[2021-07-20 12:29:17 +0300] [24066] [INFO] Starting gunicorn 20.0.4
+[2021-07-20 12:29:17 +0300] [24066] [INFO] Listening at: http://139.91.183.96:5020 (24066)
+[2021-07-20 12:29:17 +0300] [24066] [INFO] Using worker: sync
+[2021-07-20 12:29:17 +0300] [24069] [INFO] Booting worker with pid: 24069
+[2021-07-20 12:34:43 +0300] [24069] [INFO] Parent changed, shutting down: <Worker 24069>
+[2021-07-20 12:34:43 +0300] [24069] [INFO] Worker exiting (pid: 24069)
+[2021-07-20 12:43:57 +0300] [14313] [CRITICAL] WORKER TIMEOUT (pid:14316)
+[2021-07-20 12:43:57 +0300] [14316] [INFO] Worker exiting (pid: 14316)
+[2021-07-20 12:43:58 +0300] [50741] [INFO] Booting worker with pid: 50741

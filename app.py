@@ -36,8 +36,9 @@ def api_answer():
     to improve performance when we receive a large number of entities
     we use only the first 10
     """
-    if len(entities) > 10:
-        entities = entities[0:10]
+    number_of_entities = 10
+    if len(entities) > number_of_entities:
+        entities = entities[0:number_of_entities]
 
     # enabled , disabled atp
     if atp_:
@@ -45,10 +46,12 @@ def api_answer():
     else:
         found_category, found_type = '', ''
 
+    max_types = 10
     if found_category == "resource":
-        found_types = atp.classify_resource(question)[0:10]
+        found_types = atp.classify_resource(question)[0:max_types]
     else:
         found_types = [found_type]
+    # print(found_types)
 
     extended_entities = ae.extend_entities(
         entities, found_category, found_types[0])
