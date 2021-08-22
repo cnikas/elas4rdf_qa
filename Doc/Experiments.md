@@ -35,8 +35,6 @@ Average Query Time : `14.436670318245888` (Threshold 0.0)
 | F1        | 32.181 |
 | Acuuracy  | 48.122 |
 
-* f1 is smaller than precision and recall
-
 # Experiment 2: DBpedia Entity: QA
 
 ## Ngounakis script

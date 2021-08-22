@@ -597,3 +597,124 @@ requests.exceptions.ConnectionError: HTTPConnectionPool(host='dbpedia.org', port
 [2021-07-20 12:43:57 +0300] [14313] [CRITICAL] WORKER TIMEOUT (pid:14316)
 [2021-07-20 12:43:57 +0300] [14316] [INFO] Worker exiting (pid: 14316)
 [2021-07-20 12:43:58 +0300] [50741] [INFO] Booting worker with pid: 50741
+[2021-08-18 12:31:52 +0300] [17517] [INFO] Starting gunicorn 20.0.4
+[2021-08-18 12:31:52 +0300] [17517] [INFO] Listening at: http://139.91.183.96:5001 (17517)
+[2021-08-18 12:31:52 +0300] [17517] [INFO] Using worker: sync
+[2021-08-18 12:31:52 +0300] [17520] [INFO] Booting worker with pid: 17520
+[2021-08-18 12:32:19,871] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 34, in api_answer
+    entities = get_entities_from_elas4rdf(question)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 112, in get_entities_from_elas4rdf
+    for e in response_json['results']['entities']:
+KeyError: 'entities'
+[2021-08-18 12:32:27,519] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 34, in api_answer
+    entities = get_entities_from_elas4rdf(question)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 112, in get_entities_from_elas4rdf
+    for e in response_json['results']['entities']:
+KeyError: 'entities'
+[2021-08-18 12:33:33,600] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 34, in api_answer
+    entities = get_entities_from_elas4rdf(question)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 112, in get_entities_from_elas4rdf
+    for e in response_json['results']['entities']:
+KeyError: 'entities'
+[2021-08-18 12:33:52 +0300] [17968] [INFO] Starting gunicorn 20.0.4
+[2021-08-18 12:33:52 +0300] [17968] [ERROR] Connection in use: ('139.91.183.96', 5001)
+[2021-08-18 12:33:52 +0300] [17968] [ERROR] Retrying in 1 second.
+[2021-08-18 12:33:53 +0300] [17968] [ERROR] Connection in use: ('139.91.183.96', 5001)
+[2021-08-18 12:33:53 +0300] [17968] [ERROR] Retrying in 1 second.
+[2021-08-18 12:33:54 +0300] [17968] [ERROR] Connection in use: ('139.91.183.96', 5001)
+[2021-08-18 12:33:54 +0300] [17968] [ERROR] Retrying in 1 second.
+[2021-08-18 12:33:55 +0300] [17968] [ERROR] Connection in use: ('139.91.183.96', 5001)
+[2021-08-18 12:33:55 +0300] [17968] [ERROR] Retrying in 1 second.
+[2021-08-18 12:33:56 +0300] [17968] [ERROR] Connection in use: ('139.91.183.96', 5001)
+[2021-08-18 12:33:56 +0300] [17968] [ERROR] Retrying in 1 second.
+[2021-08-18 12:33:57 +0300] [17968] [ERROR] Can't connect to ('139.91.183.96', 5001)
+[2021-08-18 12:35:38,423] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 34, in api_answer
+    entities = get_entities_from_elas4rdf(question)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 112, in get_entities_from_elas4rdf
+    for e in response_json['results']['entities']:
+KeyError: 'entities'
+[2021-08-18 12:36:32 +0300] [17517] [INFO] Handling signal: term
+[2021-08-18 12:36:32 +0300] [17520] [INFO] Worker exiting (pid: 17520)
+[2021-08-18 12:36:32 +0300] [17517] [INFO] Shutting down: Master
+[2021-08-18 12:37:49 +0300] [18348] [INFO] Starting gunicorn 20.0.4
+[2021-08-18 12:37:49 +0300] [18348] [INFO] Listening at: http://139.91.183.96:5001 (18348)
+[2021-08-18 12:37:49 +0300] [18348] [INFO] Using worker: sync
+[2021-08-18 12:37:49 +0300] [18351] [INFO] Booting worker with pid: 18351
+[2021-08-18 12:38:11,527] ERROR in app: Exception on /answer [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicolaig/elas4rdf_qa/app.py", line 34, in api_answer
+    entities = get_entities_from_elas4rdf(question)
+  File "/home/nicolaig/elas4rdf_qa/entity_expansion.py", line 112, in get_entities_from_elas4rdf
+    for e in response_json['results']['entities']:
+KeyError: 'entities'
+[2021-08-22 14:53:38 +0300] [18348] [INFO] Handling signal: term
+[2021-08-22 14:53:38 +0300] [18351] [INFO] Worker exiting (pid: 18351)
+[2021-08-22 14:53:38 +0300] [18348] [INFO] Shutting down: Master

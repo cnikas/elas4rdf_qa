@@ -22,7 +22,7 @@ for q in dataset:
         "id": int(q["id"]),
         "question": q["question"],
         "answers": newans,
-        "time": float(q["time"])
+        # "time": float(q["time"])
     })
 
 with open('system_output_filtered.json', 'w') as outfile:

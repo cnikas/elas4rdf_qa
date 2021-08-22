@@ -39,19 +39,32 @@ def normalize_answer(s):
     return normalized
 
 
-def compute_scores(a_gold, a_pred, question):
+def compute_scores(a_gold, a_pred, output):
+    question = output["question"]
     gold_toks = normalize_answer(a_gold)
     pred_toks = normalize_answer(a_pred)
     common = collections.Counter(gold_toks) & collections.Counter(pred_toks)
     num_same = sum(common.values())
 
+    text = ""
+
+    for a in output["answers"]:
+        text += a["text"] + " "
+
+    text = normalize_answer(text.split())
+    common_gold_in_text = sum((collections.Counter(
+        text) & collections.Counter(gold_toks)).values())
+
+    ideal_accuracy = {True: 1, False: 0}[common_gold_in_text > 0]
+
     if num_same == 0:
         failed.append({
             'question': question,
             'answer': a_pred,
-            'gold': a_gold
+            'gold': a_gold,
+            "gold_tokens_in_text": common_gold_in_text
         })
-        return [0, 0, 0, 0]
+        return [0, 0, 0, 0, ideal_accuracy]
     if num_same > 0:
         accuracy = 1
     else:
@@ -59,7 +72,7 @@ def compute_scores(a_gold, a_pred, question):
     precision = 1.0 * num_same / len(pred_toks)
     recall = 1.0 * num_same / len(gold_toks)
     f1 = f1Score(precision, recall)
-    return [precision, recall, f1, accuracy]
+    return [precision, recall, f1, accuracy, ideal_accuracy]
 
 
 def f1Score(p, r):
@@ -72,14 +85,19 @@ def make_eval_dict(scores):
     p = sum(precision_scores) / total
     recall_scores = [i[1] for i in scores]
     r = sum(recall_scores) / total
+    f1_scores = [i[2] for i in scores]
     f1 = f1Score(p, r)
+    micro_f1 = sum(f1_scores) / total
     acc_scores = [i[3] for i in scores]
+    ideal_acc = [i[4] for i in scores]
     avg_time = total_time / total
     return collections.OrderedDict([
         ('precision', 100.0 * p),
         ('recall', 100.0 * r),
         ('f1', 100.0 * f1),
+        ('micro_f1', 100.0*micro_f1),
         ('accuracy', 100.0 * sum(acc_scores) / total),
+        ('ideal_accuracy', 100.0*sum(ideal_acc)/total),
         ('total', total),
         ('failed', len(failed)*100.0/total),
         ('query average time', avg_time)
@@ -97,7 +115,8 @@ def main():
     for q_output in system_output:
         if len(q_output["answers"]) > 0:
             total_counter += 1
-            total_time += float(q_output['time'])
+            if "time" in q_output:
+                total_time += float(q_output['time'])
             answers_output = [a["answer"] for a in q_output["answers"]]
             a_pred = []
             for a in answers_output:
@@ -114,7 +133,7 @@ def main():
                     for ac in a_clean:
                         a_gold.append(ac)
                 scores.append(compute_scores(
-                    a_gold, a_pred, q_output["question"]))
+                    a_gold, a_pred, q_output))
     out_eval = make_eval_dict(scores)
     with open("failed_questions.json", "w", encoding="utf8") as fail:
         fail.write(json.dumps(failed))

@@ -46,11 +46,11 @@ for q in dataset:
     response["id"] = q["id"]
     response["question"] = q["question"]
     # remove unwanted info
-    response.pop("category")
-    response.pop("types")
-    for ans in response["answers"]:
-        ans.pop("text")
-        ans.pop("entity")
+    # response.pop("category")
+    # response.pop("types")
+    # for ans in response["answers"]:
+    #     ans.pop("text")
+    #     ans.pop("entity")
     # if "text" in response
     answered.append(response)
     # print(response)

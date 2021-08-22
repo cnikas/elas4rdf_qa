@@ -55,7 +55,7 @@ def api_answer():
 
     extended_entities = ae.extend_entities(
         entities, found_category, found_types[0])
-    answers = ae.answer_extractive(question, extended_entities)
+    answers = ae.answer_extractive(question, extended_entities, found_category)
     end = time.time()
     response = {
         "category": found_category,
