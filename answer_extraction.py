@@ -8,14 +8,15 @@ class AnswerExtraction:
     # This class contains methods for the answer extraction stage
 
     def __init__(self):
-        self.device = torch.device("cuda"if torch.cuda.is_available() else"cpu")  
+        self.device = torch.device(
+            "cuda"if torch.cuda.is_available() else"cpu")
         # Initalisation of pretrained extractive QA model
         model_name = "deepset/roberta-base-squad2"
         # model_name = "distilbert-base-uncased-distilled-squad"
-        self.tokenizer = RobertaTokenizer.from_pretrained(model_name)
-        self.model = RobertaForQuestionAnswering.from_pretrained(model_name)
+        tokenizer = RobertaTokenizer.from_pretrained(model_name)
+        model = RobertaForQuestionAnswering.from_pretrained(model_name)
         self.pipeline = QuestionAnsweringPipeline(
-            model=self.model, tokenizer=self.tokenizer, framework="pt", device=-1)
+            model=model, tokenizer=tokenizer, framework="pt", device=-1)
 
     def combineAnswers(self, answers):
         '''
@@ -54,26 +55,29 @@ class AnswerExtraction:
 
         return combined
 
-
-    def answer_extractive(self, question, entities, category):
+    def answer_extractive(self, question, entities, category, confirmationQuestion=None):
         # Obtain a question from each given entity
         answers = []
         for e in entities:
             # print('ans'+e['uri'])
             if e['text'] != '':
-                output = self.pipeline(question, e['text'])
-                highlighted_text = e['text'][0:output['start']]+'<b>' + \
-                    e['text'][output['start']:output['end']] + \
-                    '</b>'+e['text'][output['end']:]
+                # handle answer depending on category
+                if category == 'boolean':
+                    output = confirmationQuestion.predict(question,e['text'])
+                    highlighted_text = e['text']
+                else:
+                    output = self.pipeline(question, e['text'])
+                    highlighted_text = e['text'][0:output['start']]+'<b>' + \
+                        e['text'][output['start']:output['end']] + \
+                        '</b>'+e['text'][output['end']:]
                 answers.append({
                     'entity': e['uri'],
-                    # boolean 
-                    'answer': {True: output['answer'], False: output['answer']}[category == 'boolean'],
+                    'answer': output['answer'],
                     'score': round(output['score'], 3),
                     'text': highlighted_text
                 })
-        #if category != 'boolean':
-            answers = self.combineAnswers(answers)
+        # if category != 'boolean':
+        #answers = self.combineAnswers(answers)
         return sorted(answers, key=lambda k: k['score'], reverse=True)
 
     def extend_entities(self, entities, category, atype):
