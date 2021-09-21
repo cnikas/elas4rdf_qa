@@ -1,14 +1,10 @@
 # Question Answering (QA) Component of Elas4RDF
 
+### Overview
+
 ![overview](overview.png)
 
 This repository contains code for the Question Answering Component of Elas4RDF.
-
-### Publication
-
-C. Nikas, P. Fafalios and Y. Tzitzikas,
-[Open Domain Question Answering over Knowledge Graphs using Keyword Search, Answer Type Prediction, SPARQL and Pre-trained Neural Models](http://users.ics.forth.gr/~tzitzik/publications/Tzitzikas_2021_ISWC-QA.pdf) ,
-International Semantic Web Conference (ISWC) 2021 
 
 It is used to provide answers for the QA tab of Elas4RDF ([demo available here](https://demos.isl.ics.forth.gr/elas4rdf)), but it can be used as a REST API as well.
 
@@ -24,3 +20,8 @@ To start:
 1. development server: `flask run --host=0.0.0.0`
 2. production server: `gunicorn IP:PORT --workers 1 --limit-request-line 0 app:app --daemon --error-logfile gunicorn_error.log --timeout 120`
 
+### Publication
+
+C. Nikas, P. Fafalios and Y. Tzitzikas,
+[Open Domain Question Answering over Knowledge Graphs using Keyword Search, Answer Type Prediction, SPARQL and Pre-trained Neural Models](http://users.ics.forth.gr/~tzitzik/publications/Tzitzikas_2021_ISWC-QA.pdf) ,
+International Semantic Web Conference (ISWC) 2021 
