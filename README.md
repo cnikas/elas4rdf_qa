@@ -4,7 +4,7 @@
 
 This repository contains code for the Question Answering Component of Elas4RDF.
 
-###Publication
+### Publication
 
 C. Nikas, P. Fafalios and Y. Tzitzikas,
 [Open Domain Question Answering over Knowledge Graphs using Keyword Search, Answer Type Prediction, SPARQL and Pre-trained Neural Models](http://users.ics.forth.gr/~tzitzik/publications/Tzitzikas_2021_ISWC-QA.pdf) ,
