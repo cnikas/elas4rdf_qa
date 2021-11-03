@@ -8,6 +8,7 @@ RDF nodes that match the answer type to a question
 and generate sentences to extend entity descriptions
 """
 
+
 def sparql_query(query_string):
     # Execute a query on a SPARQL endpoint
     #url = "http://139.91.183.46:8899/sparql"
@@ -16,10 +17,10 @@ def sparql_query(query_string):
         "query": query_string,
         "default-graph-uri": "http://dbpedia.org"
     }
-    headers = {"Accept":"application/json"}
-    response = requests.get(url,params=payload,headers=headers)
+    headers = {"Accept": "application/json"}
+    response = requests.get(url, params=payload, headers=headers)
     try:
-        response_json =  response.json()
+        response_json = response.json()
         keys = response_json['head']['vars']
         results = []
         for b in response_json['results']['bindings']:
@@ -29,29 +30,69 @@ def sparql_query(query_string):
             results.append(result)
     except json.decoder.JSONDecodeError:
         print("sparql error")
-        results = [] 
+        results = []
     return results
 
-def resource_sentences(entity_uri,type_uri):
+
+def filterSparql(results):
+    """
+    clears unwanted info form sparql response
+    such as link from wikipage to another wiki page and has abstract
+    """
+    filtered_results = []
+    for r in results:
+        if r['pLabel'] not in ['Link from a Wikipage to another Wikipage','Link from a Wikipage to an external page', 'has abstract']:
+            filtered_results.append(r)
+    return filtered_results
+
+
+def resource_sentences(entity_uri, type_uri):
     """ Find subjects of the entity that match the answer type
     and generate sentences of the form "entity predicate label answer"
     """
     sentences = []
     query_string_o = ("select distinct str(?pl) as ?pLabel ?a where {{"
-                        "<{0}> ?p ?a . "
-                        "?p rdfs:label ?pl . "
-                        "<{1}> owl:equivalentClass ?eq . "
-                        "?a rdf:type ?eq . "
-                        "FILTER(lang(?pl) = 'en' || lang(?pl) = '') "
-                    "}}").format(entity_uri,type_uri)
+                      "<{0}> ?p ?a . "
+                      "?p rdfs:label ?pl . "
+                      "<{1}> owl:equivalentClass ?eq . "
+                      "?a rdf:type ?eq . "
+                      "FILTER(lang(?pl) = 'en' || lang(?pl) = '') "
+                      "}}").format(entity_uri, type_uri)
     response = sparql_query(query_string_o)
-    if len(response)>20:
-    	response = response[0:20]
+    response = filterSparql(response)
+    # print(query_string_o)
+    if len(response) > 20:
+        response = response[0:20]
     for r in response:
-        sentences.append(entity_to_str(entity_uri)+' '+r['pLabel']+' '+entity_to_str(r['a']))
+        sentences.append(entity_to_str(entity_uri)+' ' +
+                         r['pLabel']+' '+entity_to_str(r['a']))
     return sentences
 
-def literal_sentences(entity_uri,literal_type):
+
+def extend_ignore_type(entity_uri):
+    """
+    Enrich entity without considering its type
+    """
+    sentences = []
+    entity = entity_to_str(entity_uri)
+    query_string = ("select str(?pl) as ?pLabel ?a where {{"
+                    "<{}> ?p ?a ."
+                    "?p rdfs:label ?pl ."
+                    "FILTER( lang(?pl) = 'en' || lang(?pl) = '')"
+                    "}}").format(entity_uri)
+    response = sparql_query(query_string)
+    response = filterSparql(response)
+    if len(response) > 20:
+        response = response[0:20]
+    for r in response:
+        a = r['a']
+        if "http://dbpedia.org/resource/" in a:
+            a = entity_to_str(a)
+        sentences.append(entity+' '+r['pLabel']+' '+a)
+    return sentences
+
+
+def literal_sentences(entity_uri, literal_type):
     """ Find literal subjects of the entity that match
     the answer type and generate sentences of the form
     "entity predicate label answer"
@@ -65,34 +106,38 @@ def literal_sentences(entity_uri,literal_type):
                         "?p rdfs:label ?pl . "
                         "FILTER(isLiteral(?answer)) "
                         "FILTER(lang(?pl) = 'en' || lang(?pl) = '') "
-                        "}}").format(entity_uri)  
-        response = sparql_query(query_string)      
+                        "}}").format(entity_uri)
+        response = sparql_query(query_string)
+        response = filterSparql(response)
         for r in response:
             sentences.append(entity_string+' '+r['pLabel']+' '+r['a'])
-    else: # if number or string
+    else:  # if number or string
         query_string = ("select str(?answer) as ?a str(?pl) as ?pLabel where {{"
                         "<{}> ?p ?answer . "
                         "?p rdfs:range ?answerType . "
                         "?p rdfs:label ?pl . "
                         "FILTER(isLiteral(?answer)) "
                         "FILTER(lang(?pl) = 'en' || lang(?pl) = '') "
-                        "}}").format(entity_uri)         
+                        "}}").format(entity_uri)
         response = sparql_query(query_string)
-        if len(response)>20:
-    	    response = response[0:20]
+        response = filterSparql(response)
+        if len(response) > 20:
+            response = response[0:20]
         for r in response:
-            if len(r['a'])<100:
-                isNumber = r['a'].replace('.','',1).isdigit()
+            if len(r['a']) < 100:
+                isNumber = r['a'].replace('.', '', 1).isdigit()
                 if(literal_type == 'number' and isNumber):
                     sentences.append(entity_string+' '+r['pLabel']+' '+r['a'])
-                elif(literal_type =='string' and (not isNumber)):
+                elif(literal_type == 'string' and (not isNumber)):
                     sentences.append(entity_string+' '+r['pLabel']+' '+r['a'])
 
     return sentences
 
+
 def entity_to_str(e):
     # Convert a dbpedia uri to a readable string
-    return e[e.rindex("/")+1:].replace('_',' ')
+    return e[e.rindex("/")+1:].replace('_', ' ')
+
 
 def get_entities_from_elas4rdf(query, size=1000):
     """
@@ -104,21 +149,21 @@ def get_entities_from_elas4rdf(query, size=1000):
         "query": query,
         "size": str(size)
     }
-    headers = {"Accept":"application/json"}
-    response = requests.get(url,params=payload,headers=headers)
+    headers = {"Accept": "application/json"}
+    response = requests.get(url, params=payload, headers=headers)
     try:
-        response_json =  response.json()
+        response_json = response.json()
         entities = []
         for e in response_json['results']['entities']:
             rdfs = "[]"
             if 'rdfs_comment' in e['ext']:
                 rdfs = e['ext']['rdfs_comment']
             entities.append({
-                'uri':e['entity'],
+                'uri': e['entity'],
                 'rdfs_comment': rdfs
             })
         # entities = [{'uri':e['entity'],'rdfs_comment':e['ext']['rdfs_comment']} for e in response_json['results']['entities']]
     except json.decoder.JSONDecodeError:
         print("error from elas4rdf search service")
-        entities = [] 
+        entities = []
     return entities
